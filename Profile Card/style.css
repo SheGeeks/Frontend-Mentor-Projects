@@ -1,0 +1,96 @@
+body {
+    font-size: 18px;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 400;
+    color: hsl(0, 0%, 59%);
+    box-sizing: content-box;
+    margin-top: 10%;
+    background: url("images/bg-pattern-top.svg") no-repeat, 
+                url("images/bg-pattern-bottom.svg") no-repeat,
+                #19a1ad;
+   
+    max-width: 1440px;
+    background-position: top -200px left -200px,
+                         bottom -100px right -100px;
+}
+
+strong {
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+}
+
+/* Profile Card*/
+#card {
+    background: white url("images/bg-pattern-card.svg") no-repeat;
+    width: 350px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 10px;
+    max-width: fit-content;
+}
+
+/* User Profile Info*/
+#user-profile {
+    margin-bottom: 12px;
+    width: 100%;
+    border-bottom: 2px solid #e8e8e8;
+    padding-bottom: 15px;
+}
+
+#avatar {
+    margin-top: 85px;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    border: 5px solid white;
+}
+
+#userprofile p strong {
+    margin-bottom: 10px;
+}
+
+
+#location {
+    margin-top: 0;
+    padding-top: 0;
+    font-size: .9rem;
+}
+
+/* Profile Stats*/
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    width: 75%;
+    padding: 4px 0;
+}
+
+.stat-block p {
+    font-size: .6rem;
+    letter-spacing: 2px;
+}
+
+.stat-block p strong {
+    font-size: 18px;
+    letter-spacing: normal;
+}
+
+
+/* Attribution*/
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}

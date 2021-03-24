@@ -62,7 +62,7 @@ body {
 
 }
 
-.user-profile h2 {
+h2 {
     color: hsl(229, 23%, 23%);
     font-weight: 700;
     font-size: 18px;

@@ -3,25 +3,25 @@
 }
 
 body {
+    margin-right: auto;
+    margin-left: auto;
+    min-width: 350px;
+    background: url('images/bg-pattern-top.svg') no-repeat, url('images/bg-pattern-bottom.svg') no-repeat, #19a1ad;
+    background-position: right 52vw top -71vh, left 48vw bottom -189vh;
+    background-clip: border-box, border-box;
+    background-size: auto, auto;
     font-size: 18px;
     font-family: 'Kumbh Sans', sans-serif;
     font-weight: 400;
     color: hsl(0, 0%, 59%);
-    background: url('images/bg-pattern-top.svg') no-repeat, url('images/bg-pattern-bottom.svg') no-repeat, #19a1ad;
-    margin-right: auto;
-    margin-left: auto;
-    background-clip: border-box;
-    background-size: cover, cover;
-    max-width: 350px;
+
 }
 
 /* Profile Card*/
 #card {
     background: white url("images/bg-pattern-card.svg") no-repeat top center;
     background-size: auto;
-    width: 326px;
-    min-width: 325px;
-    height: auto;
+    min-width: 346px;
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
     margin-left: auto;
@@ -30,19 +30,19 @@ body {
     flex-flow: column;
     align-items: center;
     text-align: center;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    
+
 }
 
 /* User Profile Info*/
 #avatar {
     margin-top: 88px;
-    width: 105px;
-    height: 105px;
+    width: 104px;
+    height: 104px;
     border-radius: 50%;
     border: 5px solid white;
 }
@@ -52,7 +52,7 @@ body {
     width: 100%;
     border-bottom: 1px solid #e8e8e8;
     padding-bottom: 10px;
-    
+
 }
 
 #user-name {
@@ -81,9 +81,9 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
-    width: 84%;
-    margin-top: 10px;
-    padding-bottom: 15px;
+    width: 85%;
+    margin-top: 9px;
+    padding-bottom: 20px;
     justify-content: center;
     align-items: center;
 }
@@ -98,18 +98,21 @@ body {
 .stats-label {
     font-size: .6rem;
     letter-spacing: 1.7px;
-margin: 0;
+    margin: 0;
 }
 
 /* Attribution*/
 .attribution {
     font-size: 11px;
     text-align: center;
-    margin-top: 20px;
     color: white;
-    
+    position: fixed;
+    bottom: 17%;
+    left: 50%;
+    transform: translate(-50%, -17%);
 }
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+    text-decoration: none;
 }

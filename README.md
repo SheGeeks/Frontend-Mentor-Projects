@@ -5,7 +5,8 @@ To continue strengthening my frontend web developement skills, I've started taki
 *Check back again soon for updates!*
 
 ## In Progress
-[Profile Card](https://shegeeks.github.io/Frontend-Mentor-Projects/Profile%20Card/)
+- [Profile Card](https://shegeeks.github.io/Frontend-Mentor-Projects/Profile%20Card/)
+- Sign-up Form
 
 ## Up Next
 *Check back again soon for updates!*

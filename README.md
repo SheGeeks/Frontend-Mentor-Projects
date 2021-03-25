@@ -6,12 +6,12 @@ Review what I've done for each project in their respective folders or visit the 
 ---
 
 ## 🐔 Digitally Raised
-- [Profile Card](https://shegeeks.github.io/Frontend-Mentor-Projects/Profile%20Card/) (3/23/21)
+- [Profile Card](https://shegeeks.github.io/Frontend-Mentor-Projects/Profile%20Card/) *(3/23/21)*
 
 ## 🐣 Hatching
-- Sign-up Form (Collaboration)
+- [Signup Form](https://shegeeks.github.io/Frontend-Mentor-Projects/Signup%20Form/) *(WIP Collaboration)*
 
 ## 🥚 Incubating
-*Nothing to hatch today. Come back next week.*
+*Currently hatching something.*
 
 

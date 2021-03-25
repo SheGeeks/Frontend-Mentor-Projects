@@ -1,0 +1,26 @@
+body {
+  background: url(images/bg-intro-mobile.png), #ff7979;
+    background-size: cover;
+  max-width: 100vh;
+  min-height: 100vh;
+  margin: auto 2rem;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+
+}
+
+.content {
+  background: url(/images/bg-intro-mobile.png);
+  background-size: cover;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,9 +1,9 @@
 body {
   background: url(images/bg-intro-mobile.png), #ff7979;
-    background-size: cover;
-  max-width: 100vh;
-  min-height: 100vh;
-  margin: auto 1.5rem;
+  background-size: cover;
+  /* max-width: 100vh;
+  min-height: 100vh; */
+  margin: 4.2rem 1.5rem 0 1.5rem;
   display: flex;
   flex-flow: column;
   justify-content: space-evenly;
@@ -19,34 +19,28 @@ body {
   display: none;
 }
 
-.intro {
-  background: url(/images/bg-intro-mobile.png);
-  background-size: cover;
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: center;
-}
-
 h1 {
   font-weight: 700;
+  font-size: 1.7rem;
+  line-height: 37px;
 }
 
-.signup {
+.signup-form {
   display: flex;
   flex-flow: column wrap;
   justify-content: space-between;
   align-items: center;
+  margin-top: 2rem;
 }
 
 
 .signup-cta {
   background: hsl(248, 32%, 49%);
   border-radius: 10px;
-  padding: .3rem 3rem;
+  padding: .2rem 4rem;
   text-align: center;
-  box-shadow: 0 10px 1px 0px #00000017;
-  margin: 1em 0 2rem 0;
+  box-shadow: 0 8px 1px 0px #00000026;
+  margin-top: 1.4rem;
 }
 
 .signup-cta span {
@@ -55,19 +49,23 @@ h1 {
 
 form {
   display: grid;
-  flex-flow: column wrap;
   justify-content: space-evenly;
   align-items: stretch;
   row-gap: 15px;
   background: white;
-  padding: 1.5rem;
+  padding: 1.5rem 0;
   border-radius: 10px;
+  margin-top: 1.3rem;
+  box-shadow: 0 8px 1px 0px #00000026;
 }
 
 input {
+  margin: .1rem 1rem;
   padding: 1rem;
   border-radius: 5px;
-  border: 1px solid hsl(0, 0%, 88%) 
+  border: 1px solid hsl(0, 0%, 88%);
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
 }
 
 form input[type=submit] {
@@ -75,15 +73,23 @@ form input[type=submit] {
   color: white;
   font-weight: 600;
   letter-spacing: .1em;
-  box-shadow: 0 10px 1px 0px hsl(0, 0%, 62%);
-  padding: 1rem 1rem;
+  box-shadow: 0 5px 1px 0px hsl(154.1, 59.2%, 45%);
   border: 0px;
+  
+  font-size: 1rem;
 }
 
 .form-agreement {
   font-size: .7rem;
-  color: rgb(134, 134, 134);
-  padding: 0 .5rem;
+  font-weight: 500;
+  color: hsl(246, 25%, 77%);
+  padding: 0 2.5rem;
+  line-height: 21px;
+  margin: 0;
+}
+
+.form-agreement p {
+  margin: 0;
 }
 
 a {

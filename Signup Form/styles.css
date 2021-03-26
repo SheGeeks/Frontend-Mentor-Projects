@@ -1,8 +1,6 @@
 body {
   background: url(images/bg-intro-mobile.png), #ff7979;
   background-size: cover;
-  /* max-width: 100vh;
-  min-height: 100vh; */
   margin: 4.2rem 1.5rem 0 1.5rem;
   display: flex;
   flex-flow: column;
@@ -44,7 +42,7 @@ h1 {
 }
 
 .signup-cta span {
-  font-weight:600;
+  font-weight: 600;
 }
 
 form {
@@ -75,7 +73,16 @@ form input[type=submit] {
   letter-spacing: .1em;
   box-shadow: 0 5px 1px 0px hsl(154.1, 59.2%, 45%);
   border: 0px;
-  
+  font-size: 1rem;
+}
+
+form input[type=submit]:active {
+  background-color: #77e2b4;
+  color: white;
+  font-weight: 600;
+  letter-spacing: .1em;
+  box-shadow: 0 5px 1px 0px rgb(138, 212, 180);
+  border: 0px;
   font-size: 1rem;
 }
 

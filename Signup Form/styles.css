@@ -104,3 +104,50 @@ a {
   font-weight: 700;
   text-decoration: none;
 }
+
+
+@media only screen and (min-width: 376px) {
+  body {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    background: url("images/bg-intro-desktop.png"), #ff7979;
+    padding: 0;
+  }
+
+  .intro {
+    text-align: left;
+    width: 36%;
+    margin: 12rem 1rem 10rem 0rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+
+  .signup-form {
+    margin-top: 0;
+    width: 40%;
+    margin-left: 4rem;
+  }
+
+  .signup-cta {
+    margin-top: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  form {
+    width: 100%;
+    padding:3rem 0;
+  }
+
+  input {
+    margin: 0;
+    
+    padding: 1rem 0 1rem 2rem;
+  }
+
+}

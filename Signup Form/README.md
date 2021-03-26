@@ -37,14 +37,21 @@ Users should be able to:
 - Live Site URL: *Coming Soon*
 
 ## My process
+Started building mobile design first with Flexbox for layout. Added form using CSS Grid and validation code for form fields. Moved on to desktop design, adding appropriate styling for desktop viewing.
 
 ### Built with
 
-*Coming Soon*
+- Mobile-first workflow
+- Semantic HTML5 markup
+- CSS3
+- Flexbox
+- CSS Grid (Form only)
 
 ### What I learned
 
-*Coming Soon*
+I didn't need to use CSS Grid for the form, but I always appreciate playing with both Flexbox and CSS Grid in the same designs. Doing so allows me to get a better understanding of the differences and limitations using either one.
+
+Learned a lot more about form validation techniques.
 
 ### Continued development
 

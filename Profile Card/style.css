@@ -3,11 +3,14 @@
 }
 
 body {
-    margin-right: auto;
-    margin-left: auto;
-    min-width: 350px;
+    width: auto;
+    height: 100vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
     background: url('images/bg-pattern-top.svg') no-repeat, url('images/bg-pattern-bottom.svg') no-repeat, #19a1ad;
-    background-position: right 52vw top -80vh, left 48vw bottom -198vh;
+    background-position: right 51vw top -31vh, left 49vw bottom -40vh;
     background-clip: border-box, border-box;
     background-size: auto, auto;
     font-size: 18px;
@@ -29,20 +32,17 @@ body {
 .card {
     background: white url("images/bg-pattern-card.svg") no-repeat top center;
     background-size: auto;
-    min-width: 346px;
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
-    margin-left: auto;
-    margin-right: auto;
     display: flex;
     flex-flow: column;
+    justify-content: center;
     align-items: center;
     text-align: center;
     padding-bottom: 5px;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    width: 100%;
+    min-width: 30vh;
+    max-width: 32.5vh;
 }
 
 /* User Profile Info*/
@@ -113,10 +113,6 @@ footer {
     font-size: 11px;
     text-align: center;
     color: white;
-    position: fixed;
-    bottom: 15%;
-    left: 50%;
-    transform: translate(-50%, -17%);
 }
 
 footer a {

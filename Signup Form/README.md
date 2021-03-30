@@ -14,7 +14,6 @@ This is my solution to the [Intro component with sign up form challenge on Front
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -28,46 +27,46 @@ Users should be able to:
   - Any `input` field is empty. The message for this error should say *"[Field Name] cannot be empty"*
   - The email address is not formatted correctly (i.e. a correct email address should have this structure: `name@host.tld`). The message for this error should say *"Looks like this is not an email"*
 
-### Screenshot
-*Work In Progress*
+### Screenshots
+<figure>
+<img src="Corvida-Raven-FEM-SignupForm(Mobile).png" height="400"> <img src="Corvida-Raven-FEM-SignupForm(Desktop).png" height="400">
+<figcaption> Mobile & Desktop Views</figcaption>
+</figure>
+
 
 ### Links
 
-- Solution URL: *Coming Soon*
-- Live Site URL: *Coming Soon*
+- Solution URL: [Code](https://github.com/SheGeeks/Frontend-Mentor-Projects/tree/Frontend-Mentor-Projects/Signup%20Form)
+- Live Site URL: [Live Demo](https://shegeeks.github.io/Frontend-Mentor-Projects/Signup%20Form/)
 
 ## My process
-Started building mobile design first with Flexbox for layout. Added form using CSS Grid and validation code for form fields. Moved on to desktop design, adding appropriate styling for desktop viewing.
+Started building mobile design first with Flexbox. Added form using CSS Grid and classes/IDs for form field validation. Moved on to adding styling for desktop responsiveness and form in CSS3. Lastly, I added client-side validation to the form and a custom error message with an accompanying image using JavaScript.
 
 ### Built with
 
 - Mobile-first workflow
-- Semantic HTML5 markup
+- HTML5
 - CSS3
 - Flexbox
 - CSS Grid (Form only)
+- Vanilla JavaScript
 
 ### What I learned
 
-I didn't need to use CSS Grid for the form, but I always appreciate playing with both Flexbox and CSS Grid in the same designs. Doing so allows me to get a better understanding of the differences and limitations using either one.
+- I always appreciate playing with both Flexbox and CSS Grid in the same designs. Doing so allows me to get a better understanding of the differences and limitations with using either one.
 
-Learned a lot more about form validation techniques.
+- Learned a lot about client-side form validation using JS rather than HTML5 validation features. Felt there was a lot more flexibility with what I could create in this approach, especially with the error messages.
 
 ### Continued development
 
-*Coming Soon*
+Looking forward to learning more JS that can be applied here such as clearing the error messages when a user focuses on an input field to try again. Also looking forward to digging into accessibility after using aria-labels for the first time with this challenge. 
 
 ### Useful resources
 
-*Coming Soon*
+- [JavaScript Client-side Form Validation (YouTube)](https://www.youtube.com/watch?v=rsd4FNGTRBw)
 
 ## Author
 
 - Website - [Corvida Raven](https://shegeeks.net)
 - Frontend Mentor - [@SheGeeks](https://www.frontendmentor.io/profile/shegeeks)
 - Twitter - [@Corvida](https://www.twitter.com/corvida)
-
-
-## Acknowledgments
-
-

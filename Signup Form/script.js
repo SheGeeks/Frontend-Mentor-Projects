@@ -23,29 +23,29 @@ function checkInputs() {
         //show error
         //add error class
         setErrorFor(fname, 'First Name cannot be empty');
-        document.getElementById("fname").placeholder = " "; 
+        document.getElementById("fname").placeholder = " ";
 
     }
 
     if (lnameValue === '') {
         setErrorFor(lname, 'Last Name cannot be empty');
-        document.getElementById("lname").placeholder = " "; 
+        document.getElementById("lname").placeholder = " ";
 
     }
 
     if (emailValue === '') {
-        setErrorFor(email, 'Looks like this is not an email');
-        document.getElementById("email").placeholder = " "; 
+        setErrorFor(email, 'Email cannot be empty');
+        document.getElementById("email").placeholder = " ";
     }
 
     if (emailValue !== mailformat) {
         setErrorFor(email, 'Looks like this is not an email');
-        document.getElementById("email").placeholder = " "; 
+        document.getElementById("email").placeholder = " ";
     }
 
     if (passwordValue === '') {
         setErrorFor(password, 'Password cannot be empty');
-        document.getElementById("password").placeholder = " "; 
+        document.getElementById("password").placeholder = " ";
 
     }
 
@@ -57,8 +57,8 @@ function setErrorFor(input, message) {
 
     //add error message inside small
     small.innerText = message;
-    document.getElementById("fname").placeholder = " "; 
-   
+    document.getElementById("fname").placeholder = " ";
+
 
     //add error class
     formControl.className = 'form-control error';

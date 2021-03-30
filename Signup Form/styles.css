@@ -49,7 +49,7 @@ form {
   display: grid;
   justify-content: space-evenly;
   align-items: stretch;
-  row-gap: 15px;
+  row-gap: 18px;
   background: white;
   padding: 1.5rem 0;
   border-radius: 10px;
@@ -58,7 +58,7 @@ form {
 }
 
 input {
-  margin: .1rem 1rem;
+  margin: 0rem 1rem;
   padding: 1rem;
   border-radius: 5px;
   border: 1px solid hsl(0, 0%, 88%);
@@ -70,7 +70,7 @@ form input[type=submit] {
   background-color: hsl(154, 59%, 51%);
   color: white;
   font-weight: 600;
-  letter-spacing: .1em;
+  letter-spacing: 0em;
   box-shadow: 0 5px 1px 0px hsl(154.1, 59.2%, 45%);
   border: 0px;
   font-size: 1rem;
@@ -81,7 +81,7 @@ form input[type=submit]:hover {
   color: white;
   font-weight: 600;
   letter-spacing: .1em;
-  box-shadow: 0 5px 1px 0px rgb(138, 212, 180);
+  box-shadow: 0 3px 1px 0px rgb(138, 212, 180);
   border: 0px;
   font-size: 1rem;
 }
@@ -93,6 +93,7 @@ form input[type=submit]:hover {
   padding: 0 2.5rem;
   line-height: 21px;
   margin: 0;
+  margin-top: -11px;
 }
 
 .form-agreement p {
@@ -105,12 +106,20 @@ a {
   text-decoration: none;
 }
 
+.attribution {
+  font-weight: 500;
+}
 
-@media only screen and (min-width: 376px) {
+.attribution a {
+  color: hsl(248, 32%, 49%);
+}
+
+
+@media only screen and (min-width: 1249px) {
   body {
     display: flex;
-    flex-flow: row;
-    justify-content: center;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
     align-items: center;
     background: url("images/bg-intro-desktop.png"), #ff7979;
     padding: 0;
@@ -119,34 +128,48 @@ a {
   .intro {
     text-align: left;
     width: 36%;
-    margin: 12rem 1rem 10rem 0rem;
+    margin: 10.7rem 0rem 10rem 4rem;
   }
 
   h1 {
     font-size: 3rem;
-    line-height: 3rem;
+    line-height: 3.3rem;
+    margin-bottom: 2rem;
   }
 
   .signup-form {
-    margin-top: 0;
-    width: 40%;
-    margin-left: 4rem;
+    margin-top: 3rem;
+    width: 38.5%;
+    margin-right: 6rem;
   }
 
   .signup-cta {
-    margin-top: 0;
+    margin-top: .5rem;
     padding: 0;
     width: 100%;
   }
 
   form {
     width: 100%;
-    padding: 3rem 0;
+    padding: 2.8rem 2.5rem 1.7rem 2.5rem;
+    justify-content: stretch;
+    box-sizing: border-box;
+    margin: 1.5rem 0rem;
+    row-gap: 28px;
+  }
+
+  form input[type="submit"] {
+    letter-spacing: normal;
   }
 
   input {
     margin: 0;
-    padding: 1rem 0 1rem 2rem;
+    padding: .8rem 2rem;
+  }
+
+  .form-agreement {
+    margin: 0;
+    margin: -14px 0px 1rem 0;
   }
 
 }

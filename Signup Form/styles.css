@@ -59,7 +59,7 @@ form {
 
 
 .form-control {
-  display:inherit;
+  display: inherit;
   row-gap: 0;
   margin-bottom: -24px;
 }
@@ -79,13 +79,13 @@ form {
 .form-control img {
   visibility: hidden;
   position: relative;
-    top: -2.6rem;
-    left: 16.4rem;
+  top: -2.6rem;
+  left: 16.4rem;
 }
 
 .form-control.error img {
   visibility: visible;
-  
+
 }
 
 .form-control small {
@@ -110,6 +110,10 @@ input {
   border: 1px solid hsl(0, 0%, 88%);
   font-weight: 700;
   font-family: 'Poppins', sans-serif;
+}
+
+input:hover {
+  border: 1px solid hsl(248, 32%, 49%);
 }
 
 form input[type=submit] {
@@ -212,7 +216,7 @@ a {
   }
 
   .form-control {
-    display:inherit;
+    display: inherit;
     row-gap: 0;
   }
 
@@ -239,7 +243,7 @@ a {
   .form-control.error img {
     visibility: visible;
   }
-  
+
   .form-control small {
     text-align: right;
     position: inherit;
@@ -262,9 +266,9 @@ a {
   }
 
   input:focus {
-    border: 1px solid hsl(248, 32%, 49%);;
+    border: 1px solid hsl(248, 32%, 49%);
   }
-  
+
 
   .form-agreement {
     margin: 0;

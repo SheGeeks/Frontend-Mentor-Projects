@@ -57,8 +57,54 @@ form {
   box-shadow: 0 8px 1px 0px #00000026;
 }
 
+
+.form-control {
+  display:inherit;
+  row-gap: 0;
+  margin-bottom: -24px;
+}
+
+.form-control input {
+  display: block;
+  width: 74%;
+}
+
+.form-control.error input {
+  border: 3px solid #ff7979;
+  color: #ff7979;
+  font-weight: 700;
+  width: 72%;
+}
+
+.form-control img {
+  visibility: hidden;
+  position: relative;
+    top: -2.6rem;
+    left: 16.4rem;
+}
+
+.form-control.error img {
+  visibility: visible;
+  
+}
+
+.form-control small {
+  text-align: right;
+  position: inherit;
+  color: #ff7979;
+  font-weight: 600;
+  font-style: italic;
+  font-size: .7rem;
+  display: none;
+  margin: -20px 40px 10px 0;
+}
+
+.form-control.error small {
+  display: block;
+}
+
 input {
-  margin: 0rem 1rem;
+  margin: 0rem 1.7rem;
   padding: 1rem;
   border-radius: 5px;
   border: 1px solid hsl(0, 0%, 88%);
@@ -80,7 +126,6 @@ form input[type=submit]:hover {
   background-color: #77e2b4;
   color: white;
   font-weight: 600;
-  letter-spacing: .1em;
   box-shadow: 0 3px 1px 0px rgb(138, 212, 180);
   border: 0px;
   font-size: 1rem;
@@ -155,7 +200,7 @@ a {
     justify-content: stretch;
     box-sizing: border-box;
     margin: 1.5rem 0rem;
-    row-gap: 4px;
+    row-gap: 20px;
   }
 
   form input[type="submit"] {
@@ -181,6 +226,7 @@ a {
     color: #ff7979;
     font-weight: 700;
     margin: .3rem 0;
+    width: 86%;
   }
 
   .form-control img {
@@ -211,7 +257,7 @@ a {
 
   input {
     margin: 0;
-    padding: .8rem 2rem;
+    padding: 1rem 2rem;
     display: block;
   }
 
@@ -222,7 +268,7 @@ a {
 
   .form-agreement {
     margin: 0;
-    margin: 1rem 0 0.3rem 0;
+    margin: 0 0 0.3rem 0;
   }
 
   footer {

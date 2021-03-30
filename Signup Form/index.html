@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- displays site properly based on user's device -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
@@ -20,35 +20,53 @@
     <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but
       understanding how developers think is invaluable.</p>
   </section>
- 
+
 
   <!-- Form Section -->
   <section class="signup-form">
     <div class="signup-cta">
       <p><span>Try it free 7 days</span> then $20/mo. thereafter </p>
-    </div> 
+    </div>
     <h2 class="vr">Signup Form</h2>
-    <form action="/">
-      
-      <input type="text" id="fname" name="fname" placeholder="First Name" autocomplete="on" autofocus  oninvalid="this.setCustomValidity('First Name cannot be empty')"
-      oninput="this.setCustomValidity('')" required>
-      <input type="text" id="lname" name="lname" placeholder="Last Name" autocomplete="on"  oninvalid="this.setCustomValidity('Last Name cannot be empty')"
-      oninput="this.setCustomValidity('')" required>
-      <input type="email" id="email" name="email" placeholder="Email Address" autocomplete="on"
-        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"  oninvalid="this.setCustomValidity('Looks like this is not an email')"
-        oninput="this.setCustomValidity('')" required>
-      <input type="password" id="password" name="password" placeholder="Password"  oninvalid="this.setCustomValidity('Pasword cannot be empty')"
-      oninput="this.setCustomValidity('')" required>
+    <form class="form" action="/" id="form">
+
+      <div class="form-control">
+        <input type="text" id="fname" name="fname" placeholder="First Name" >
+        <img src="images/icon-error.svg" alt="error icon">
+        <small>Error Message</small>
+      </div>
+
+      <div class="form-control">
+        <input type="text" id="lname" name="lname" placeholder="Last Name">
+        <img src="images/icon-error.svg" alt="error icon">
+        <small>Error Message</small>
+      </div>
+
+      <div class="form-control">
+        <input type="text" id="email" name="email" placeholder="Email Address">
+        <img src="images/icon-error.svg" alt="error icon">
+        <small>Error Message</small>
+      </div>
+
+      <div class="form-control">
+        <input type="password" id="password" name="password" placeholder="Password">
+        <img src="images/icon-error.svg" alt="error icon">
+        <small>Error Message</small>
+      </div>
+
       <input type="submit" value="CLAIM YOUR FREE TRIAL">
+
       <div class="form-agreement">
         <p>By clicking the button, you are agreeing to our <a href="">Terms and Services</a></p>
       </div>
     </form>
   </section>
-  
-    <footer>
+
+  <script src="script.js"></script>
+  <footer>
     <p class="attribution"><small>
-      A <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a> Challenge <br> Made with 💝 by <a href="https://shegeeks.net">Corvida Raven</a></small>
+        A <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a> Challenge <br> Made
+        with 💝 by <a href="https://shegeeks.net">Corvida Raven</a></small>
     </p>
   </footer>
 

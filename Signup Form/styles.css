@@ -86,6 +86,16 @@ form input[type=submit]:hover {
   font-size: 1rem;
 }
 
+.form-control img {
+  position: absolute;
+  top: 32.5rem;
+  right: 3rem;
+}
+
+.form-control small {
+ 
+}
+
 .form-agreement {
   font-size: .7rem;
   font-weight: 500;
@@ -155,21 +165,74 @@ a {
     justify-content: stretch;
     box-sizing: border-box;
     margin: 1.5rem 0rem;
-    row-gap: 28px;
+    row-gap: 4px;
   }
 
   form input[type="submit"] {
     letter-spacing: normal;
   }
 
+  form input[type=submit]:hover {
+    letter-spacing: normal;
+  }
+
+  .form-control {
+    display:inherit;
+    row-gap: 0;
+  }
+
+  .form-control input {
+    display: block;
+    width: 86%;
+  }
+
+  .form-control.error input {
+    border: 3px solid #ff7979;
+    color: #ff7979;
+    font-weight: 700;
+    margin: .3rem 0;
+  }
+
+  .form-control img {
+    position: relative;
+    top: -2.8rem;
+    left: 25.4rem;
+    visibility: hidden;
+  }
+
+  .form-control.error img {
+    visibility: visible;
+  }
+  
+  .form-control small {
+    text-align: right;
+    position: inherit;
+    color: #ff7979;
+    font-weight: 600;
+    font-style: italic;
+    font-size: .7rem;
+    display: none;
+    margin: -26px 0 16px 0;
+  }
+
+  .form-control.error small {
+    display: block;
+  }
+
   input {
     margin: 0;
     padding: .8rem 2rem;
+    display: block;
   }
+
+  input:focus {
+    border: 1px solid hsl(248, 32%, 49%);;
+  }
+  
 
   .form-agreement {
     margin: 0;
-    margin: -14px 0px 1rem 0;
+    margin: 1rem 0 0.3rem 0;
   }
 
   footer {

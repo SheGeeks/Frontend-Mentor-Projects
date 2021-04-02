@@ -41,11 +41,26 @@ Users should be able to:
 
 ### Built with
 
+- Mobile first workflow
+- Semantic HTML5
+- CSS3
+- Flexbox
+- Accessible form
+
 ### What I learned
 
+#### Day 1 *(1.5 hours)*
+Qickly structured the provided content with HTML and stylef with CSS for mobile layout first. Great practice styling SVG graphics, making accessible forms, and using a mobile-first workflow.
+
+
 ### Continued development
+- SVG graphics
+- Accessibility
 
 ### Useful resources
+- [Beautiful CSS box-shadow examples](https://getcssscan.com/css-box-shadow-examples) (Notify Me Button)
+- [Using SVG Images in Web Development](https://medium.com/@tyler.greason/using-svg-images-in-web-development-3da83165aa92) (Social Icons)
+- [Creating Accessible Forms](https://webaim.org/techniques/forms/controls#input) (Form)
 
 ## Author
 

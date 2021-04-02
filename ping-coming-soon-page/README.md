@@ -50,7 +50,7 @@ Users should be able to:
 ### What I learned
 
 #### Day 1 *(1.5 hours)*
-Qickly structured the provided content with HTML and stylef with CSS for mobile layout first. Great practice styling SVG graphics, making accessible forms, and using a mobile-first workflow.
+Started with a mobile first workflow. Quickly structured the provided content with HTML and styled with CSS for mobile layout. Great practice styling SVG graphics, making accessible forms, and using a mobile-first workflow.
 
 
 ### Continued development

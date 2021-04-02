@@ -10,7 +10,9 @@ Review what I've done for each project in their respective folders or visit the 
 - [Signup Form](https://shegeeks.github.io/Frontend-Mentor-Projects/Signup%20Form/) *(3/30/21)*
 
 ## 🐣 Hatching
-- *Check back next week.*
+- *[Ping Coming Soon Page](https://github.com/SheGeeks/Frontend-Mentor-Projects/tree/Frontend-Mentor-Projects/ping-coming-soon-page)*
 
 ## 🥚 Incubating
-- *Check back next week.*
+- *[Fylo landing page](https://www.frontendmentor.io/challenges/fylo-landing-page-with-two-column-layout-5ca5ef041e82137ec91a50f5)*
+- *[Insure landing page](https://www.frontendmentor.io/challenges/insure-landing-page-uTU68JV8)*
+- *[FAQ accordion card](https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam)*

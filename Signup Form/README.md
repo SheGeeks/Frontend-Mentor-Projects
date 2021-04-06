@@ -28,10 +28,7 @@ Users should be able to:
   - The email address is not formatted correctly (i.e. a correct email address should have this structure: `name@host.tld`). The message for this error should say *"Looks like this is not an email"*
 
 ### Screenshots
-<figure>
 <img src="Corvida-Raven-FEM-SignupForm(Mobile).png" height="300"> <img src="Corvida-Raven-FEM-SignupForm(Desktop).png" height="300">
-<figcaption> Mobile & Desktop Views</figcaption>
-</figure>
 
 
 ### Links

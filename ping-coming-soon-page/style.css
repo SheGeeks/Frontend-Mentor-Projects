@@ -54,6 +54,7 @@ form {
     padding: 0 1.9rem;
 }
 
+
 #email {
     border: 1px solid hsl(223, 100%, 88%);
     border-radius: 50px;
@@ -84,7 +85,8 @@ form {
 }
 
 #dashboard {
-    width: 91%;
+    width: 70%;
+    max-width: 400px;
     margin-top: 4.1rem;
 }
 
@@ -127,17 +129,22 @@ footer p {
 
 
 /* Desktop Media Query */
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 631px) {
+
+    body {
+        flex-flow: column nowrap;
+    }
+
 
     #logo {
         width: 86px;
         height: auto;
-        margin-top: 2.5rem;
+        margin-top: 3.5rem;
     }
 
     #intro {
         row-gap: 0px;
-        margin-top: .9rem;
+        margin-top: 1rem;
     }
 
     h1 {
@@ -161,22 +168,26 @@ footer p {
     }
 
     #email {
-        width: 29%;
-        height: 2rem;
+        width: 27%;
+        height: 1.3rem;
         font-size: 16px;
     }
 
     #submit {
-        width: 17%;
         font-size: 16px;
-        height: 4.2em;
         padding: 1rem 1rem;
+        width: 15%;
+        height: 3.5em;
     }
 
     #dashboard {
-        width: 50%;
+        width: 40rem;
         height: auto;
+        max-width: 641px;
         margin-top: 5rem;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     footer {

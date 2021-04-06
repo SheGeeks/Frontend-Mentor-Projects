@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Project tracking intro component</title>
+</head>
+
+<body>
+  <header>
+    <nav id="topMobileNav" class="mobilenav">
+      <img src="images/logo.svg" alt="logo" id="logo">
+      <div class="navlinks" id="mobileNavLinks">
+        <a href="#">Product</a>
+        <a href="#">Features</a>
+        <a href="#">Pricing</a>
+        <hr>
+        <a href="#" id="login-link">Login</a>
+      </div>
+      <a href="#mobileNavLinks" class="icon" onclick="openNav()"><img src="images/icon-hamburger.svg" alt=""></a>
+
+      <a href="#mobileNavLinks" class="icon close" onclick="closeNav()"><img src="images/icon-close.svg" alt=""></a>
+    </nav>
+    <div id="circle"></div>
+  </header>
+  <main>
+
+    <div id="featured-image">
+      <img src="images/illustration-devices.svg" alt="">
+    </div>
+
+    <section class="product-info">
+      <h1 class="product-label"><span>New</span> Monograph Dashboard</h1>
+      <h2 class="product-tagline">Powerful insights <br> into your team</h2>
+      <p id="description"> Project planning and time tracking <br> for agile teams</p>
+      <p class="schedule-demo"><a href="#" class="schedule-demo-btn">Schedule a demo</a> to see a preview</p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Made with 💝 by <a href="https://shegeeks.net  ">Corvida Raven</a>.
+    </p>
+  </footer>
+
+  <script>
+    const ele = document.getElementById('mobileNavLinks');
+    ele.addEventListener('navlinks', function (e) {
+      e.preventDefault();
+    });
+
+    function openNav() {
+      var x = document.getElementById("topMobileNav");
+      var y = document.getElementById("mobileNavLinks");
+
+      if (x.className === "mobilenav") {
+        x.className += " responsive";
+        y.className = "navlinks transition";
+      } else {
+        x.className = "mobilenav";
+        y.className = "navlinks";
+
+      }
+    }
+
+    function closeNav() {
+      var x = document.getElementById("topMobileNav");
+      var y = document.getElementById("mobileNavLinks");
+
+      if (y.className === "navlinks transition") {
+        x.className = "mobilenav";
+        y.className = "navlinks closeout";
+      } else {
+        x.className = "mobilenav";
+        y.className = "navlinks";
+
+      }
+    }
+  </script>
+</body>
+
+</html>

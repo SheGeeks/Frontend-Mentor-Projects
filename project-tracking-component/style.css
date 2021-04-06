@@ -1,0 +1,437 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;400;500;600;700&family=Barlow:wght@100;200;300;400;500&display=swap');
+
+body {
+    font-size: 18px;
+    font-family: 'Barlow Condensed', sans-serif;
+    overflow: hidden;
+}
+
+/* Navigation Styling */
+
+nav {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.navlinks {
+    z-index: 1;
+    visibility: hidden;
+    position: fixed;
+    top: 104px;
+    left: 35px;
+    width: 83%;
+    padding: 1.5rem 1.3rem 1.5rem 1.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 23px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    box-sizing: border-box;
+}
+
+.navlinks.closeout {
+    visibility: hidden;
+    transition: all .3s ease-out;
+    z-index: 1;
+    visibility: hidden;
+    position: fixed;
+    top: 104px;
+    left: 35px;
+    width: 83%;
+    padding: 1.5rem 1.3rem 1.5rem 1.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 23px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    box-sizing: border-box;
+
+}
+
+.navlinks a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: .1ch;
+}
+
+.navlinks.transition {
+    visibility: visible;
+    transition: all .7s ease;
+    position: fixed;
+    top: 100px;
+    left: 35px;
+    width: 83%;
+    padding: 1.5rem 1.3rem 1.5rem 1.3rem;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 25px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    box-sizing: border-box;
+}
+
+
+.mobilenav a.icon {
+    float: right;
+    display: block;
+    z-index: 1;
+    margin-right: .6rem;
+}
+
+.mobilenav.responsive a.icon {
+    display: none;
+}
+
+.mobilenav a.close {
+    display: none;
+}
+
+.mobilenav.responsive a.close {
+    float: right;
+    display: block;
+    z-index: 1;
+    margin-right: .6rem;
+}
+
+.mobilenav.responsive {
+    position: relative;
+}
+
+.mobilenav.responsive .close {
+    position: absolute;
+    right: 16px;
+    top: 19px;
+}
+
+.mobilenav.responsive .icon {
+    position: absolute;
+    right: 16px;
+    top: 19px;
+}
+
+.mobilenav.responsive a {
+    float: right;
+    display: block;
+    text-align: left;
+    color: black;
+    text-decoration: none;
+}
+
+#login-link {
+    color: hsl(231, 7%, 65%);
+    padding: 0;
+    margin: 0;
+}
+
+hr {
+    width: 100%;
+    margin: 0;
+    border: 1px solid hsl(233, 19%, 91%);
+}
+
+
+#logo {
+    width: 25px;
+    height: 25px;
+    z-index: 1;
+    margin-left: .6rem;
+}
+
+#featured-image {
+    position: fixed;
+    width: 370px;
+    height: 425px;
+    top: 121px;
+    z-index: 0;
+    left: 100%;
+    transform: translate3d(-98%, 0, 0);
+    z-index: 0;
+
+}
+
+#circle {
+    width: 370px;
+    height: 425px;
+    border-bottom-left-radius: 60px;
+    background: hsl(207, 33%, 95%);
+    position: fixed;
+    top: 0;
+    left: 100%;
+    transform: translate3d(-50%, 0, 0);
+    z-index: 0;
+}
+
+#featured-image img {
+
+    height: 243px;
+    width: auto;
+
+}
+
+main {
+    margin-top: 373px;
+    margin-left: 1rem;
+}
+
+.product-info {
+    margin-left: .6rem;
+
+}
+
+.product-info p {
+    font-weight: 500;
+}
+
+.product-label {
+    color: hsl(231, 7%, 65%);
+    letter-spacing: .6ch;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.product-label span {
+    background-color: hsl(230, 29%, 20%);
+    color: white;
+    border-radius: 15px;
+    padding: 3px .6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .1ch;
+    margin-right: .7em;
+}
+
+.product-tagline {
+    color: hsl(230, 29%, 20%);
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 2.5rem;
+    margin-top: 1.1rem;
+    margin-bottom: 0;
+}
+
+#description {
+    color: hsl(230, 11%, 40%);
+    font-family: 'Barlow', sans-serif;
+    line-height: 1.6rem;
+    margin-top: 1rem;
+}
+
+.schedule-demo {
+    margin-top: 2.4rem;
+    color: hsl(231, 7%, 65%);
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: .3ch;
+    margin-left: 1px;
+}
+
+.schedule-demo a {
+    font-size: 14px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 600;
+    letter-spacing: .2ch;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    background-color: hsl(0, 100%, 68%);
+    padding: .7rem 1.4rem;
+    border-radius: 5px;
+    margin-right: .8rem;
+}
+
+footer {
+    position: absolute;
+    bottom: 1%;
+    margin: 0 0 1rem 2rem;
+    font-weight: 500;
+    color: hsl(231, 7%, 65%);
+    font-family: 'Barlow', sans-serif;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    text-decoration: none;
+    color: hsl(0, 100%, 84%);
+    font-weight: 600;
+
+}
+
+/* Medium Size Screen Styling */
+/* ========================== */
+
+@media screen and (min-width: 751px) and (max-width: 1374px) {
+
+    main {
+        margin-top: 47vh;
+    }
+
+    #circle {
+        width: 338px;
+        transform: translate3d(-100%, 0, 0);
+    }
+
+    #featured-image {
+        height: auto;
+        width: 389px;
+        top: 184px;
+        transform: translate3d(-109%, 0, 0);
+    }
+
+    #featured-image img {
+        height: 17.5rem;
+    }
+
+    .navlinks.transition, .navlinks.closeout {
+        left: 185px;
+        width: 61%;        
+    }
+}
+
+
+/* Desktop Media Queries
+==========================*/
+
+
+@media screen and (min-width: 1375px) {
+
+    nav {
+        padding: 0 0 0 5rem;
+        margin: 3.7rem 8.6rem 9.6rem 3.7rem;
+    }
+
+    #logo {
+        width: 32px;
+        height: 32px;
+        margin-left: 1.6rem;
+    }
+
+    .navlinks {
+        visibility: visible;
+        flex-direction: row;
+        justify-content: flex-end;
+        text-align: center;
+        align-items: center;
+        position: static;
+        border: 0;
+        border-radius: 0;
+        box-shadow: none;
+        width: 100%;
+        background: none;
+        column-gap: 40px;
+        height: 1px;
+    }
+
+    .navlinks a {
+        font-size: 16px;
+    }
+
+    .navlinks a:hover {
+        border-bottom: 2px solid hsl(0, 0%, 0%);
+    }
+
+    #login-link:hover {
+        border-bottom: 2px solid hsl(231, 7%, 65%);
+    }
+
+    hr {
+        border: 3px solid hsl(207, 10%, 82%);
+        width: 0;
+        border-radius: 5px;
+
+    }
+
+    .mobilenav a.icon,
+    .mobilenav a.close {
+        visibility: hidden;
+        display: none;
+        margin: 0;
+        z-index: 0;
+    }
+
+    #circle {
+        width: 700px;
+        transform: translate3d(-100%, 0, 0);
+    }
+
+    /* Main Content Desktop Styling */
+    /* ============================ */
+
+    main {
+        margin-top: 145px;
+        margin-left: 1.3rem;
+    }
+
+    #featured-image {
+        width: 413px;
+        top: 210px;
+        height: auto;
+        transform: translate3d(-167%, 0, 0);
+    }
+
+    #featured-image img {
+        height: 463px;
+    }
+
+    .product-label span {
+        margin-right: .5em;
+    }
+
+    .product-info {
+        margin-left: 9rem;
+    }
+
+    .product-tagline {
+        line-height: 4rem;
+        font-size: 4rem;
+        margin-top: 1.2rem;
+    }
+
+    #description {
+        margin-top: 1.9rem;
+    }
+
+    .schedule-demo {
+        font-size: 16px;
+        margin-top: 4.9rem;
+        letter-spacing: .6ch;
+        margin-left: 0;
+    }
+
+    .schedule-demo a {
+        font-size: 16px;
+        padding: .8rem 1.9rem;
+        margin-right: 1rem;
+    }
+
+    .schedule-demo-btn:hover {
+        background-color: hsl(0, 100%, 76%);
+    }
+
+    footer {
+        left: 40%;
+    }
+}

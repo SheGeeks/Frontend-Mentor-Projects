@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Screenshots
 <figure>
-<img src="Corvida-Raven-FEM-SignupForm(Mobile).png" height="400"> <img src="Corvida-Raven-FEM-SignupForm(Desktop).png" height="400">
+<img src="Corvida-Raven-FEM-SignupForm(Mobile).png" height="300"> <img src="Corvida-Raven-FEM-SignupForm(Desktop).png" height="300">
 <figcaption> Mobile & Desktop Views</figcaption>
 </figure>
 

@@ -8,6 +8,7 @@ Review what I've done for each project in their respective folders or visit the 
 ## 🐔 Digitally Raised
 - [Profile Card](https://shegeeks.github.io/Frontend-Mentor-Projects/Profile%20Card/) *(3/23/21)*
 - [Signup Form](https://shegeeks.github.io/Frontend-Mentor-Projects/Signup%20Form/) *(3/30/21)*
+- [Project Tracking Landing Page](https://shegeeks.github.io/Frontend-Mentor-Projects/project-tracking-component/) *(4/5/2021)*
 
 ## 🐣 Hatching
 - *[Ping Coming Soon Page](https://github.com/SheGeeks/Frontend-Mentor-Projects/tree/Frontend-Mentor-Projects/ping-coming-soon-page)*

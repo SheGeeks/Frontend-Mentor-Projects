@@ -26,13 +26,12 @@ Users should be able to:
 - Create the background shape using code
 
 ### Screenshot
-
-**Coming Soon**
+![Solution Preview - Desktop](/solutionpreview-desktop.png)
 
 ### Links
 
-- Solution URL: (*Coming Soon*)
-- Live Site URL: (*Coming Soon*)
+- [Solution](https://github.com/SheGeeks/Frontend-Mentor-Projects/tree/Frontend-Mentor-Projects/project-tracking-component)
+- [Demo](https://shegeeks.github.io/Frontend-Mentor-Projects/project-tracking-component/)
 
 ## My process
 
@@ -62,7 +61,7 @@ More practice on posiitioning elements to get faster and comfortable with doing 
 
 In the future, I think I will still continue to getting an exact match with the design and start converting pixel values into their corresponding responsive units. What I hope to accomplish with this is design accuracy at the challenge breakpoints, while still allowing the flexibility of a fulyl responsive design.
 
-At some point in the future I may come back to this project to do more code cleanup in the stylesheet. There were a lot of properties to work with, especially for the popup menu and just looking at the stylesheet for this project feels overwhelming. 😩 Still proud of myself for getting this done in 2 days. 
+At some point in the future I may come back to this project to do more code cleanup in the stylesheet. There were a lot of properties to work with, especially for the mobile menu and just looking at the stylesheet for this project feels overwhelming. 😩 Still proud of myself for getting this done in 2 days. 
 
 ### Useful resources
 

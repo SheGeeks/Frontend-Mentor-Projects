@@ -178,7 +178,7 @@ a {
 }
 
 
-@media only screen and (min-width: 949px) {
+@media only screen and (min-width: 961px) {
   body {
     display: flex;
     flex-flow: row wrap;
@@ -186,7 +186,7 @@ a {
     background: url("images/bg-intro-desktop.png"), hsl(0, 100%, 74%);
     height: 98vh;
     justify-content: center;
-    column-gap: 1rem;
+    column-gap: 0;
     margin: unset;
   }
 
@@ -197,7 +197,7 @@ a {
   .intro {
     text-align: left;
     max-width: 35.5rem;
-    margin: 13.5rem 0rem 10rem 0rem;
+    margin-top: 3.3rem;
   }
 
   .intro.error {
@@ -227,20 +227,25 @@ a {
   }
 
   form {
+    display: flex;
+    align-items: stretch;
+    flex-flow: column;
     width: 100%;
+    padding: 2.5rem 2.8rem 2.5rem 2.4rem;
     justify-content: center;
     box-sizing: border-box;
     margin: 1.5rem 0rem;
-    padding: 2.5rem 2rem 2rem 2rem;
     row-gap: 43px;
   }
 
   button {
     letter-spacing: normal;
     margin: 0;
-    padding: 1rem;
     border-radius: 5px;
-    display: inherit;
+    letter-spacing: .1ch;
+    font-family: inherit;
+    padding: 1rem;
+    display: initial;
   }
 
   button:hover {
@@ -260,6 +265,7 @@ a {
   .form-control input {
     display: block;
     padding: 1rem 2rem;
+    width: 100%;
   }
 
   .form-control.error input {
@@ -298,6 +304,7 @@ a {
 
   .form-agreement {
     margin: -1.8rem 0 0 0;
+    padding: 0 2rem;
   }
 
   footer {

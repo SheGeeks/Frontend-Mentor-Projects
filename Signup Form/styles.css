@@ -14,7 +14,7 @@ body {
 }
 
 .sr-only {
-  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
   clip-path: inset(50%);
   height: 1px;
   overflow: hidden;
@@ -31,6 +31,7 @@ h1 {
 
 .intro {
   line-height: 1.7rem;
+  max-width: 32rem;
 }
 
 .signup-form {
@@ -311,5 +312,4 @@ a {
     width: 100%;
     margin-top: 0;
   }
-
 }

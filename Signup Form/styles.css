@@ -59,14 +59,13 @@ form {
   display: grid;
   justify-content: center;
   align-items: center;
-  row-gap: 18px;
+  row-gap: 2.3rem;
   background: hsl(0, 0%, 100%);
   padding: 1.5rem 0;
   border-radius: 10px;
   margin-top: 1.3rem;
   box-shadow: 0 8px 1px 0px #00000026;
 }
-
 
 .form-control {
   display: inherit;
@@ -82,19 +81,9 @@ form {
   border: 3px solid hsl(0, 100%, 74%);
   color: hsl(0, 100%, 74%);
   font-weight: 700;
-  width: 72%;
-}
-
-.form-control img {
-  visibility: hidden;
+  background: url(images/icon-error.svg) no-repeat right 1rem center;
   position: relative;
-  top: -2.6rem;
-  left: 16.4rem;
-}
-
-.form-control.error img {
-  visibility: visible;
-
+  padding-right: 2rem;
 }
 
 .form-control small {
@@ -110,6 +99,7 @@ form {
 
 .form-control.error small {
   display: block;
+  margin: 4px 21px 0 0;
 }
 
 input {
@@ -129,7 +119,7 @@ input:invalid {
   background-color: hsl(350, 100%, 88%);
 }
 
-input[type=submit] {
+button {
   background-color: hsl(154, 59%, 51%);
   color: hsl(0, 0%, 100%);
   font-weight: 600;
@@ -137,9 +127,13 @@ input[type=submit] {
   box-shadow: 0 5px 1px 0px hsl(154.1, 59.2%, 45%);
   border: 0px;
   font-size: 1rem;
+  padding: 1rem;
+  border-radius: 5px;
+  display: inherit;
+  margin: 1rem 1.5rem -1.5rem 1.5rem;
 }
 
-input[type=submit]:hover {
+button:hover {
   background-color: hsl(154, 65%, 68%);
   color: hsl(0, 0%, 100%);
   font-weight: 600;
@@ -148,7 +142,7 @@ input[type=submit]:hover {
   font-size: 1rem;
 }
 
-input[type=submit]:active {
+button:active {
   background-color: hsl(154, 65%, 68%);
   color: hsl(0, 0%, 100%);
   font-weight: 600;
@@ -163,8 +157,6 @@ input[type=submit]:active {
   color: hsl(246, 25%, 77%);
   padding: 0 2.5rem;
   line-height: 21px;
-  margin: 0;
-  margin-top: -11px;
 }
 
 .form-agreement p {
@@ -190,16 +182,26 @@ a {
   body {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-evenly;
     align-items: center;
     background: url("images/bg-intro-desktop.png"), hsl(0, 100%, 74%);
-    padding: 0;
+    height: 98vh;
+    justify-content: center;
+    column-gap: 1rem;
+    margin: unset;
+  }
+
+  body.error {
+    padding: 0.5rem 0;
   }
 
   .intro {
     text-align: left;
-    width: 36%;
-    margin: 10.7rem 0rem 10rem 4rem;
+    width: 38%;
+    margin: 13.5rem 0rem 10rem 0rem;
+  }
+
+  .intro.error {
+    margin: 11.5rem 0rem 10rem 0rem;
   }
 
   h1 {
@@ -209,41 +211,55 @@ a {
   }
 
   .signup-form {
-    margin-top: 3rem;
-    width: 38.5%;
-    margin-right: 6rem;
+    margin-top: 4.7rem;
+    margin-right: 2rem;
+    width: 37.5%;
+  }
+
+  .signup-form.error {
+    margin-top: 1.8rem;
   }
 
   .signup-cta {
-    margin-top: .5rem;
+    margin-top: 1.4rem;
     padding: 0;
     width: 100%;
   }
 
   form {
     width: 100%;
-    padding: 2.8rem 1rem 1.7rem 1rem;
     justify-content: center;
     box-sizing: border-box;
     margin: 1.5rem 0rem;
-    row-gap: 20px;
+    padding: 2.5rem 2rem 2rem 2rem;
+    row-gap: 43px;
   }
 
-  input[type="submit"] {
+  button {
     letter-spacing: normal;
+    margin: 0;
+    padding: 1rem;
+    border-radius: 5px;
+    display: inherit;
   }
 
-  input[type=submit]:hover {
+  button:hover {
     letter-spacing: normal;
   }
 
   .form-control {
     display: inherit;
     row-gap: 0;
+    margin-bottom: -21px;
+  }
+
+  .form-control.error {
+    margin-bottom: -31px;
   }
 
   .form-control input {
     display: block;
+    padding: 1rem 2rem;
   }
 
   .form-control.error input {
@@ -251,18 +267,9 @@ a {
     color: hsl(0, 100%, 74%);
     font-weight: 700;
     margin: .3rem 0;
-    width: 86%;
-  }
-
-  .form-control img {
+    background: url(images/icon-error.svg) no-repeat right 1rem center;
     position: relative;
-    top: -2.8rem;
-    left: 25.4rem;
-    visibility: hidden;
-  }
-
-  .form-control.error img {
-    visibility: visible;
+    padding-right: 2rem;
   }
 
   .form-control small {
@@ -273,7 +280,7 @@ a {
     font-style: italic;
     font-size: .7rem;
     display: none;
-    margin: -26px 0 16px 0;
+    margin: 0;
   }
 
   .form-control.error small {
@@ -282,21 +289,20 @@ a {
 
   input {
     display: block;
-    margin:unset;
+    margin: unset;
   }
 
   input:focus {
     border: 1px solid hsl(248, 32%, 49%);
   }
 
-
   .form-agreement {
-    margin: 0;
-    margin: 0 0 0.3rem 0;
+    margin: -1.8rem 0 0 0;
   }
 
   footer {
     width: 100%;
+    margin-top: -6rem;
   }
 
 }

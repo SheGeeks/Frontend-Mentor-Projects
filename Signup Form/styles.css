@@ -196,7 +196,7 @@ a {
 
   .intro {
     text-align: left;
-    width: 38%;
+    max-width: 35.5rem;
     margin: 13.5rem 0rem 10rem 0rem;
   }
 

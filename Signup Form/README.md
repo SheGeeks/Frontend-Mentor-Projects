@@ -44,10 +44,9 @@ Started building the mobile design first with Flexbox. Added form using CSS Grid
 
 ### BUILT WITH
 
-
 - HTML5 | Semantic markup
-- CSS3 | Flexbox, SVG
-- JavaScript | vanilla
+- CSS3 | Flexbox, Media Queries
+- JavaScript
 - A11Y <sup id="a1">[1](#fn1)</sup>
 - Mobile-first workflow
 - 💝

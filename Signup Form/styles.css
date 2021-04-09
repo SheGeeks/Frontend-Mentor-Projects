@@ -35,7 +35,7 @@ body {
   background-size: cover;
   margin: 4.2rem 1.5rem 0 1.5rem;
   display: flex;
-  flex-flow: column;
+  flex-flow: row wrap;
   justify-content: space-evenly;
   align-items: center;
   text-align: center;
@@ -107,9 +107,10 @@ a {
 /* =========== */
 
 form {
-  display: grid;
+  display: flex;
+  flex-flow: column;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   row-gap: 2.3rem;
   background: #ffffff;
   padding: 1.5rem 0;
@@ -122,10 +123,7 @@ form {
   display: inherit;
   row-gap: 0;
   margin-bottom: -24px;
-}
-
-.form-control input {
-  display: block;
+  flex-flow: column;
 }
 
 input {
@@ -151,8 +149,7 @@ button {
   font-size: 1rem;
   padding: 1rem;
   border-radius: 5px;
-  display: inherit;
-  margin: 1rem 1.5rem -1.5rem 1.5rem;
+  margin: 1rem 1rem -1.5rem 1rem;
 }
 
 button:hover {
@@ -184,7 +181,6 @@ button:active {
 .form-control.error input {
   border: 3px solid #ff7a7a;
   color: #ff7a7a;
-  font-weight: 700;
   background: url(https://shegeeks.github.io/Frontend-Mentor-Projects/Signup%20Form/images/icon-error.svg) no-repeat right 1rem center;
   position: relative;
   padding-right: 0;
@@ -208,10 +204,14 @@ button:active {
 
 input:invalid {
   background-color: #ffc2cc;
-} 
+}
 
 /* Solution Attribution Styles */
 /* =========================== */
+
+footer {
+  width: 100%;
+}
 .attribution {
   font-weight: 500;
 }
@@ -226,13 +226,9 @@ input:invalid {
 /* ============ */
 @media only screen and (min-width:961px) {
   body {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
     background: url("https://shegeeks.github.io/Frontend-Mentor-Projects/Signup%20Form/images/bg-intro-desktop.png"), #ff7a7a;
     height: 98vh;
     justify-content: center;
-    column-gap: 0;
     margin: unset;
   }
 
@@ -245,8 +241,8 @@ input:invalid {
     margin-bottom: 2rem;
   }
 
-   /* Intro Component Styles */
-   /* ======================= */
+  /* Intro Component Styles */
+  /* ======================= */
 
   .intro {
     text-align: left;
@@ -254,13 +250,14 @@ input:invalid {
     margin-top: 5.1rem;
   }
 
-   /* Call to Action Styles */
+  /* Call to Action Styles */
   /* ====================== */
 
   .signup-form {
     margin-top: 6.3rem;
     margin-right: 2rem;
     width: 37.5%;
+    max-width: 580px;
   }
 
   .signup-cta {
@@ -269,35 +266,22 @@ input:invalid {
     width: 100%;
   }
 
-   /* Form Styles */
-   /* =========== */
+  /* Form Styles */
+  /* =========== */
 
   form {
-    display: flex;
-    align-items: stretch;
-    flex-flow: column;
-    width: 100%;
-    padding: 2.5rem 2.8rem 2.5rem 2.4rem;
-    justify-content: center;
-    box-sizing: border-box;
-    margin: 1.5rem 0;
     row-gap: 43px;
-  }
-
-  .form-control {
-    display: inherit;
-    row-gap: 0;
-    margin-bottom: -21px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 2.5rem 2.8rem 2.5rem 2.4rem;
+    margin: 1.5rem 0;
   }
 
   .form-control input {
-    display: block;
     padding: 1rem 2rem;
-    width: 100%;
   }
 
   input {
-    display: block;
     margin: unset;
   }
 
@@ -306,13 +290,11 @@ input:invalid {
   }
 
   button {
-    letter-spacing: normal;
     margin: 0;
     border-radius: 5px;
     letter-spacing: .1ch;
     font-family: inherit;
     padding: 1rem;
-    display: initial;
   }
 
   .form-agreement {
@@ -320,46 +302,25 @@ input:invalid {
     padding: 0 2rem;
   }
 
-   /* Form Invalid Input Styles */
-   /* ========================= */
+  /* Form Invalid Input Styles */
+  /* ========================= */
 
   .form-control.error {
     margin-bottom: -31px;
-    display: flex;
-    flex-direction: column;
   }
 
   .form-control.error input {
-    border: 3px solid #ff7a7a;
-    color: #ff7a7a;
-    font-weight: 700;
-    margin: .3rem 0;
-    background: url(images/icon-error.svg) no-repeat right 1rem center;
-    position: relative;
-    padding-right: 2rem;
     width: unset;
   }
 
-  .form-control small {
-    text-align: right;
-    position: inherit;
-    color: #ff7a7a;
-    font-weight: 600;
-    font-style: italic;
-    font-size: .7rem;
-    display: none;
-    margin: 0;
-  }
-
   .form-control.error small {
-    display: block;
+    margin: 4px 5px 0 0;
   }
 
   /* Footer Styles */
   /* ============= */
 
   footer {
-    width: 100%;
     margin-top: 0;
   }
 }

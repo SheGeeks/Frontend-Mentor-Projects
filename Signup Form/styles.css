@@ -193,18 +193,10 @@ a {
     margin: unset;
   }
 
-  body.error {
-    padding: .5rem 0;
-  }
-
   .intro {
     text-align: left;
     max-width: 35.5rem;
     margin-top: 3.3rem;
-  }
-
-  .intro.error {
-    margin: 11.5rem 0 10rem 0;
   }
 
   h1 {
@@ -241,20 +233,6 @@ a {
     row-gap: 43px;
   }
 
-  button {
-    letter-spacing: normal;
-    margin: 0;
-    border-radius: 5px;
-    letter-spacing: .1ch;
-    font-family: inherit;
-    padding: 1rem;
-    display: initial;
-  }
-
-  button:hover {
-    letter-spacing: normal;
-  }
-
   .form-control {
     display: inherit;
     row-gap: 0;
@@ -263,6 +241,8 @@ a {
 
   .form-control.error {
     margin-bottom: -31px;
+    display: flex;
+    flex-direction: column;
   }
 
   .form-control input {
@@ -279,6 +259,7 @@ a {
     background: url(images/icon-error.svg) no-repeat right 1rem center;
     position: relative;
     padding-right: 2rem;
+    width: unset;
   }
 
   .form-control small {
@@ -303,6 +284,20 @@ a {
 
   input:focus {
     border: 1px solid #6055a5;
+  }
+
+  button {
+    letter-spacing: normal;
+    margin: 0;
+    border-radius: 5px;
+    letter-spacing: .1ch;
+    font-family: inherit;
+    padding: 1rem;
+    display: initial;
+  }
+
+  button:hover {
+    letter-spacing: normal;
   }
 
   .form-agreement {

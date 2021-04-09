@@ -12,7 +12,7 @@ This is my solution to the [Intro component with sign up form challenge on Front
   - [My solution](#my-solution)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
+  - [Lessons Learned](#lessons-learned)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)

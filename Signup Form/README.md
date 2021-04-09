@@ -53,7 +53,7 @@ Started building the mobile design first with Flexbox. Added form using CSS Grid
 
 ### LESSONS LEARNED
 
- - **Update (4/8/21)**: After receiving feedback from @grace-snow in the Frontend Mentor Slack channel, my solution is now responsive AF and the error indicators properly adjust with the inputs in all orientations. Grae also introduced me to the `:invalid` psuedo class to easily position the error indicator images correctly.
+ - **Update (4/8/21)**: After receiving feedback from <a href="https://github.com/grace-snow">@grace-snow</a> in the Frontend Mentor Slack channel, my solution is now responsive AF and the error indicators properly adjust with the inputs in all orientations. Grace also introduced me to the `:invalid` psuedo class to easily position the error indicator images correctly.
 
 -  **Update (4/8/21)** I am no longer using CSS Grid on this form. <br>~~I always appreciate playing with both Flexbox and CSS Grid in the same designs. Doing so allows me to get a better understanding of the differences and limitations with using either one.~~
 

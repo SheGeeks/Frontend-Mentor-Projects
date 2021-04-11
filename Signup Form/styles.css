@@ -111,7 +111,6 @@ form {
   flex-flow: column;
   justify-content: center;
   align-items: stretch;
-  /* row-gap: 2.3rem; */
   background: #ffffff;
   padding: 1.5rem 0;
   border-radius: 10px;
@@ -125,7 +124,6 @@ form > * + * {
 
 .form-control {
   display: inherit;
-  row-gap: 0;
   margin-bottom: -24px;
   flex-flow: column;
 }
@@ -274,7 +272,6 @@ footer {
   /* =========== */
 
   form {
-    row-gap: 43px;
     width: 100%;
     box-sizing: border-box;
     padding: 2.5rem 2.8rem 2.5rem 2.4rem;
@@ -294,7 +291,7 @@ footer {
   }
 
   button {
-    margin: 0;
+    margin: 2.3rem 0 0 0;
     border-radius: 5px;
     letter-spacing: .1ch;
     font-family: inherit;
@@ -302,7 +299,7 @@ footer {
   }
 
   .form-agreement {
-    margin: -1.8rem 0 0 0;
+    margin: 1rem 0 0 0;
     padding: 0 2rem;
   }
 

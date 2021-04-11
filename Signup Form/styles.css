@@ -84,7 +84,7 @@ a {
 
 .signup-form {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column nowrap;
   justify-content: space-between;
   align-items: stretch;
   margin-top: 2rem;

@@ -111,12 +111,16 @@ form {
   flex-flow: column;
   justify-content: center;
   align-items: stretch;
-  row-gap: 2.3rem;
+  /* row-gap: 2.3rem; */
   background: #ffffff;
   padding: 1.5rem 0;
   border-radius: 10px;
   margin-top: 1.3rem;
   box-shadow: 0 8px 1px 0 #00000026;
+}
+
+form > * + * {
+  margin-top: 2.3rem;
 }
 
 .form-control {
@@ -149,7 +153,7 @@ button {
   font-size: 1rem;
   padding: 1rem;
   border-radius: 5px;
-  margin: 1rem 1rem -1.5rem 1rem;
+  margin: 2.3rem 1rem -1.5rem 1rem;
 }
 
 button:hover {

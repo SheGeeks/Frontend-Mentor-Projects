@@ -58,11 +58,45 @@ form {
 #email {
     border: 1px solid hsl(223, 100%, 88%);
     border-radius: 50px;
-    color: hsl(223, 100%, 88%);
+    color: hsl(0, 0%, 11%);
     width: 100%;
     padding: 1rem 2rem;
-    font-size: 16px;
+    font-size: 1rem;
 }
+
+#email::placeholder{
+    color: hsl(223, 100%, 88%);
+}
+
+#email:invalid {
+    border: 2px solid #e60101;
+}
+
+input[type=email]:invalid:focus:not(:-moz-placeholder-shown) ~ .requirements {
+    max-height: 200px;
+    padding: 0 1.7rem 1.25rem 3rem;
+  }
+
+input[type=email]:invalid:focus:not(:-ms-input-placeholder) ~ .requirements {
+    max-height: 200px;
+    padding: 0 1.7rem 1.25rem 3rem;
+  }
+  
+input[type=email]:invalid:focus:not(:placeholder-shown) ~ .requirements {
+    max-height: 200px;
+    padding: .7rem 0 1rem;
+  }
+
+.requirements {
+    padding: 0 1.7rem 0 3rem;
+    color: #999;
+    max-height: 0;
+    transition: 0.28s;
+    overflow: hidden;
+    color: #e60101;
+    font-size: .7rem;
+    font-style: italic;
+  }
 
 #submit {
     margin-top: .7rem;
@@ -85,7 +119,7 @@ form {
 }
 
 #dashboard {
-    width: 70%;
+    width: 100%;
     max-width: 400px;
     margin-top: 4.1rem;
 }
@@ -162,28 +196,45 @@ footer p {
         justify-content: center;
         align-items: last baseline;
         margin: 1rem 0 0 0;
-        padding: 0 3rem;
         column-gap: 9px;
-        width: 93%;
+        width: 100%;
+        position: relative;
+        padding: 0;
     }
 
     #email {
-        width: 27%;
+        max-width: 350px;
         height: 1.3rem;
         font-size: 16px;
+        position: relative;
+        width: 100%;
     }
+
+    .requirements {
+        padding: 0 1.7rem 0 3rem;
+        color: #999;
+        max-height: 0;
+        transition: 0.28s;
+        overflow: hidden;
+        color: #e60101;
+        font-size: .7rem;
+        font-style: italic;
+        transform: translate(-194px, 41px);
+        position: absolute;       
+      }
 
     #submit {
         font-size: 16px;
         padding: 1rem 1rem;
-        width: 15%;
+        width: 100%;
         height: 3.5em;
+        max-width: 175px;
     }
 
     #dashboard {
-        width: 40rem;
+        width: 100%;
         height: auto;
-        max-width: 641px;
+        max-width: 600px;
         margin-top: 5rem;
         display: block;
         margin-left: auto;

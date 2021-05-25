@@ -30,37 +30,36 @@ Users should be able to:
 
 ### Screenshot
 
-*Screenshot coming soon*
+<img src="desktop-ss.png">
 
 ### Links
 
-- Solution URL: (*Coming Soon*)
-- Live Site URL: *Coming Soon*)
+- [Frontend Mentor Solution]()
+- [Live Demo](https://shegeeks.github.io/Frontend-Mentor-Projects/ping-coming-soon-page/)
 
 ## My process
 
 ### Built with
 
-- Mobile first workflow
-- Semantic HTML5
+- HTML5
 - CSS3
 - Flexbox
-- Accessible form
+- Mobile first workflow
+- A11Y
 
 ### What I learned
 
-#### Day 1 *(1.5 hours)*
-Started with a mobile first workflow. Quickly structured the provided content with HTML and styled with CSS for mobile layout. Great practice styling SVG graphics, making accessible forms, and using a mobile-first workflow.
-
+Started with a mobile first workflow, then uickly structured the provided content with HTML and styled with CSS for mobile layout. This design was great practice for styling SVG graphics and making accessible forms. One thing I tried and succeeded at with this challenge was using CSS only for client-side validation error. 
 
 ### Continued development
 - SVG graphics
 - Accessibility
+- Form validation and errors
 
 ### Useful resources
-- [Beautiful CSS box-shadow examples](https://getcssscan.com/css-box-shadow-examples) (Notify Me Button)
-- [Using SVG Images in Web Development](https://medium.com/@tyler.greason/using-svg-images-in-web-development-3da83165aa92) (Social Icons)
-- [Creating Accessible Forms](https://webaim.org/techniques/forms/controls#input) (Form)
+- [Beautiful CSS box-shadow examples](https://getcssscan.com/css-box-shadow-examples)
+- [Using SVG Images in Web Development](https://medium.com/@tyler.greason/using-svg-images-in-web-development-3da83165aa92)
+- [Creating Accessible Forms](https://webaim.org/techniques/forms/controls#input)
 
 ## Author
 

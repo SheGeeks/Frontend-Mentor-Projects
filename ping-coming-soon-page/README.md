@@ -34,7 +34,7 @@ Users should be able to:
 
 ### Links
 
-- [Frontend Mentor Solution]()
+- [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/responsive-ping-coming-soon-page-using-css-validation-WHv-FB_d6)
 - [Live Demo](https://shegeeks.github.io/Frontend-Mentor-Projects/ping-coming-soon-page/)
 
 ## My process

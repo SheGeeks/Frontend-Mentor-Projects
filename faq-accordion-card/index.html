@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | FAQ Accordion Card</title>
+</head>
+
+<body>
+  <main>
+
+    <div class="featured-image">
+      <img id="mobile-svg" src="images/illustration-woman-online-mobile.svg" alt="illustration">
+      <img id="desktop-svg" src="images/illustration-box-desktop.svg" alt="">
+    </div>
+
+    <div id="accordionGroup" class="accordion" data-allow-toggle>
+      <h1 id="heading">FAQ</h1>
+      <div class="faq-item">
+        <h2>
+          <button aria-expanded="false" class="accordion-trigger" aria-controls="sect1" id="accordion1id">
+            <span class="accordion-title">How many team members can I invite?
+              <span class="Accordion-icon"><img src="images/icon-arrow-down.svg" alt=""></span>
+            </span>
+          </button>
+        </h2>
+        <div id="sect1" role="region" aria-labelledby="accordion1id" class="accordion-panel" hidden="">
+          <p>You can invite up to 2 additional users on the Free plan. There is no limit on
+            team members for the Premium plan.</p>
+        </div>
+      </div>
+      <hr>
+
+      <div class="faq-item">
+        <h2>
+          <button aria-expanded="true" class="accordion-trigger" aria-controls="sect2" id="accordion2id">
+            <span class="accordion-title">What is the maximum file upload size?
+              <span class="Accordion-icon"><img src="images/icon-arrow-down.svg" alt=""></span>
+            </span>
+          </button>
+        </h2>
+        <div id="sect2" role="region" aria-labelledby="accordion2id" class="accordion-panel" >
+          <p>No more than 2GB. All files in your account must fit your allotted storage space.</p>
+        </div>
+      </div>
+      <hr>
+
+      <div class="faq-item">
+        <h2>
+          <button aria-expanded="false" class="accordion-trigger" aria-controls="sect3" id="accordion3id">
+            <span class="accordion-title">How do I reset my password?
+              <span class="Accordion-icon"><img src="images/icon-arrow-down.svg" alt=""></span>
+            </span>
+          </button>
+        </h2>
+        <div id="sect3" role="region" aria-labelledby="accordion3id" class="accordion-panel" hidden="">
+          <p>Click “Forgot password” from the login page or “Change password” from your profile page.
+            A reset link will be emailed to you.</p>
+        </div>
+      </div>
+      <hr>
+
+      <div class="faq-item">
+        <h2>
+          <button aria-expanded="false" class="accordion-trigger" aria-controls="sect4" id="accordion4id">
+            <span class="accordion-title">Can I cancel my subscription?
+              <span class="Accordion-icon"><img src="images/icon-arrow-down.svg" alt=""></span>
+            </span>
+          </button>
+        </h2>
+        <div id="sect4" role="region" aria-labelledby="accordion4id" class="accordion-panel" hidden="">
+          <p>Yes! Send us a message and we’ll process your request no questions asked.</p>
+        </div>
+      </div>
+      <hr>
+
+      <div class="faq-item">
+        <h2>
+          <button aria-expanded="false" class="accordion-trigger" aria-controls="sect5" id="accordion5id">
+            <span class="accordion-title">Do you provide additional support?
+              <span class="Accordion-icon"><img src="images/icon-arrow-down.svg" alt=""></span>
+            </span>
+          </button>
+        </h2>
+        <div id="sect5" role="region" aria-labelledby="accordion5id" class="accordion-panel" hidden="">
+          <p>Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
+        </div>
+      </div>
+      <hr>
+
+      <div class="attribution">
+        <p>A <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a> Design 💝 Coded by <a href="https://shegeeks.net">Corvida</a></p>
+      </div>
+    </div>
+
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -5,17 +5,16 @@ Up above you can review my solutions for each challenge in their respective fold
 
 ---
 
-## 🐔 Digitally Raised
-- [Profile Card](https://shegeeks.github.io/Frontend-Mentor-Projects/Profile%20Card/) *(3/23/21)*
-- [Signup Form](https://shegeeks.github.io/Frontend-Mentor-Projects/Signup%20Form/) *(3/30/21)*
-- [Project Tracking Landing Page](https://shegeeks.github.io/Frontend-Mentor-Projects/project-tracking-component/) *(4/5/2021)*
+## 🐔 Digitally Grown
+- [FAQ Accordion Card](https://shegeeks.github.io/Frontend-Mentor-Projects/faq-accordion-card/) *(5/30/21)*
 - [Ping Coming Soon Page](https://shegeeks.github.io/Frontend-Mentor-Projects/ping-coming-soon-page) *(5/25/21)*
+- [Project Tracking Landing Page](https://shegeeks.github.io/Frontend-Mentor-Projects/project-tracking-component/) *(4/5/2021)*
+- [Signup Form](https://shegeeks.github.io/Frontend-Mentor-Projects/Signup%20Form/) *(3/30/21)*
+- [Profile Card](https://shegeeks.github.io/Frontend-Mentor-Projects/Profile%20Card/) *(3/23/21)*
 
-
-## 🐣 Hatching
+## 🐣 Hatched
 *Recently completed a challenge. Check back next week*
 
 ## 🥚 Incubating
 - *[Fylo landing page](https://www.frontendmentor.io/challenges/fylo-landing-page-with-two-column-layout-5ca5ef041e82137ec91a50f5)*
 - *[Insure landing page](https://www.frontendmentor.io/challenges/insure-landing-page-uTU68JV8)*
-- *[FAQ accordion card](https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam)*

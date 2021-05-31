@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- [Frontend Mentor Solution](#)
+- [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/responsive-and-accessible-faq-accordion-card-SJ3j56Ftc)
 - [Live Demo](https://shegeeks.github.io/Frontend-Mentor-Projects/faq-accordion-card/)
 
 ## My process

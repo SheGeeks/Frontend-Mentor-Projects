@@ -140,7 +140,6 @@ span {
         padding: 2rem;
         width: 100%;
         text-align: left;
-
         border-top-left-radius: 10px;
         border-bottom-right-radius: 0;
     }
@@ -154,7 +153,8 @@ span {
     #stat-list {
         align-items: center;
         padding-left: 1.5rem;
-        justify-content: unset;
+        padding-right: 5rem;
+        justify-content: space-between;
     }
 
     .stat {

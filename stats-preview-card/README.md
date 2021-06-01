@@ -27,12 +27,12 @@ Users should be able to:
 
 ### Screenshot
 
-![]()
+![Desktop Version](desktop-ss.png)
 
 ### Links
 
-- [Frontend Mentor Solution](#)
-- [Live Demo](#)
+- [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/responsive-stats-preview-card-c4O935rw3)
+- [Live Demo](https://shegeeks.github.io/Frontend-Mentor-Projects/stats-preview-card/)
 
 ## My process
 
@@ -46,11 +46,20 @@ Users should be able to:
 
 ### What I learned
 
+Since I've been working on more challenging web development projects lately, this one felt very easy. For once, I felt my *progress* in web development while coding, which was a very nice feeling.
+
+I ran into my biggest challenge when positioning the desktop featured image. I was initially able to switch the image position responsively. However, the image would move to the left instead of the right side of the card. Great opportunity to learn more about how `flex-flow`, `flex-wrap`, and `flex-direction` work. 
+
+I also realized that working from the mobile design first is great, but it's also good to be aware of how the layout will change for desktop. Taking the time to review the desktop design before starting the mobile design could've prevented my featured image mistep and saved me from backtracking on other parts of my code.
+
 ### Continued development
 
+- Flexbox
+- Design Systems
 
 ### Useful resources
-- []()
+
+No additional resources used for this project. *(A first!)*
 
 ## Author
 

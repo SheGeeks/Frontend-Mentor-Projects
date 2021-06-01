@@ -25,6 +25,7 @@ main {
     width: 100%;
 }
 
+
 #logo {
   width: 100%;
   max-width: 165px;
@@ -32,11 +33,19 @@ main {
    padding: 2rem;
 }
 
+#featured-images {
+    width: 100%;
+}
+
 #mobile-img {
-    margin-bottom: 2rem;
     padding: 0;
     width: 100%;
     height: auto;
+}
+
+.main-content {
+margin-top: 1.6rem;
+
 }
 
 #main-heading {
@@ -46,7 +55,7 @@ main {
     margin: auto;
     padding: 2rem 0 1rem;
     font-size: 2.5rem;
-    letter-spacing: .5ch;
+    letter-spacing: .4ch;
     font-weight: 600;
     color: var(--secondary-dark-red);
 }
@@ -58,11 +67,11 @@ main {
 
 #main-info {
     width: 100%;
-    padding: 0 2rem;
+    padding: 0 2.5rem;
     color: var(--primary-subtle-red);
     font-weight: 600;
-    line-height: 1.5rem;
-    font-size: .9rem;
+    line-height: 1.4rem;
+    font-size: .85rem;
 }
 
 #form {
@@ -71,17 +80,16 @@ main {
     align-items: center;
     width: 100%;
     padding: 0 2rem;
-    margin: 1.5rem 0;
+    margin: 2rem 0;
     position: relative;
 }
 
 #email {
-    padding: 1rem;
+    padding: 1rem 1.5rem;
     border-radius: 25px;
     border: 1px solid var(--primary-subtle-red);
-    background-color: hsl(0, 100%, 98%);
-    width: 100%;
-    
+    background-color: transparent;
+    width: 98%;    
 }
 
 input::placeholder {
@@ -101,16 +109,17 @@ input::-webkit-input-placeholder {
     border-left: none;
     border-right: none;
     border-radius: 25px;
-    padding: .7rem 1.5rem;
+    padding: .7rem 1.6rem;
     z-index: 1;
     position: absolute;
     top: 0;
-    right: 30px;
+    right: 35px;
     box-shadow: rgba(192, 89, 89, 0.486) 0px 5px 25px 0px;
 }
 
 footer {
     width: 100%;
+    padding-bottom: 2rem;
 }
 
 .attribution {

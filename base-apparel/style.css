@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+:root {
+    --primary-subtle-red: hsl(0, 36%, 70%);
+    --primary-bold-red: hsl(0, 93%, 68%);
+    --secondary-dark-red: hsl(0, 6%, 24%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    width: 100%;
+}
+
+#logo {
+  width: 100%;
+  max-width: 165px;
+   height: 85px;
+   padding: 2rem;
+}
+
+#mobile-img {
+    margin-bottom: 2rem;
+    padding: 0;
+    width: 100%;
+    height: auto;
+}
+
+#main-heading {
+    text-align: center;
+    width: 65%;
+    text-transform: uppercase;
+    margin: auto;
+    padding: 2rem 0 1rem;
+    font-size: 2.5rem;
+    letter-spacing: .5ch;
+    font-weight: 600;
+    color: var(--secondary-dark-red);
+}
+
+#main-heading span {
+    font-weight: 300;
+    color: var(--primary-subtle-red);
+}
+
+#main-info {
+    width: 100%;
+    padding: 0 2rem;
+    color: var(--primary-subtle-red);
+    font-weight: 600;
+    line-height: 1.5rem;
+    font-size: .9rem;
+}
+
+#form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0 2rem;
+    margin: 1.5rem 0;
+    position: relative;
+}
+
+#email {
+    padding: 1rem;
+    border-radius: 25px;
+    border: 1px solid var(--primary-subtle-red);
+    background-color: hsl(0, 100%, 98%);
+    width: 100%;
+    
+}
+
+input::placeholder {
+    color: var(--primary-subtle-red);
+    font-weight: 600;
+}
+
+input::-webkit-input-placeholder {
+    color: var(--primary-subtle-red);
+    font-weight: 600;
+}
+
+#submit {
+    background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    border-top: 1px solid var(--primary-subtle-red);
+    border-bottom: 1px solid var(--primary-subtle-red);
+    border-left: none;
+    border-right: none;
+    border-radius: 25px;
+    padding: .7rem 1.5rem;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 30px;
+    box-shadow: rgba(192, 89, 89, 0.486) 0px 5px 25px 0px;
+}
+
+footer {
+    width: 100%;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: var(--primary-bold-red);
+    text-decoration: none;
+}

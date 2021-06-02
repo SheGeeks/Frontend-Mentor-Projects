@@ -26,7 +26,7 @@ Users should be able to:
 - Create the background shape using code
 
 ### Screenshot
-![Solution Preview - Desktop](/solutionpreview-desktop.png)
+![Solution Preview - Desktop](desktop-ss.png)
 
 ### Links
 

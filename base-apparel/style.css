@@ -14,8 +14,8 @@
 }
 
 body {
-    background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
-    height: 100vh;
+    background: linear-gradient(160deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    min-height: 100vh;
 }
 
 main {
@@ -25,27 +25,27 @@ main {
     width: 100%;
 }
 
-
 #logo {
-  width: 100%;
-  max-width: 165px;
-   height: 85px;
-   padding: 2rem;
+    width: 100%;
+    max-width: 165px;
+    height: 85px;
+    padding: 2rem;
 }
 
-#featured-images {
+.featured-images {
     width: 100%;
 }
 
-#mobile-img {
-    padding: 0;
+img {
     width: 100%;
+    max-width: 840px;
     height: auto;
 }
 
 .main-content {
-margin-top: 1.6rem;
-
+    width: 100%;
+    max-width: 575px;
+    margin: 1.6rem auto 0;
 }
 
 #main-heading {
@@ -54,7 +54,8 @@ margin-top: 1.6rem;
     text-transform: uppercase;
     margin: auto;
     padding: 2rem 0 1rem;
-    font-size: 2.5rem;
+    /* font-size: 2.5rem; */
+    font-size: clamp(2.5rem, 4vw, 4rem);
     letter-spacing: .4ch;
     font-weight: 600;
     color: var(--secondary-dark-red);
@@ -71,7 +72,7 @@ margin-top: 1.6rem;
     color: var(--primary-subtle-red);
     font-weight: 600;
     line-height: 1.4rem;
-    font-size: .85rem;
+    font-size: clamp(.85rem, 1.5vw, 1rem);
 }
 
 #form {
@@ -89,7 +90,8 @@ margin-top: 1.6rem;
     border-radius: 25px;
     border: 1px solid var(--primary-subtle-red);
     background-color: transparent;
-    width: 98%;    
+    width: 98%;
+    position: relative;
 }
 
 input::placeholder {
@@ -115,19 +117,139 @@ input::-webkit-input-placeholder {
     top: 0;
     right: 35px;
     box-shadow: rgba(192, 89, 89, 0.486) 0px 5px 25px 0px;
+    cursor: pointer;
 }
 
-footer {
-    width: 100%;
-    padding-bottom: 2rem;
+small {
+    visibility: hidden;
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+    color: var(--primary-bold-red);
+    font-weight: 700;
+}
+
+form.error small {
+    visibility: visible;
+}
+
+form.error #email {
+    border-color: var(--primary-bold-red);
+    border-width: 2px;
+}
+
+form.error #submit {
+    right: 2px;
+    top: 1px;
+}
+
+.error-icon {
+    display: none;
+    position: absolute;
+    right: 115px;
+    width: 20px;
+    height: auto;
+}
+
+form.error .error-icon {
+    display: block;
 }
 
 .attribution {
     font-size: 11px;
     text-align: center;
+    padding: 2rem 0;
 }
 
 .attribution a {
     color: var(--primary-bold-red);
     text-decoration: none;
+}
+
+@media screen and (min-width:840px) {
+
+    body {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+    }
+
+    main {
+        flex-flow: row-reverse;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        background-image: url(images/bg-pattern-desktop.svg);
+        background-size: 60% 100%;
+    }
+
+    #logo {
+        width: 100%;
+        position: absolute;
+        top: 35px;
+        right: 75%;
+        max-width: 220px;
+        height: 95px;
+    }
+
+    .featured-images {
+        width: 40%;
+        height: 100vh;
+        background-image: url("images/hero-desktop.jpg");
+        background-size: cover;
+        background-position: center center;
+    }
+
+    #mobile-img {
+       display: none;
+    }
+
+    .main-content {
+        width: 33%;
+        text-align: left;
+        position: relative;
+       
+    }
+
+    #main-heading {
+        text-align: left;
+        margin: unset;
+        letter-spacing: 0.6ch;
+    }
+
+    #main-info {
+        width: 95%;
+        line-height: 1.8rem;
+        margin-bottom: 2.5rem;
+        padding: unset;
+    }
+
+    #form {
+        padding: unset;
+        margin: 0;
+        width: 94%;
+    }
+
+    #email {
+        padding: 1.2rem 1.8rem;
+        width: 100%;
+    }
+
+    #submit {
+        right: 0;
+        padding: .9rem 2.7rem;
+    }
+
+    small {
+        left: 2rem;
+    }
+
+    .attribution {
+        font-size: 11px;
+        text-align: center;
+        position: absolute;
+        bottom: -7rem;
+        left: 0;
+    }
+
 }

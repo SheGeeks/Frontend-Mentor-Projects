@@ -13,25 +13,26 @@
   <main>
     <img src="images/logo.svg" id="logo" alt="">
     <div class="featured-images">
-      <img src="images/hero-mobile.jpg" alt="" id="mobile-img">
+        <img src="images/hero-mobile.jpg" id="mobile-img" alt="" />
     </div>
     <div class="main-content">
       <h1 id="main-heading"><span>We're</span> coming soon</h1>
       <p id="main-info">
         Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date
         with announcements and our launch deals.</p>
-      <form action="" id="form">
-        <input type="email" id="email" placeholder="Email Address"></input>
-        <button type="submit" id="submit"><img src="images/icon-arrow.svg" id="form-arrow" alt=""></button>
+      <form id="form">
+        <input type="email" id="email" placeholder="Email Address" aria-labelledby="email">
+        <img src="images/icon-error.svg" class="error-icon" alt="">
+        <small>Please provide a valid email</small>
+        <button type="submit" id="submit" aria-label="submit"><img src="images/icon-arrow.svg" id="form-arrow" alt=""></button>
       </form>
+      <div class="attribution">
+        A <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a> Design 💝 Coded by
+        <a href="https://shegeeks.net">Corvida</a>
+      </div>
     </div>
   </main>
-  <footer>
-    <div class="attribution">
-      A <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a> Design 💝 Coded by
-      <a href="https://shegeeks.net">Corvida</a>
-    </div>
-  </footer>
+  <script src="script.js"></script>
 </body>
 
 </html>

@@ -6,6 +6,7 @@ Up above you can review my solutions for each challenge in their respective fold
 ---
 
 ## 🐔 Digitally Grown
+- [Base Apparel Coming Soon Page](https://shegeeks.github.io/Frontend-Mentor-Projects/base-apparel/) *(6/17/21)*
 - [Stats Preview Card](https://shegeeks.github.io/Frontend-Mentor-Projects/stats-preview-card/) *(5/31/21)*
 - [FAQ Accordion Card](https://shegeeks.github.io/Frontend-Mentor-Projects/faq-accordion-card/) *(5/30/21)*
 - [Ping Coming Soon Page](https://shegeeks.github.io/Frontend-Mentor-Projects/ping-coming-soon-page) *(5/25/21)*
@@ -14,7 +15,7 @@ Up above you can review my solutions for each challenge in their respective fold
 - [Profile Card](https://shegeeks.github.io/Frontend-Mentor-Projects/Profile%20Card/) *(3/23/21)*
 
 ## 🐣 Hatched
-*Base Apparel coming soon page*
+*Just hatched a project. Check back next week for something new*
 
 ## 🥚 Incubating
 - *[Fylo landing page](https://www.frontendmentor.io/challenges/fylo-landing-page-with-two-column-layout-5ca5ef041e82137ec91a50f5)*

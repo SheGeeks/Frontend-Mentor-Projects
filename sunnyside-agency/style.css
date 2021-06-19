@@ -1,0 +1,149 @@
+:root {
+    --primary-red: hsl(7, 99%, 70%);
+    --primary-yellow: hsl(51, 100%, 49%);
+    --graphic-design-text: hsl(167, 40%, 24%);
+    --photography-text: hsl(198, 62%, 26%);
+    --footer: hsl(168, 34%, 41%);
+    --secondary-dark-blue: hsl(212, 27%, 19%);
+    --secondary-darkgray-blue: hsl(213, 9%, 39%);
+    --secondary-lightgray-blue: hsl(210, 4%, 67%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 18px;
+    font-family: 'Barlow', sans-serif;
+    text-align: center;
+}
+
+header {
+    position: relative;
+    padding: 2rem;
+    background-image: url(images/mobile/image-header.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+nav {
+    display: flex;
+}
+
+#nav-logo {
+    width: 100%;
+    max-width: 120px;
+    height: 100%;
+}
+
+.nav-list {
+    visibility: hidden;
+}
+
+.nav-list-items {
+    display: inline-block;
+}
+
+.header-content {
+    margin: 4.8rem 0 3.3rem;
+}
+
+#header-heading {
+    font-family: 'Fraunces', serif;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: .3ch;
+    font-weight: 900;
+}
+
+#icon-arrow {
+    margin: 3rem;
+    height: 100%;
+}
+
+main {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.block-img {
+    width: 100%;
+}
+
+.block-content {
+    padding: 2rem 1.7rem 4rem;
+}
+
+.block-title {
+    font-family: 'Fraunces', serif;
+    padding: 2rem 0 1.5rem;
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+.block-content p {
+    line-height: 2.8ch;
+    margin-bottom: 2rem;
+    color: var(--secondary-lightgray-blue);
+}
+
+.block-link {
+    text-decoration: none;
+    font-family: 'Fraunces', serif;
+    text-transform: uppercase;
+    color: var(--secondary-dark-blue);
+    font-size: 1rem;
+    font-weight: 900;
+    position: relative;
+}
+
+.block-link::before {
+    content: " ";
+    border-bottom: 10px solid #fdf1b5;
+    border-radius: 20px;
+    width: 115%;
+    position: absolute;
+    top: 12px;
+    left: -9px;
+    z-index: -1;
+}
+
+.block-link.red::before{
+    border-bottom: 10px solid #ffd6cf;
+} 
+
+.block-value {
+    padding-bottom: .5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}

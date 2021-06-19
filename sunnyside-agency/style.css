@@ -158,7 +158,53 @@ main {
 
 .block-service.photography p {
     color:var(--photography-text);
-   
+}
+
+.testimonials {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 3.9rem 1.5rem;
+    color:var(--secondary-darkgray-blue);
+}
+
+.test-item {
+    margin-bottom: 2.5rem;
+}
+
+.test-title {
+    width: 100%;
+    color:var(--secondary-lightgray-blue);
+    font-family: 'Fraunces', serif;
+    font-size: 1rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: .3ch;
+    margin-bottom: 2rem;
+}
+
+.test-profile {
+    width: 22%;
+    max-width: 50%;
+    border-radius: 100px;
+    margin: 1.8rem 0;
+}
+
+.test-quote {
+    line-height: 2rem;
+    margin-bottom: 1.8rem;
+}
+
+.test-author {
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    color: var(--secondary-dark-blue);
+    margin-bottom: .8rem;
+    
+}
+
+.test-job {
+    color:var(--secondary-lightgray-blue);
+    font-size: .9rem;
 }
 
 

@@ -22,7 +22,6 @@ body {
 }
 
 header {
-    position: relative;
     padding: 2rem;
     background-image: url(images/mobile/image-header.jpg);
     background-size: cover;
@@ -120,8 +119,47 @@ main {
     padding-bottom: .5rem;
 }
 
+.block-service {
+    position: relative;
+    margin: 0;
+}
 
+.graphicDesign .block-img {
+    height: 100%;
+}
 
+.block-service .block-content{
+    position: absolute;
+    bottom: 6%;
+    right: 0;
+    z-index: 2;
+    padding: 0 1.3rem 0;
+    font-size: 1rem;
+}
+
+.block-title.service {
+    font-family: 'Fraunces', serif;
+    text-transform: capitalize;
+    font-size: 1.8rem;
+    font-weight: 900;
+}
+
+.block-title.service.gD {
+    color:var(--graphic-design-text);
+}
+
+.block-service.graphicDesign p {
+    color:var(--graphic-design-text);
+}
+
+.block-title.service.photog {
+    color:var(--photography-text);
+}
+
+.block-service.photography p {
+    color:var(--photography-text);
+   
+}
 
 
 

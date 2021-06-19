@@ -216,22 +216,41 @@ main {
     width: 50%;
 }
 
+footer {
+    background-color: #90d4c5;
+    color: var(--footer);
+    padding: 3rem 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
 
+.footer-logo {
+    margin: 1rem 0 .5rem;
+}
 
+footer nav {
+    margin: 0 0 4.5rem;
+}
 
+.nav-list-items {
+    margin: 0 1rem;
+}
 
+.socials img {
+    padding: 1rem;
 
-
-
-
-
-
+}
 
 .attribution {
     font-size: 11px;
     text-align: center;
+    padding: 1rem 0 0;
 }
 
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: #2d7665;
+    text-decoration: none;
+    font-weight: 900;
 }

@@ -263,9 +263,9 @@ main {
 }
 
 footer {
-    position: absolute;
+    /* position: absolute;
     bottom: 1%;
-    margin: 0 0 1rem 2rem;
+    margin: 0 0 1rem 2rem; */
     font-weight: 500;
     color: hsl(231, 7%, 65%);
     font-family: 'Barlow', sans-serif;
@@ -283,7 +283,7 @@ footer {
 /* Medium Size Screen Styling */
 /* ========================== */
 
-@media screen and (min-width: 751px) and (max-width: 1374px) {
+@media screen and (min-width: 751px) and (max-width: 1199px) {
 
     main {
         margin-top: 47vh;
@@ -316,11 +316,21 @@ footer {
 ==========================*/
 
 
-@media screen and (min-width: 1375px) {
+@media screen and (min-width: 1200px) {
+
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
 
     nav {
+        width: 100%;
         padding: 0 0 0 5rem;
-        margin: 3.7rem 8.6rem 9.6rem 3.7rem;
+        margin: 3.7rem 2.5rem 9.6rem 2.7rem;
+    }
+
+    .navlinks.closeout {
+        visibility: hidden;
     }
 
     #logo {
@@ -332,16 +342,15 @@ footer {
     .navlinks {
         visibility: visible;
         flex-direction: row;
-        justify-content: flex-end;
+        justify-content: space-evenly;
         text-align: center;
         align-items: center;
         position: static;
         border: 0;
         border-radius: 0;
         box-shadow: none;
-        width: 100%;
+        width: 50%;
         background: none;
-        column-gap: 40px;
         height: 1px;
     }
 

@@ -53,15 +53,16 @@ There was a lot to unpack for the desktop portion of this challenge after starti
 
 ### Feedback Request
 
-This challenge has really piqued my interest in digging deeper into different ways to position layouts. Any resources that were helpful to you around this topic would greatly appreciated!
+This challenge has really piqued my interest in digging deeper into different ways to position images. Any resources that were helpful to you around this topic would greatly appreciated!
 
 ### Continued development
 
-More practice on posiitioning elements to get faster and comfortable with doing so. Also intend to work on using responsive typography within these projects. I usually don't becase I'm so focused on trying to get the exact design. It's tedious and nearly impossible to calculate how things will look beyond the challenge's breakpoints. 
+**6/29 Update** - I came back to this solution to fix a few issues. To start, I didn't need to use any positioning properties like I initially thought (and sadly pursued). Good old flexbox and an `img` tag was a much easier solution. `Transform` was key in offsetting the image using `scale` and `translate` values. All in all, my solution is cleaner with better cross-browser compatibility. 
+~~More practice on posiitioning elements to get faster and comfortable with doing so. Also intend to work on using responsive typography within these projects. I usually don't becase I'm so focused on trying to get the exact design. It's tedious and nearly impossible to calculate how things will look beyond the challenge's breakpoints.~~
 
-In the future, I think I will still continue to getting an exact match with the design and start converting pixel values into their corresponding responsive units. What I hope to accomplish with this is design accuracy at the challenge breakpoints, while still allowing the flexibility of a fulyl responsive design.
+~~In the future, I think I will still continue to getting an exact match with the design and start converting pixel values into their corresponding responsive units. What I hope to accomplish with this is design accuracy at the challenge breakpoints, while still allowing the flexibility of a fulyl responsive design.~~
 
-At some point in the future I may come back to this project to do more code cleanup in the stylesheet. There were a lot of properties to work with, especially for the mobile menu and just looking at the stylesheet for this project feels overwhelming. 😩 Still proud of myself for getting this done in 2 days. 
+~~At some point in the future I may come back to this project to do more code cleanup in the stylesheet. There were a lot of properties to work with, especially for the mobile menu and just looking at the stylesheet for this project feels overwhelming. 😩 Still proud of myself for getting this done in 2 days.~~
 
 ### Useful resources
 
@@ -71,6 +72,6 @@ At some point in the future I may come back to this project to do more code clea
 
 
 ## Author
-- Website - [Corvida Raven](https://shegeeks.net)
+- Website - [SheGeeks.net](https://shegeeks.net)
 - Frontend Mentor - [@SheGeeks](https://www.frontendmentor.io/profile/shegeeks)
 - Twitter - [@Corvida](https://www.twitter.com/corvida)

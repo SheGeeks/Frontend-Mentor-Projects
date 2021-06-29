@@ -11,7 +11,7 @@ Up above you can review my solutions for each challenge in their respective fold
 - [Stats Preview Card](https://shegeeks.github.io/Frontend-Mentor-Projects/stats-preview-card/) *(5/31/21)*
 - [FAQ Accordion Card](https://shegeeks.github.io/Frontend-Mentor-Projects/faq-accordion-card/) *(5/30/21)*
 - [Ping Coming Soon Page](https://shegeeks.github.io/Frontend-Mentor-Projects/ping-coming-soon-page) *(5/25/21)*
-- [Project Tracking Landing Page](https://shegeeks.github.io/Frontend-Mentor-Projects/project-tracking-component/) *(4/5/2021)*
+- [Project Tracking Landing Page](https://shegeeks.github.io/Frontend-Mentor-Projects/project-tracking-component/) *(4/5/2021)* *(Updated: 6/29/21)*
 - [Signup Form](https://shegeeks.github.io/Frontend-Mentor-Projects/Signup%20Form/) *(3/30/21)*
 - [Profile Card](https://shegeeks.github.io/Frontend-Mentor-Projects/Profile%20Card/) *(3/23/21)*
 

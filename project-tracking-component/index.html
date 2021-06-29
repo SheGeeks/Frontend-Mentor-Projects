@@ -4,86 +4,53 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
-  <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
+  <link rel="stylesheet" href="style2.css">
   <title>Frontend Mentor | Project tracking intro component</title>
 </head>
 
 <body>
   <header>
-    <nav id="topMobileNav" class="mobilenav">
-      <img src="images/logo.svg" alt="logo" id="logo">
-      <div class="navlinks" id="mobileNavLinks">
-        <a href="#">Product</a>
-        <a href="#">Features</a>
-        <a href="#">Pricing</a>
-        <hr>
-        <a href="#" id="login-link">Login</a>
-      </div>
-      <a href="#mobileNavLinks" class="icon" onclick="openNav()"><img src="images/icon-hamburger.svg" alt="Open mobile navigation"></a>
-
-      <a href="#mobileNavLinks" class="icon close" onclick="closeNav()"><img src="images/icon-close.svg" alt="Close mobile navigation"></a>
+    <nav id="nav-menu">
+      <img src="images/logo.svg" alt="" id="logo">
+      <a href="javascript:void(0);" onclick="mobileToggle()" id="mobile-nav"><img src="images/icon-hamburger.svg" alt="mobile navigation icon" id="mobile-nav-icon"></a>
+      <ul class="nav-list">
+        <li class="nav-link"><a href="#">Product</a></li>
+        <li class="nav-link"><a href="#">Features</a></li>
+        <li class="nav-link"><a href="#">Pricing</a></li>
+        <li class="nav-link">
+          <div id="dot"></div>
+        </li>
+        <li class="nav-link" id="login"><a href="#">Login</a></li>
+      </ul>
     </nav>
-    <div id="circle"></div>
+    <div id="background-circle"></div>
   </header>
+
   <main>
-
-    <div id="featured-image">
-      <img src="images/illustration-devices.svg" alt="">
+    <div class="container">
+      <section id="intro">
+        <h1 class="title"><span class="title-indicator">New</span> Monograph Dashboard</h1>
+        <h2 class="subtitle">Powerful insights into your team</h2>
+        <p class="content">Project planning and time tracking for agile teams</p>
+        <div class="CTA">
+          <button id="demo-btn" type="button">Schedule a demo</button>
+          <p id="demo"> to see a preview</p>
+        </div>
+      </section>
+      <div>
+        <img src="images/illustration-devices.svg" alt="illustration-devices" class="illustration">
+      </div>
     </div>
-
-    <section class="product-info">
-      <h1 class="product-label"><span>New</span> Monograph Dashboard</h1>
-      <h2 class="product-tagline">Powerful insights <br> into your team</h2>
-      <p id="description"> Project planning and time tracking <br> for agile teams</p>
-      <p class="schedule-demo"><a href="#" class="schedule-demo-btn">Schedule a demo</a> to see a preview</p>
-    </section>
-
   </main>
 
   <footer>
     <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Made with 💝 by <a href="https://shegeeks.net  ">Corvida Raven</a>.
+      A <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a> Challenge | Coded by
+      <a href="https://shegeeks.net" target="_blank">Corvida</a>.
     </p>
   </footer>
-
-  <script>
-    const ele = document.getElementById('mobileNavLinks');
-    ele.addEventListener('navlinks', function (e) {
-      e.preventDefault();
-    });
-
-    function openNav() {
-      var x = document.getElementById("topMobileNav");
-      var y = document.getElementById("mobileNavLinks");
-
-      if (x.className === "mobilenav") {
-        x.className += " responsive";
-        y.className = "navlinks transition";
-      } else {
-        x.className = "mobilenav";
-        y.className = "navlinks";
-
-      }
-    }
-
-    function closeNav() {
-      var x = document.getElementById("topMobileNav");
-      var y = document.getElementById("mobileNavLinks");
-
-      if (y.className === "navlinks transition") {
-        x.className = "mobilenav";
-        y.className = "navlinks closeout";
-      } else {
-        x.className = "mobilenav";
-        y.className = "navlinks";
-
-      }
-    }
-  </script>
+  <script src="script.js"></script>
 </body>
 
 </html>

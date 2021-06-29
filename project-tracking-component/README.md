@@ -57,7 +57,8 @@ This challenge has really piqued my interest in digging deeper into different wa
 
 ### Continued development
 
-**6/29 Update** - I came back to this solution to fix a few issues. To start, I didn't need to use any positioning properties like I initially thought (and sadly pursued). Good old flexbox and an `img` tag was a much easier solution. `Transform` was key in offsetting the image using `scale` and `translate` values. All in all, my solution is cleaner with better cross-browser compatibility. 
+**6/29 Update** - I came back to this solution to fix a few issues. To start, I didn't need to use any positioning properties like I initially thought (and sadly pursued). Good old flexbox and an `img` tag was a much easier solution. `Transform` was key in offsetting the image using `scale` and `translate` values. All in all, my solution is cleaner with better cross-browser compatibility.
+ 
 ~~More practice on posiitioning elements to get faster and comfortable with doing so. Also intend to work on using responsive typography within these projects. I usually don't becase I'm so focused on trying to get the exact design. It's tedious and nearly impossible to calculate how things will look beyond the challenge's breakpoints.~~
 
 ~~In the future, I think I will still continue to getting an exact match with the design and start converting pixel values into their corresponding responsive units. What I hope to accomplish with this is design accuracy at the challenge breakpoints, while still allowing the flexibility of a fulyl responsive design.~~

@@ -188,17 +188,14 @@ main {
     margin-right: .8rem;
 }
 
-footer {
-    display: none;
-}
-
 .attribution {
     font-size: 11px;
     text-align: center;
 }
 
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: hsl(0, 100%, 68%);
+    text-decoration: none;
 }
 
 /* Tablet View */

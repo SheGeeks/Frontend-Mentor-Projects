@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+
+:root {
+  --btn-selected: hsl(172, 67%, 45%);
+  --dark-cyan: hsl(183, 100%, 15%);
+  --label-color: hsl(184, 14%, 56%);
+  --light-gray-cyan: hsl(185, 41%, 84%);
+  --light-cyan: hsl(189, 41%, 97%);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Space Mono", monospace;
+  box-sizing: border-box;
+  font-weight: 700;
+}
+
+input {
+  border: 0;
+  border-radius: 5px;
+  max-width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: hsl(180, 9%, 96%);
+  color: var(--dark-cyan);
+  font-family: "Space Mono", monospace;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: right;
+}
+
+label {
+  color: var(--label-color);
+}
+
+/*/////////////////////////*/
+
+/* #tip-calc {
+} */
+
+#calc-container {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 2rem 0;
+}
+
+.tip-percent {
+  padding: 1.5rem 0 1rem;
+}
+
+.percentages {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.percent {
+  background-color: var(--dark-cyan);
+  color: #fff;
+  font-size: 24px;
+  width: 37%;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.percent.selected {
+  background-color: var(--btn-selected);
+  color: var(--dark-cyan);
+}
+
+.percent.custom {
+  background-color: ghostwhite;
+  color: var(--label-color);
+  font-weight: 700;
+  width: 37%;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-align: center;
+  display: inline-flex;
+}
+
+#custom-tip {
+  width: 100%;
+  text-align: center;
+  padding: 0;
+}
+
+/*/////////////////////////*/
+#totals-container {
+  display: flex;
+  background-color: var(--dark-cyan);
+  flex-direction: column;
+  padding: 2.5rem 2rem 2rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-top: 2rem;
+}
+
+.totals {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.main-heading {
+  color: #fff;
+  font-size: 18px;
+  margin: 0;
+}
+
+.sub-heading {
+  margin: 0;
+  color: var(--label-color);
+}
+
+.total {
+  color: var(--btn-selected);
+  font-size: 32px;
+  margin: 0;
+}
+
+#reset {
+  display: block;
+  width: 100%;
+  height: 3.4rem;
+  margin-top: 1.5rem;
+  border: 0;
+  border-radius: 5px;
+  background-color: var(--btn-selected);
+  color: var(--dark-cyan);
+  font-family: "Space Mono", monospace;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 22px;
+}
+
+/*/////////////////////////*/
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

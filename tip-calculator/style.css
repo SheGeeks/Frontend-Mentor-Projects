@@ -3,7 +3,8 @@
 :root {
   --btn-selected: hsl(172, 67%, 45%);
   --dark-cyan: hsl(183, 100%, 15%);
-  --label-color: hsl(184, 14%, 56%);
+  --label-color: hsl(186, 14%, 43%);
+  --icons: hsl(184, 14%, 56%);
   --light-gray-cyan: hsl(185, 41%, 84%);
   --light-cyan: hsl(189, 41%, 97%);
 }
@@ -14,20 +15,31 @@ body {
   font-family: "Space Mono", monospace;
   box-sizing: border-box;
   font-weight: 700;
+  background-color: var(--light-gray-cyan);
+}
+
+header {
+  background-color: var(--light-gray-cyan);
+  text-align: center;
+  padding: 3rem 0 2rem;
 }
 
 input {
   border: 0;
   border-radius: 5px;
   max-width: 100%;
-  padding-left: 1rem;
   padding-right: 1rem;
-  background-color: hsl(180, 9%, 96%);
+  background-color: var(--light-cyan);
   color: var(--dark-cyan);
   font-family: "Space Mono", monospace;
   font-size: 24px;
   font-weight: 700;
   text-align: right;
+  position: relative;
+}
+
+input:not(#custom-tip) {
+  margin-top: 0.5rem;
 }
 
 label {
@@ -42,7 +54,16 @@ label {
 #calc-container {
   display: flex;
   flex-direction: column;
-  padding: 2rem 2rem 0;
+  padding: 2rem 2rem;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background-color: #fff;
+}
+
+.icon {
+  position: relative;
+  bottom: 27px;
+  left: 20px;
 }
 
 .tip-percent {
@@ -67,6 +88,7 @@ label {
   margin: 0.5rem 0;
   border-radius: 5px;
   text-align: center;
+  cursor: pointer;
 }
 
 .percent.selected {
@@ -75,18 +97,11 @@ label {
 }
 
 .percent.custom {
-  background-color: ghostwhite;
+  background-color: var(--light-cyan);
   color: var(--label-color);
-  font-weight: 700;
-  width: 37%;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  text-align: center;
-  display: inline-flex;
 }
 
 #custom-tip {
-  width: 100%;
   text-align: center;
   padding: 0;
 }
@@ -99,7 +114,7 @@ label {
   padding: 2.5rem 2rem 2rem;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  margin-top: 2rem;
+  margin-top: -1.5rem;
 }
 
 .totals {
@@ -139,6 +154,7 @@ label {
   text-transform: uppercase;
   font-weight: 600;
   font-size: 22px;
+  cursor: pointer;
 }
 
 /*/////////////////////////*/

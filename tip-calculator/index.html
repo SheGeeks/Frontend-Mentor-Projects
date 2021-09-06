@@ -15,26 +15,31 @@
 </head>
 
 <body>
+  <header><img src="images/logo.svg" alt=""></header>
   <div id="tip-calc">
     <div id="calc-container">
-      <label for="bill" id="bill">Bill</label>
-      <input type="text" name="" id="bill">
+      <div class="bill-input">
+        <label for="bill">Bill</label>
+        <input type="text" name="" id="bill">
+        <small class="icon"><img src="images/icon-dollar.svg" alt=""></small>
+      </div>
       <div class="tip-percent">
         <label id="tip-percent">Select Tip %</label>
         <ul class="percentages">
-          <li class="percent selected">5% </li>
+          <li class="percent">5% </li>
           <li class="percent">10%</li>
-          <li class="percent">15%</li>
+          <li class="percent selected">15%</li>
           <li class="percent">25%</li>
           <li class="percent">50%</li>
           <li class="percent custom">
-            <input type="text" name="custom-tip"  id="custom-tip" placeholder="Custom">
+            <input type="text" name="custom-tip" id="custom-tip" placeholder="Custom">
           </li>
         </ul>
       </div>
       <div class="party">
-        <label for="" id="party-count">Number of People</label>
+        <label for="party-count">Number of People</label>
         <input type="text" id="party-count"></input>
+        <small class="icon"><img src="images/icon-person.svg" alt=""></small>
       </div>
     </div>
     <div id="totals-container">
@@ -52,13 +57,13 @@
         </div>
         <p class="total">$32.79</p>
       </div>
-      <button id="reset">Reset</button>
+      <button type="button" id="reset">Reset</button>
     </div>
   </div>
-  <!-- <div class="attribution">
+  <div class="attribution">
     A <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a> challenge coded by <a
       href="#">Corvida Raven</a>.
-  </div> -->
+  </div>
 </body>
 
 </html>

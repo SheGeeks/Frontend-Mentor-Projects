@@ -1,12 +1,12 @@
 const container = document.querySelector(".percentages");
-const billInput = +document.querySelector("#bill").value;
-const percentages = document.querySelectorAll(".percent");
+let percentages;
 const percent = document.querySelectorAll(".percent.selected");
-const partyCount = +document.querySelector("#party-count").value;
-let tipTotal;
-let selectedTip;
-let customTip;
-let billTotal;
+let billInput, partyCount, tipTotal, selectedTip, customTip, billTotal;
+// let partyCount;
+// let tipTotal;
+// let selectedTip;
+// let customTip;
+// let billTotal;
 
 //Functions
 // Calculate Tip Per Person
@@ -30,19 +30,30 @@ const calcTotal = function () {
 };
 
 container.addEventListener("click", (e) => {
+  billInput = +document.querySelector("#bill").value;
+  partyCount = +document.querySelector("#party-count").value;
+  console.log(percentages);
+  percentages = document.querySelector(".percent.selected");
+
   // Selected Percent Toggle
   if (
     e.target.classList.contains("percent") &&
     !e.target.classList.contains("custom")
   ) {
+    if (percentages) {
+      percentages.classList.remove("selected");
+    }
     e.target.classList.toggle("selected");
     selectedTip = e.target.getAttribute("percentage");
-
     console.log(`Selected Tip: ${selectedTip}%`);
   } else if (
     e.target === document.getElementById("custom-tip") ||
     e.target.classList.contains("custom")
   ) {
+    if (percentages) {
+      percentages.classList.remove("selected");
+    }
+
     selectedTip = customTip = +document.getElementById("custom-tip").value;
 
     document.querySelector(".percent.custom").classList.toggle("selected");

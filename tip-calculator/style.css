@@ -101,7 +101,13 @@ label {
   color: var(--label-color);
 }
 
+.percent.selected.custom {
+  background-color: var(--btn-selected);
+  color: var(--dark-cyan);
+}
+
 #custom-tip {
+  background-color: transparent;
   text-align: center;
   padding: 0;
 }

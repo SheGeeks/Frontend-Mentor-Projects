@@ -26,13 +26,13 @@
       <div class="tip-percent">
         <label id="tip-percent">Select Tip %</label>
         <ul class="percentages">
-          <li class="percent">5% </li>
-          <li class="percent">10%</li>
-          <li class="percent selected">15%</li>
-          <li class="percent">25%</li>
-          <li class="percent">50%</li>
+          <li class="percent" percentage="5">5%</li>
+          <li class="percent" percentage="10">10%</li>
+          <li class="percent" percentage="15">15%</li>
+          <li class="percent" percentage="25">25%</li>
+          <li class="percent" percentage="50">50%</li>
           <li class="percent custom">
-            <input type="text" name="custom-tip" id="custom-tip" placeholder="Custom">
+            <input type="text" name="custom-tip" id="custom-tip" placeholder="Custom" class="c-tip">
           </li>
         </ul>
       </div>
@@ -48,14 +48,14 @@
           <p class="main-heading">Tip Amount</p>
           <p class="sub-heading">/ person</p>
         </div>
-        <p class="total">$4.27</p>
+        <p class="total" id="tip-total">4.27</p>
       </div>
       <div class="totals">
         <div class="headings">
           <p class="main-heading">Total</p>
           <p class="sub-heading">/ person</p>
         </div>
-        <p class="total">$32.79</p>
+        <p class="total" id="bill-total">32.78</p>
       </div>
       <button type="button" id="reset">Reset</button>
     </div>
@@ -64,6 +64,7 @@
     A <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a> challenge coded by <a
       href="#">Corvida Raven</a>.
   </div>
+  <script src="script.js"></script>
 </body>
 
 </html>

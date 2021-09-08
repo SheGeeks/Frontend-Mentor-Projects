@@ -20,7 +20,7 @@
     <div id="calc-container">
       <div class="bill-input">
         <label for="bill">Bill</label>
-        <input type="text" name="" id="bill">
+        <input type="text" name="bill" id="bill" required>
         <small class="icon"><img src="images/icon-dollar.svg" alt=""></small>
       </div>
       <div class="tip-percent">
@@ -38,8 +38,9 @@
       </div>
       <div class="party">
         <label for="party-count">Number of People</label>
-        <input type="text" id="party-count"></input>
+        <input type="number" id="party-count" required></input>
         <small class="icon"><img src="images/icon-person.svg" alt=""></small>
+        <small class="err">Can't be zero</small>
       </div>
     </div>
     <div id="totals-container">

@@ -46,6 +46,19 @@ label {
   color: var(--label-color);
 }
 
+.icon {
+  position: relative;
+  bottom: 27px;
+  left: 20px;
+}
+
+.err {
+  color: red;
+  position: relative;
+  bottom: 70px;
+  left: 50%;
+  display: none;
+}
 /*/////////////////////////*/
 
 /* #tip-calc {
@@ -58,12 +71,6 @@ label {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   background-color: #fff;
-}
-
-.icon {
-  position: relative;
-  bottom: 27px;
-  left: 20px;
 }
 
 .tip-percent {
@@ -110,6 +117,7 @@ label {
   background-color: transparent;
   text-align: center;
   padding: 0;
+  cursor: pointer;
 }
 
 /*/////////////////////////*/

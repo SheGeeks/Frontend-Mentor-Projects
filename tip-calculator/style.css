@@ -28,7 +28,6 @@ input {
   border: 0;
   border-radius: 5px;
   max-width: 100%;
-  padding-right: 1rem;
   background-color: var(--light-cyan);
   color: var(--dark-cyan);
   font-family: "Space Mono", monospace;
@@ -36,6 +35,14 @@ input {
   font-weight: 700;
   text-align: right;
   position: relative;
+  padding: 2px 0;
+  padding-right: 1rem;
+  border: 1px solid transparent;
+}
+
+input:focus-visible {
+  outline: none;
+  border: 1px solid var(--btn-selected);
 }
 
 input:not(#custom-tip) {
@@ -48,7 +55,7 @@ label {
 
 .icon {
   position: relative;
-  bottom: 27px;
+  bottom: 30px;
   left: 20px;
 }
 
@@ -59,6 +66,12 @@ label {
   left: 50%;
   display: none;
 }
+
+.input-err:focus-visible {
+  outline: none;
+  border: 1px solid red;
+}
+
 /*/////////////////////////*/
 
 /* #tip-calc {

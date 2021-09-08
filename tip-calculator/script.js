@@ -82,9 +82,11 @@ customTipInput.addEventListener("keyup", (e) => {
 partyInput.addEventListener("keyup", (e) => {
   if (partyInput.value > 0 || partyInput.value === "") {
     err.style.display = "none";
+    document.querySelector("#party-count").classList.remove("input-err");
     calcTotals();
   } else {
     err.style.display = "inline";
+    document.querySelector("#party-count").classList.add("input-err");
   }
 });
 

@@ -184,6 +184,11 @@ label {
   cursor: pointer;
 }
 
+#reset:disabled {
+  background-color: #0d686d;
+  cursor: initial;
+}
+
 /*/////////////////////////*/
 .attribution {
   font-size: 11px;

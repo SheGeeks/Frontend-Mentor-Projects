@@ -18,10 +18,18 @@ body {
   background-color: var(--light-gray-cyan);
 }
 
-header {
-  background-color: var(--light-gray-cyan);
-  text-align: center;
+.logo {
+  max-width: 100%;
   padding: 3rem 0 2rem;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100%;
 }
 
 input {
@@ -88,7 +96,6 @@ label {
 #tip-calc {
   min-width: 323px;
   max-width: 500px;
-  margin: auto;
 }
 
 #calc-container {
@@ -222,6 +229,10 @@ label {
 
 /*//////////Desktop Styling///////////////////////*/
 @media only screen and (min-width: 750px) {
+  body {
+    height: 100vh;
+  }
+
   input {
     width: 98%;
     padding: 0;
@@ -232,7 +243,6 @@ label {
     display: flex;
     padding: 2rem;
     max-width: 850px;
-    margin: auto;
     border-radius: 25px;
     background-color: #fff;
     justify-content: space-between;
@@ -250,6 +260,10 @@ label {
   .percent {
     width: 22%;
     padding: 0.4rem 1rem;
+  }
+
+  .percent:not(.custom)::after {
+    content: "%";
   }
 
   #custom-tip {

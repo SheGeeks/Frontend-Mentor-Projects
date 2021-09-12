@@ -9,62 +9,65 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
   <title>Frontend Mentor | Tip calculator app</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <header><img src="images/logo.svg" alt=""></header>
-  <div id="tip-calc">
-    <div id="calc-container">
-      <div class="bill-input">
-        <label for="bill">Bill</label>
-        <input type="number" name="bill" id="bill" placeholder="0" oninput="this.value = Math.abs(this.value)">
-        <small class="icon"><img src="images/icon-dollar.svg" alt=""></small>
+  <header></header>
+
+  <main>
+    <div class="logo"><img src="images/logo.svg" id="logo-l" alt="Splitter Logo"></div>
+    <div id="tip-calc">
+      <div id="calc-container">
+        <div class="bill-input">
+          <label for="bill">Bill</label>
+          <input type="number" name="bill" id="bill" placeholder="0" oninput="this.value = Math.abs(this.value)">
+          <small class="icon"><img src="images/icon-dollar.svg" alt=""></small>
+        </div>
+        <div class="tip-percent">
+          <label id="tip-percent">Select Tip %</label>
+          <ul class="percentages">
+            <li class="percent">5</li>
+            <li class="percent">10</li>
+            <li class="percent">15</li>
+            <li class="percent">25</li>
+            <li class="percent">50</li>
+            <li class="percent custom">
+              <input type="number" name="custom-tip" id="custom-tip" placeholder="Custom" class="c-tip" oninput="this.value = Math.abs(this.value)">
+            </li>
+          </ul>
+        </div>
+        <div class="party">
+          <label for="party-count">Number of People</label>
+          <input type="number" id="party-count" placeholder="0" oninput="this.value = Math.abs(this.value)"></input>
+          <small class="icon"><img src="images/icon-person.svg" alt=""></small>
+          <small class="err">Can't be zero</small>
+        </div>
       </div>
-      <div class="tip-percent">
-        <label id="tip-percent">Select Tip %</label>
-        <ul class="percentages">
-          <li class="percent" percentage="5">5%</li>
-          <li class="percent" percentage="10">10%</li>
-          <li class="percent" percentage="15">15%</li>
-          <li class="percent" percentage="25">25%</li>
-          <li class="percent" percentage="50">50%</li>
-          <li class="percent custom">
-            <input type="number" name="custom-tip" id="custom-tip" placeholder="Custom" class="c-tip" oninput="this.value = Math.abs(this.value)">
-          </li>
-        </ul>
-      </div>
-      <div class="party">
-        <label for="party-count">Number of People</label>
-        <input type="number" id="party-count" placeholder="0" oninput="this.value = Math.abs(this.value)"></input>
-        <small class="icon"><img src="images/icon-person.svg" alt=""></small>
-        <small class="err">Can't be zero</small>
+      <div id="totals-container">
+        <div class="totals">
+          <div class="headings">
+            <p class="main-heading">Tip Amount</p>
+            <p class="sub-heading">/ person</p>
+          </div>
+          <p class="total" id="tip-total">0.00</p>
+        </div>
+        <div class="totals">
+          <div class="headings">
+            <p class="main-heading">Total</p>
+            <p class="sub-heading">/ person</p>
+          </div>
+          <p class="total" id="bill-total">0.00</p>
+        </div>
+        <button type="button" id="reset" disabled="disabled">Reset</button>
       </div>
     </div>
-    <div id="totals-container">
-      <div class="totals">
-        <div class="headings">
-          <p class="main-heading">Tip Amount</p>
-          <p class="sub-heading">/ person</p>
-        </div>
-        <p class="total" id="tip-total">0.00</p>
-      </div>
-      <div class="totals">
-        <div class="headings">
-          <p class="main-heading">Total</p>
-          <p class="sub-heading">/ person</p>
-        </div>
-        <p class="total" id="bill-total">0.00</p>
-      </div>
-      <button type="button" id="reset" disabled="disabled">Reset</button>
+    <div class="attribution">
+      A <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a> challenge coded by <a
+        href="#">Corvida Raven</a>.
     </div>
-  </div>
-  <div class="attribution">
-    A <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a> challenge coded by <a
-      href="#">Corvida Raven</a>.
-  </div>
+  </main>
+  
   <script src="script.js"></script>
 </body>
 

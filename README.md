@@ -8,6 +8,7 @@ Up above you can review my solutions for each challenge in their respective fold
 
 ## 🐔 Digitally Grown
 
+- [Tip Calculator](https://shegeeks.github.io/Frontend-Mentor-Projects/tip-calculator/) _(9/11/21)_
 - [Sunnyside Agency](https://shegeeks.github.io/Frontend-Mentor-Projects/sunnyside-agency/) _(6/20/21)_
 - [Base Apparel Coming Soon Page](https://shegeeks.github.io/Frontend-Mentor-Projects/base-apparel/) _(6/17/21)_
 - [Stats Preview Card](https://shegeeks.github.io/Frontend-Mentor-Projects/stats-preview-card/) _(5/31/21)_
@@ -19,8 +20,8 @@ Up above you can review my solutions for each challenge in their respective fold
 
 ## 🐣 Hatched
 
-- [Tip Calculator](https://github.com/SheGeeks/Frontend-Mentor-Projects/tree/Frontend-Mentor-Projects/tip-calculator)
+_Recently hatched something. Check back next week._
 
 ## 🥚 Incubating
 
-_Check what's hatching!_
+_Check back next week._

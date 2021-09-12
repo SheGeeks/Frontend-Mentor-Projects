@@ -50,27 +50,25 @@ This was a great template to practice what I'm learning from a JavaScript course
 
 ```
 container.addEventListener("click", (e) => {
-  let perSelected = document.querySelector(".percent.selected");
-  // Selected Tip Toggle
   if (e.target.classList.contains("percent") || e.target === customTipInput) {
-    if (perSelected) perSelected.classList.remove("selected");
-    e.target.classList.toggle("selected");
-    selectedTip = e.target.textContent;
-    //select custom tip from input
-    if (e.target === customTipInput) {
-      selectedTip = customTipInput.value;
-      document.querySelector(".percent.custom").classList.toggle("selected");
-      document.querySelector(".percent.custom").textContent =
-        customTipInput.value;
+    if (document.querySelector(".percent.selected")) {
+      document.querySelector(".percent.selected").classList.remove("selected");
     }
+    e.target !== customTip && e.target !== customTipInput
+      ? e.target.classList.add("selected")
+      : customTip.classList.add("selected");
+
+    e.target !== customTipInput && e.target !== customTip
+      ? (selectedTip = e.target.textContent)
+      : (selectedTip = customTipInput.value);
   }
   calcTotals();
 });
 ```
 
-This went through many stages of refactoring, but I did get stuck on removing the perSelected variable and still having this block work properly. Any feedback on this block is greatly appreciated!
+This went through many stages of refactoring. Any feedback on this codeblock is greatly appreciated!
 
-One of my favorite additions to this code was a piece that prevents a negative value from being typed into the input fields ([thanks StackOverflow](https://stackoverflow.com/questions/7372067/is-there-any-way-to-prevent-input-type-number-getting-negative-values)):
+One of my favorite additions to this challenge was learning a way to prevent a negative value from being typed into input fields ([thanks StackOverflow](https://stackoverflow.com/questions/7372067/is-there-any-way-to-prevent-input-type-number-getting-negative-values)):
 
 `oninput="this.value = Math.abs(this.value)"`
 

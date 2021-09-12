@@ -27,14 +27,13 @@ header {
 input {
   border: 0;
   border-radius: 5px;
-  max-width: 100%;
+  width: 100%;
   background-color: var(--light-cyan);
   color: var(--dark-cyan);
   font-family: "Space Mono", monospace;
   font-size: 24px;
   font-weight: 700;
   text-align: right;
-  position: relative;
   padding: 2px 0;
   padding-right: 1rem;
   border: 1px solid transparent;
@@ -54,16 +53,16 @@ label {
 }
 
 .icon {
-  position: relative;
-  bottom: 30px;
+  position: absolute;
+  top: 45px;
   left: 20px;
 }
 
 .err {
   color: red;
-  position: relative;
-  bottom: 70px;
-  left: 50%;
+  position: absolute;
+  top: 3px;
+  right: 0;
   display: none;
 }
 
@@ -76,6 +75,11 @@ label {
 
 /* #tip-calc {
 } */
+
+.bill-input,
+.party {
+  position: relative;
+}
 
 #calc-container {
   display: flex;

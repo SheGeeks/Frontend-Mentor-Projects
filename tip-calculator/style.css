@@ -27,7 +27,7 @@ header {
 input {
   border: 0;
   border-radius: 5px;
-  width: 100%;
+  width: 96%;
   background-color: var(--light-cyan);
   color: var(--dark-cyan);
   font-family: "Space Mono", monospace;
@@ -48,14 +48,21 @@ input:not(#custom-tip) {
   margin-top: 0.5rem;
 }
 
-label {
-  color: var(--label-color);
+.input-err:focus-visible {
+  outline: none;
+  border: 1px solid red;
 }
 
-.icon {
-  position: absolute;
-  top: 45px;
-  left: 20px;
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
 }
 
 .err {
@@ -66,28 +73,36 @@ label {
   display: none;
 }
 
-.input-err:focus-visible {
-  outline: none;
-  border: 1px solid red;
+label {
+  color: var(--label-color);
+}
+
+.icon {
+  position: absolute;
+  top: 45px;
+  left: 20px;
 }
 
 /*/////////////////////////*/
 
-/* #tip-calc {
-} */
-
-.bill-input,
-.party {
-  position: relative;
+#tip-calc {
+  min-width: 323px;
+  max-width: 500px;
+  margin: auto;
 }
 
 #calc-container {
   display: flex;
   flex-direction: column;
-  padding: 2rem 2rem;
+  padding: 2rem 2rem 3rem;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   background-color: #fff;
+}
+
+.bill-input,
+.party {
+  position: relative;
 }
 
 .tip-percent {
@@ -137,15 +152,13 @@ label {
   cursor: pointer;
 }
 
-/*/////////////////////////*/
 #totals-container {
   display: flex;
   background-color: var(--dark-cyan);
   flex-direction: column;
   padding: 2.5rem 2rem 2rem;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  margin-top: -1.5rem;
+  border-radius: 10px;
+  margin-top: -0.7rem;
 }
 
 .totals {
@@ -189,8 +202,12 @@ label {
 }
 
 #reset:disabled {
-  background-color: #0d686d;
+  background-color: hsl(183, 79%, 24%);
   cursor: initial;
+}
+
+#reset:not(:disabled):hover {
+  background-color: hsl(173, 61%, 77%);
 }
 
 /*/////////////////////////*/
@@ -201,4 +218,61 @@ label {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+/*//////////Desktop Styling///////////////////////*/
+@media only screen and (min-width: 750px) {
+  input {
+    width: 98%;
+    padding: 0;
+    padding-right: 10px;
+  }
+
+  #tip-calc {
+    display: flex;
+    padding: 2rem;
+    max-width: 850px;
+    margin: auto;
+    border-radius: 25px;
+    background-color: #fff;
+    justify-content: space-between;
+  }
+
+  #calc-container {
+    max-width: 45%;
+    padding: 1rem;
+  }
+
+  .tip-percent {
+    margin: 1rem 0;
+  }
+
+  .percent {
+    width: 22%;
+    padding: 0.4rem 1rem;
+  }
+
+  #custom-tip {
+    font-size: 18px;
+  }
+
+  #totals-container {
+    padding-bottom: 2.5rem;
+    padding-top: 1rem;
+    margin: 0;
+    width: 41%;
+  }
+
+  .total {
+    font-size: 48px;
+  }
+
+  .total::before {
+    content: "$";
+  }
+
+  #reset {
+    margin-top: 6.5rem;
+    height: 3rem;
+  }
 }

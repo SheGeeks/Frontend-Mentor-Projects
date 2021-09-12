@@ -2,16 +2,17 @@
 
 const billInput = document.querySelector("#bill");
 const partyInput = document.querySelector("#party-count");
-const container = document.querySelector(".percentages");
+const customTip = document.querySelector(".percent.custom");
 const customTipInput = document.getElementById("custom-tip");
+const container = document.querySelector(".percentages");
+const tips = document.querySelectorAll(".percent");
 const tipTotal = document.getElementById("tip-total");
 const billTotal = document.getElementById("bill-total");
 const resetBtn = document.getElementById("reset");
 const err = document.querySelector(".err");
-
 let selectedTip;
 
-////// Functions
+///// Functions
 // Calculate Tip Per Person
 const calcTip = function (percent) {
   tipTotal.textContent = (
@@ -38,7 +39,6 @@ const calcTotals = function () {
     calcTip(selectedTip);
     calcBill(Number(tipTotal));
     document.getElementById("reset").removeAttribute("disabled");
-    //Check for empty inputs
   } else {
     resetTotals();
   }
@@ -53,18 +53,20 @@ const resetTotals = function () {
 // Reset Everything
 resetBtn.addEventListener("click", (e) => {
   billInput.value = partyInput.value = customTipInput.value = "";
-  document.querySelector(".percent.selected").classList.remove("selected");
+  selectedTip = "";
+  if (document.querySelector(".percent.selected"))
+    document.querySelector(".percent.selected").classList.remove("selected");
 
   resetTotals();
 });
 
-//// Event Listeners
+///// Event Listeners
 // Listen for billinPut
 billInput.addEventListener("keyup", (e) => calcTotals());
 
 //Listen for custom tip
 customTipInput.addEventListener("keyup", (e) => {
-  selectedTip = customTipInput.value / 100;
+  selectedTip = e.target.value;
   calcTotals();
 });
 
@@ -82,19 +84,17 @@ partyInput.addEventListener("keyup", (e) => {
 
 // Toggle Tip Percentage
 container.addEventListener("click", (e) => {
-  let perSelected = document.querySelector(".percent.selected");
-  // Selected Tip Toggle
   if (e.target.classList.contains("percent") || e.target === customTipInput) {
-    if (perSelected) perSelected.classList.remove("selected");
-    e.target.classList.toggle("selected");
-    selectedTip = e.target.textContent;
-    //select custom tip from input
-    if (e.target === customTipInput) {
-      selectedTip = customTipInput.value;
-      document.querySelector(".percent.custom").classList.toggle("selected");
-      document.querySelector(".percent.custom").textContent =
-        customTipInput.value;
+    if (document.querySelector(".percent.selected")) {
+      document.querySelector(".percent.selected").classList.remove("selected");
     }
+    e.target !== customTip && e.target !== customTipInput
+      ? e.target.classList.add("selected")
+      : customTip.classList.add("selected");
+
+    e.target !== customTipInput && e.target !== customTip
+      ? (selectedTip = e.target.textContent)
+      : (selectedTip = customTipInput.value);
   }
   calcTotals();
 });

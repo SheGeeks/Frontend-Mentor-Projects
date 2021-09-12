@@ -51,17 +51,17 @@ This was a great template to practice what I'm learning from a JavaScript course
 ```
 container.addEventListener("click", (e) => {
   let perSelected = document.querySelector(".percent.selected");
-
   // Selected Tip Toggle
   if (e.target.classList.contains("percent") || e.target === customTipInput) {
     if (perSelected) perSelected.classList.remove("selected");
     e.target.classList.toggle("selected");
-    selectedTip = e.target.getAttribute("percentage");
-
+    selectedTip = e.target.textContent;
     //select custom tip from input
     if (e.target === customTipInput) {
       selectedTip = customTipInput.value;
       document.querySelector(".percent.custom").classList.toggle("selected");
+      document.querySelector(".percent.custom").textContent =
+        customTipInput.value;
     }
   }
   calcTotals();

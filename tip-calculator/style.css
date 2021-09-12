@@ -63,7 +63,7 @@ label {
   position: absolute;
   top: 3px;
   right: 0;
-  display: none;
+  display: block;
 }
 
 .input-err:focus-visible {

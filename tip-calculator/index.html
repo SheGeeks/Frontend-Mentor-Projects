@@ -20,7 +20,7 @@
     <div id="calc-container">
       <div class="bill-input">
         <label for="bill">Bill</label>
-        <input type="text" name="bill" id="bill" placeholder="0" required>
+        <input type="number" name="bill" id="bill" placeholder="0" oninput="this.value = Math.abs(this.value)">
         <small class="icon"><img src="images/icon-dollar.svg" alt=""></small>
       </div>
       <div class="tip-percent">
@@ -32,13 +32,13 @@
           <li class="percent" percentage="25">25%</li>
           <li class="percent" percentage="50">50%</li>
           <li class="percent custom">
-            <input type="number" name="custom-tip" id="custom-tip" placeholder="Custom" class="c-tip">
+            <input type="number" name="custom-tip" id="custom-tip" placeholder="Custom" class="c-tip" oninput="this.value = Math.abs(this.value)">
           </li>
         </ul>
       </div>
       <div class="party">
         <label for="party-count">Number of People</label>
-        <input type="number" id="party-count" placeholder="0" required></input>
+        <input type="number" id="party-count" placeholder="0" oninput="this.value = Math.abs(this.value)"></input>
         <small class="icon"><img src="images/icon-person.svg" alt=""></small>
         <small class="err">Can't be zero</small>
       </div>

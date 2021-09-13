@@ -20,12 +20,6 @@ body {
   background-color: var(--background);
   padding: 4rem 2rem;
   color: #fff;
-  width: auto;
-  height: 100vh;
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-content: center;
 }
 
 main {
@@ -110,6 +104,10 @@ p.highlight {
   cursor: pointer;
 }
 
+#signup-btn:focus-visible {
+  background-color: hsl(71, 73%, 30%);
+}
+
 .benefits {
   background-color: var(--why-background);
   border-bottom-left-radius: 10px;
@@ -138,13 +136,22 @@ p.highlight {
 
 /* Desktop Media Query */
 @media only screen and (min-width: 680px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
   main {
     max-width: 640px;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-columns: repeat(2, 50%);
     grid-template-areas:
       "intro intro"
-      "subscribe benefits";
-    align-items: unset;
-    justify-items: unset;
+      "subscribe benefits"
+      "attribution attribution";
   }
 
   .intro {
@@ -172,5 +179,9 @@ p.highlight {
   .benefits {
     grid-area: benefits;
     border-bottom-left-radius: 0;
+  }
+
+  footer {
+    grid-area: attribution;
   }
 }

@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: hsl(179, 62%, 43%);
+  --why-background: hsl(179, 47%, 52%);
+  --accent-green: hsl(71, 73%, 54%);
+  --primary-text: hsl(218, 22%, 67%);
+  --background: hsl(205, 48%, 91%);
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  font-size: 14px;
+  background-color: var(--background);
+  padding: 4rem 2rem;
+  color: #fff;
+}
+
+main {
+  display: grid;
+}
+
+section:not(.subscribe) {
+  padding: 2rem 1.3rem;
+}
+
+.sect-heading:not(#primary) {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.sect-heading#primary {
+  color: var(--primary);
+  font-size: 19px;
+}
+
+.highlight {
+  color: var(--accent-green);
+}
+
+.intro {
+  background-color: #fff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  color: var(--primary-text);
+}
+
+p.highlight {
+  font-size: 15px;
+  font-weight: 700;
+  margin-top: 1.5rem;
+}
+
+#intro-content {
+  margin-top: 1rem;
+  line-height: 3ch;
+}
+
+.subscribe {
+  padding: 2rem 1.3rem 1.5rem;
+  background-color: var(--primary);
+}
+
+.pricing {
+  color: rgba(255, 255, 255, 0.562);
+  margin-top: 1rem;
+  font-size: 15px;
+}
+
+.pricing #amount {
+  color: #fff;
+  font-weight: 700;
+  font-size: 30px;
+  margin-right: 0.5rem;
+}
+
+.subscribe .sub-content {
+  font-size: 16px;
+  margin-top: 0.5rem;
+}
+
+#signup-btn {
+  background-color: var(--accent-green);
+  color: #fff;
+  font-weight: 700;
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  padding: 0.9rem 0;
+  margin-top: 1.5rem;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.144) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.benefits {
+  background-color: var(--why-background);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.benefits > ul {
+  margin-top: 1rem;
+}
+
+.benefits > ul > li {
+  list-style-type: none;
+  color: rgba(255, 255, 255, 0.74);
+  margin-top: 0.2rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: rgb(56, 56, 56);
+}
+.attribution a {
+  color: var(--primary);
+  text-decoration: none;
+}

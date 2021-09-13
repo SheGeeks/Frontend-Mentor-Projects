@@ -20,10 +20,18 @@ body {
   background-color: var(--background);
   padding: 4rem 2rem;
   color: #fff;
+  width: auto;
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-content: center;
 }
 
 main {
   display: grid;
+  margin: auto;
+  max-width: 375px;
 }
 
 section:not(.subscribe) {
@@ -126,4 +134,43 @@ p.highlight {
 .attribution a {
   color: var(--primary);
   text-decoration: none;
+}
+
+/* Desktop Media Query */
+@media only screen and (min-width: 680px) {
+  main {
+    max-width: 640px;
+    grid-template-areas:
+      "intro intro"
+      "subscribe benefits";
+    align-items: unset;
+    justify-items: unset;
+  }
+
+  .intro {
+    grid-area: intro;
+  }
+
+  .sect-heading#primary {
+    font-size: 23px;
+  }
+
+  p.highlight {
+    font-size: 18px;
+  }
+
+  #intro-content {
+    font-size: 16px;
+    padding-right: 1.3rem;
+  }
+
+  .subscribe {
+    grid-area: subscribe;
+    border-bottom-left-radius: 10px;
+  }
+
+  .benefits {
+    grid-area: benefits;
+    border-bottom-left-radius: 0;
+  }
 }

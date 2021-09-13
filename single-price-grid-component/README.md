@@ -26,25 +26,36 @@ Users should be able to:
 
 ### Screenshot
 
-![](#)
+![Desktop View](desktop-ss.png)
 
 ### Links
 
-- Solution: [Work in progress](https://github.com/SheGeeks/Frontend-Mentor-Projects/tree/Frontend-Mentor-Projects/single-price-grid-component)
-- Demo: [Coming Soon](#)
+- [Solution](https://github.com/SheGeeks/Frontend-Mentor-Projects/tree/Frontend-Mentor-Projects/single-price-grid-component)
+- [Live Demo](https://shegeeks.github.io/Frontend-Mentor-Projects/single-price-grid-component/)
 
 ## My process
 
 ### Built with
 
 - CSS Grid
+- A11Y
 - Mobile-first workflow
+- HTML5 Semantic Markup
 
 ### What I learned
 
+This is my first frontend mentor challenge built almost entirely with CSS Grid. I do wish there was an easy way to center a grid container horizontally and veritcally without using flexbox. If you know of a way that could work with my solution, let me know!
+
+Used grid-areas and grid-templates to create this layout in no time for mobile and desktop. CSS Grid made this challenge a breeze. I may go back and code it using Flexbox just to see if that changes the difficulty for me.
+
 ### Continued development
 
+Using CSS Grid more. I really feel Grid might be easier to work with over Flexbox in some cases, espeically for responsive design.
+
 ### Useful resources
+
+- [Understanding CSS Grid Template Areas](https://www.smashingmagazine.com/understanding-css-grid-template-areas/)
+- [CSS Box Shadow Examples](https://getcssscan.com/css-box-shadow-examples)
 
 ## Author
 

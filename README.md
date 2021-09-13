@@ -8,6 +8,7 @@ Up above you can review my solutions for each challenge in their respective fold
 
 ## 🐔 Digitally Grown
 
+- [Single Price Grid Component](https://shegeeks.github.io/Frontend-Mentor-Projects/single-price-grid-component/) _9/12/21_
 - [Tip Calculator](https://shegeeks.github.io/Frontend-Mentor-Projects/tip-calculator/) _(9/11/21)_
 - [Sunnyside Agency](https://shegeeks.github.io/Frontend-Mentor-Projects/sunnyside-agency/) _(6/20/21)_
 - [Base Apparel Coming Soon Page](https://shegeeks.github.io/Frontend-Mentor-Projects/base-apparel/) _(6/17/21)_
@@ -20,7 +21,7 @@ Up above you can review my solutions for each challenge in their respective fold
 
 ## 🐣 Hatched
 
-_Recently hatched something. Check back next week._
+_Recently hatched [Single Price Grid Component](https://shegeeks.github.io/Frontend-Mentor-Projects/single-price-grid-component/) & [Tip Calculator](https://shegeeks.github.io/Frontend-Mentor-Projects/tip-calculator/). Check back next week._
 
 ## 🥚 Incubating
 

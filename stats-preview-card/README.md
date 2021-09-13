@@ -22,8 +22,6 @@ This is my solution to the [Stats preview card component challenge on Frontend M
 Users should be able to:
 
 - View the optimal layout for the component depending on their device's screen size
-- See hover states for all interactive elements on the page
-- Hide/Show the answer to a question when the question is clicked
 
 ### Screenshot
 
@@ -39,16 +37,16 @@ Users should be able to:
 ### Built with
 
 - Semantic HTML5 markup
-- CSS3 
+- CSS3
 - Flexbox
 - Mobile-first workflow
 - A11Y
 
 ### What I learned
 
-Since I've been working on more challenging web development projects lately, this one felt very easy. For once, I felt my *progress* in web development while coding, which was a very nice feeling.
+Since I've been working on more challenging web development projects lately, this one felt very easy. For once, I felt my _progress_ in web development while coding, which was a very nice feeling.
 
-I ran into my biggest challenge when positioning the desktop featured image. I was initially able to switch the image position responsively. However, the image would move to the left instead of the right side of the card. Great opportunity to learn more about how `flex-flow`, `flex-wrap`, and `flex-direction` work. 
+I ran into my biggest challenge when positioning the desktop featured image. I was initially able to switch the image position responsively. However, the image would move to the left instead of the right side of the card. Great opportunity to learn more about how `flex-flow`, `flex-wrap`, and `flex-direction` work.
 
 I also realized that working from the mobile design first is great, but it's also good to be aware of how the layout will change for desktop. Taking the time to review the desktop design before starting the mobile design could've prevented my featured image mistep and saved me from backtracking on other parts of my code.
 
@@ -59,7 +57,7 @@ I also realized that working from the mobile design first is great, but it's als
 
 ### Useful resources
 
-No additional resources used for this project. *(A first!)*
+No additional resources used for this project. _(A first!)_
 
 ## Author
 

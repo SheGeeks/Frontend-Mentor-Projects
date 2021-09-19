@@ -21,8 +21,8 @@ Up above you can review my solutions for each challenge in their respective fold
 
 ## 🐣 Hatched
 
-_Recently hatched [Single Price Grid Component](https://shegeeks.github.io/Frontend-Mentor-Projects/single-price-grid-component/) & [Tip Calculator](https://shegeeks.github.io/Frontend-Mentor-Projects/tip-calculator/). Check back next week._
+- [Insure Landing Page](https://github.com/SheGeeks/Frontend-Mentor-Projects/tree/Frontend-Mentor-Projects/insure-landing-page)
 
 ## 🥚 Incubating
 
-_Check back next week._
+- [Room Homepage](https://www.frontendmentor.io/challenges/room-homepage-BtdBY_ENq)

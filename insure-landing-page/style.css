@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color-violet: hsl(256, 26%, 20%);
+  --primary-color-light-blue: hsl(216, 30%, 68%);
+  --secondary-color-dark-violet: hsl(270, 9%, 17%);
+  --secondary-color-light-gray-violet: hsl(273, 4%, 51%);
+  --secondary-color-light-gray: hsl(0, 0%, 98%);
+}
+
+body {
+  font-family: "Karla", sans-serif;
+}
+
+nav {
+  display: none;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "DM Serif Display", serif;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

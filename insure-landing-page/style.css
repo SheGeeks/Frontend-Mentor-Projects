@@ -61,6 +61,7 @@ nav:not(#footer-nav) {
   display: none;
 }
 
+/* ////////////////INTRO//////////////// */
 #intro {
   display: flex;
   flex-direction: column;
@@ -80,6 +81,7 @@ nav:not(#footer-nav) {
   padding: 6rem 1.9rem; /* extra spacing for images that need to be added */
 }
 
+/* ////////////////PERKS//////////////// */
 #perks {
   display: flex;
   flex-direction: column;
@@ -98,7 +100,7 @@ nav:not(#footer-nav) {
 
 hr {
   border: 1px solid var(--primary-color-violet);
-  width: 200px;
+  width: 150px;
 }
 
 #perks .sect-title {
@@ -107,19 +109,45 @@ hr {
   font-size: 2.8rem;
 }
 
-#perks h3 {
+#perks-list .perk h3 {
   color: var(--secondary-color-dark-violet);
   font-size: 1.7rem;
   font-weight: 500;
   padding: 1rem 0;
 }
 
-.perk-icon {
+#perks-list .perk .perk-icon {
   padding: 1rem 0;
 }
 
-.perk p {
+#perks-list .perk p {
   color: var(--secondary-color-light-gray-violet);
+}
+
+/* ////////////////Work//////////////// */
+#work {
+  background-color: var(--primary-color-violet);
+  background-image: url(images/bg-pattern-how-we-work-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: top right;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 1.5rem;
+  padding: 4.5rem 1rem;
+  margin-top: 5rem;
+}
+
+#work .sect-title {
+  color: var(--secondary-color-light-gray);
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+}
+
+/* ////////////////Footer//////////////// */
+footer {
+  display: none;
 }
 
 .attribution {

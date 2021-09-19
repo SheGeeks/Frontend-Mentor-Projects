@@ -51,6 +51,11 @@ h3 {
   margin-top: 1rem;
 }
 
+.a-btn:hover {
+  background-color: var(--secondary-color-light-gray);
+  color: var(--primary-color-violet);
+}
+
 nav:not(#footer-nav) {
   display: flex;
   align-items: center;

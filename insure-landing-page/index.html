@@ -23,8 +23,23 @@
 
   <body>
     <header>
-      <nav>
+      <nav id="nav-header">
         <img src="images/logo.svg" alt="" class="logo" />
+        <a href="javascript:void(0);" onclick="mobileToggle()" id="mobile-menu"
+          ><img
+            src="images/icon-hamburger.svg"
+            id="mobile-menu-btn"
+            alt="mobile menu icon"
+        /></a>
+        <a
+          href="javascript:void(0);"
+          onclick="mobileToggle()"
+          id="mobile-menu-open"
+          ><img
+            src="images/icon-close.svg"
+            id="mobile-menu-close-btn"
+            alt="mobile menu close icon"
+        /></a>
         <ul id="nav-list">
           <li><a href="" class="nav-link">How we work</a></li>
           <li><a href="" class="nav-link">Blog</a></li>
@@ -37,16 +52,17 @@
     <main>
       <h1 class="sr"></h1>
       <section id="intro">
-        <img
-          srcset="
-            images/image-intro-mobile.jpg  375w,
-            images/image-intro-desktop.jpg 540w
-          "
-          sizes="(max-width: 600px) 375px,
-            800px"
-          src="images/image-intro-mobile.jpg"
-          alt="Family line"
-        />
+        <picture>
+          <source
+            srcset="images/image-intro-mobile.jpg"
+            media="(max-width: 600px)"
+          />
+          <source srcset="images/image-intro-desktop.jpg" />
+          <img
+            src="images/image-intro-desktop.jpg"
+            alt="Family walking in line"
+          />
+        </picture>
         <section class="intro-content">
           <h2 class="sect-title">Humanizing your insurance.</h2>
           <p class="sect-content">
@@ -105,10 +121,18 @@
     <footer>
       <img src="images/logo.svg" alt="" class="logo" />
       <div class="socials">
-        <img src="images/icon-facebook.svg" alt="Follow us on Facebook" />
-        <img src="images/icon-twitter.svg" alt="Follow us on Twitter" />
-        <img src="images/icon-pinterest.svg" alt="Follow us on Pinterest" />
-        <img src="images/icon-instagram.svg" alt="Follow us on Instagram" />
+        <a href="#"
+          ><img src="images/icon-facebook.svg" alt="Follow us on Facebook"
+        /></a>
+        <a href="#"
+          ><img src="images/icon-twitter.svg" alt="Follow us on Twitter"
+        /></a>
+        <a href="#"
+          ><img src="images/icon-pinterest.svg" alt="Follow us on Pinterest"
+        /></a>
+        <a href="#"
+          ><img src="images/icon-instagram.svg" alt="Follow us on Instagram"
+        /></a>
       </div>
       <hr class="footer-hr" />
       <nav id="footer-nav">
@@ -147,5 +171,6 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
     </div> -->
+    <script src="script.js"></script>
   </body>
 </html>

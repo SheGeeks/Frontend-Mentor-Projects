@@ -32,23 +32,23 @@ h3 {
 }
 
 .sect-title {
-  font-size: 3rem;
+  font-size: 2.91rem;
   line-height: 3rem;
   font-weight: 500;
   z-index: 2;
 }
 
 .sect-content {
-  line-height: 1.5rem;
+  line-height: 1.62rem;
 }
 
 .a-btn {
   text-decoration: none;
   color: var(--secondary-color-light-gray);
   border: 1px solid var(--secondary-color-light-gray);
-  padding: 0.6rem 1.8rem;
+  padding: 0.7rem 1.7rem;
   text-transform: uppercase;
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   letter-spacing: 0.2ch;
   z-index: 1;
 }
@@ -63,7 +63,7 @@ h3 {
 #nav-header {
   display: flex;
   align-items: center;
-  padding: 1.5rem 2rem;
+  padding: 1.4rem 1.5rem;
   justify-content: space-between;
   position: relative;
   z-index: 3;
@@ -144,7 +144,8 @@ h3 {
 
 #intro img {
   width: 100vw;
-  height: 100%;
+  height: auto;
+  display: block;
 }
 
 .intro-content {
@@ -155,7 +156,7 @@ h3 {
   row-gap: 1rem;
   background-color: var(--primary-color-violet);
   color: var(--secondary-color-light-gray);
-  padding: 6rem 1.3rem; /* extra spacing for images that need to be added */
+  padding: 5.8rem 1.3rem; /* extra spacing for images that need to be added */
   background-image: url(images/bg-pattern-intro-left-mobile.svg);
   background-position: top left;
   background-repeat: no-repeat;
@@ -168,7 +169,7 @@ h3 {
   height: 100%;
   background-image: url(images/bg-pattern-intro-right-mobile.svg);
   background-repeat: no-repeat;
-  background-position: bottom 75px right;
+  background-position: bottom 64px right;
   position: absolute;
 }
 
@@ -183,28 +184,26 @@ h3 {
   flex-direction: column;
   align-items: center;
   row-gap: 2rem;
-  padding: 7rem 1.6rem 8.8rem; /* extra spacing for images that need to be added */
-  z-index: -1;
+  padding: 5.7rem 1.6rem 8.8rem; /* extra spacing for images that need to be added */
 }
 
 #perks-list {
   display: flex;
   flex-direction: column;
   align-items: center;
-  row-gap: 3rem;
+  row-gap: 2.5rem;
   padding: 2rem 0;
 }
 
 hr {
   border: none;
   border-top: 1px solid var(--secondary-color-light-gray-violet);
+  margin: 1rem 0 0.5rem;
   width: 150px;
 }
 
 #perks .sect-title {
   color: var(--secondary-color-dark-violet);
-  font-weight: 500;
-  font-size: 2.8rem;
 }
 
 #perks-list .perk h3 {
@@ -215,7 +214,7 @@ hr {
 }
 
 #perks-list .perk .perk-icon {
-  padding: 1rem 0;
+  padding: 0.9rem 0;
 }
 
 #perks-list .perk p {
@@ -233,15 +232,19 @@ hr {
   align-items: center;
   justify-content: center;
   row-gap: 1.5rem;
-  padding: 4.5rem 1rem;
-  margin-top: 5rem;
+  padding: 4.5rem 0;
+  margin-top: 4.8rem;
 }
 
 #work .sect-title {
   color: var(--secondary-color-light-gray);
-  font-size: 2.5rem;
+  font-size: 2.4rem;
   line-height: 2.5rem;
   padding-bottom: 1rem;
+}
+
+#work .a-btn {
+  padding: 0.7rem 1.5rem;
 }
 
 /* ////////////////Footer//////////////// */
@@ -254,7 +257,7 @@ footer {
   background-image: url(images/bg-pattern-footer-mobile.svg);
   background-repeat: no-repeat;
   background-position: top;
-  letter-spacing: 0.2ch;
+  letter-spacing: 0.15ch;
   font-weight: 700;
 }
 
@@ -269,7 +272,6 @@ footer .logo {
   justify-content: center;
   gap: 1rem;
   margin-top: 1rem;
-  padding-bottom: 1.5rem;
 }
 
 .socials img {
@@ -283,9 +285,10 @@ footer .logo {
 }
 
 footer .footer-hr {
-  width: 85%;
+  width: 87%;
   border: none;
   border-top: 1px solid var(--secondary-color-light-gray-violet);
+  margin: 1.2rem 0 0;
 }
 
 #footer-nav {
@@ -303,7 +306,7 @@ footer .footer-hr {
 }
 
 .footer-nav-list .footer-nav-title {
-  margin: 1rem 0;
+  margin: 0.5rem 0 1.4rem;
   color: var(--secondary-color-light-gray-violet);
   font-size: 0.8rem;
 }

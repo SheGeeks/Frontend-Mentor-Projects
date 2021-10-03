@@ -106,6 +106,7 @@ h3 {
   padding: 0.8rem 0;
   z-index: 2;
 }
+
 .nav-link {
   text-decoration: none;
   color: var(--secondary-color-light-gray);
@@ -156,7 +157,8 @@ h3 {
   row-gap: 1rem;
   background-color: var(--primary-color-violet);
   color: var(--secondary-color-light-gray);
-  padding: 5.8rem 1.3rem; /* extra spacing for images that need to be added */
+  padding: 5.8rem 1.3rem;
+  /* extra spacing for images that need to be added */
   background-image: url(images/bg-pattern-intro-left-mobile.svg);
   background-position: top left;
   background-repeat: no-repeat;
@@ -184,7 +186,8 @@ h3 {
   flex-direction: column;
   align-items: center;
   row-gap: 2rem;
-  padding: 5.7rem 1.6rem 8.8rem; /* extra spacing for images that need to be added */
+  padding: 5.7rem 1.6rem 8.8rem;
+  /* extra spacing for images that need to be added */
 }
 
 #perks-list {
@@ -326,6 +329,104 @@ footer .footer-hr {
   font-size: 11px;
   text-align: center;
 }
+
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+/*//////////Desktop Styling///////////////////////*/
+@media only screen and (min-width: 750px) {
+  #nav-header {
+    padding: 1rem 1.5rem;
+    justify-content: space-around;
+  }
+
+  #mobile-menu-btn {
+    display: none;
+  }
+
+  #nav-header #nav-list {
+    display: flex;
+    align-items: center;
+    /* margin-right: 2rem; */
+  }
+
+  #nav-list li {
+    list-style-type: none;
+    margin-right: 2rem;
+  }
+
+  li:not(:last-of-type) .nav-link {
+    color: var(--secondary-color-light-gray-violet);
+    font-size: 0.8rem;
+    letter-spacing: 0.2ch;
+  }
+
+  #nav-list li:last-of-type {
+    border: 2px solid var(--secondary-color-dark-violet);
+    padding: 0.5rem 1.5rem;
+    margin-right: 0;
+  }
+
+  li:last-of-type .nav-link {
+    color: var(--secondary-color-dark-violet);
+    font-size: 0.8rem;
+    letter-spacing: 0.2ch;
+  }
+
+  #intro {
+    flex-direction: row-reverse;
+    align-items: center;
+    background-color: var(--primary-color-violet);
+    background-image: url(images/bg-pattern-intro-right-desktop.svg);
+    background-position: top -82px right;
+    background-repeat: no-repeat;
+    background-size: 30.5%;
+    padding: 0;
+  }
+
+  #intro::before {
+    content: "";
+    display: inline-block;
+    background-image: url(images/bg-pattern-intro-left-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: bottom -335px left;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  #intro img {
+    width: 92%;
+  }
+
+  .intro-content {
+    width: 40%;
+    text-align: left;
+    align-items: flex-start;
+    background-image: none;
+    background-color: unset;
+    padding: 2.7rem 2rem 0 0;
+  }
+
+  .intro-content::before {
+    display: none;
+  }
+
+  .sect-title {
+    font-size: 4.4rem;
+    line-height: 4rem;
+    padding-right: 3rem;
+  }
+
+  .intro-content .sect-content {
+    margin-top: 0.7rem;
+    padding-right: 0rem;
+  }
+
+  /* //// Perks ///// */
+
+  #perks-list {
+    flex-direction: row;
+  }
 }

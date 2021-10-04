@@ -452,6 +452,19 @@ footer .footer-hr {
   /* ////Work ///// */
   #work {
     width: 100%;
+    background-image: url(images/bg-pattern-how-we-work-desktop.svg);
+    background-position: top right;
+    background-size: contain;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 5.1rem;
+  }
+
+  #work .sect-title {
+    font-size: 3.4rem;
+    width: 55%;
+    line-height: 3.5rem;
   }
 
   /* ///Footer/// */

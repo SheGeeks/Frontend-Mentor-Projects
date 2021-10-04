@@ -449,7 +449,38 @@ footer .footer-hr {
     width: 31.5%;
   }
 
+  /* ////Work ///// */
   #work {
+    width: 100%;
+  }
+
+  /* ///Footer/// */
+  footer {
+    background-image: url(images/bg-pattern-footer-desktop.svg);
+    background-position: top left;
+    padding: 0 10rem 3rem;
+  }
+
+  footer .logo {
+    margin-top: 4.3rem;
+  }
+
+  #footer-nav {
+    flex-direction: row;
+    align-items: flex-start;
+    column-gap: 11.5rem;
+    width: 100%;
+  }
+
+  footer .footer-hr {
+    width: 100%;
+    border-top: 1px solid var(--secondary-color-light-gray-violet);
+  }
+
+  #brand {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
     width: 100%;
   }
 }

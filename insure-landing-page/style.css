@@ -425,8 +425,31 @@ footer .footer-hr {
   }
 
   /* //// Perks ///// */
+  body:not(h1, h2, h3) {
+    text-align: left;
+  }
+
+  #perks {
+    padding: 5.7rem 10rem 8.8rem;
+  }
+
+  #perks .sect-title {
+    text-align: left;
+    width: 100%;
+  }
 
   #perks-list {
     flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    column-gap: 2.3rem;
+  }
+
+  .perk {
+    width: 31.5%;
+  }
+
+  #work {
+    width: 100%;
   }
 }

@@ -376,6 +376,7 @@ footer .footer-hr {
 
   #intro {
     flex-direction: row-reverse;
+    justify-content: flex-end;
     align-items: center;
     background-color: var(--primary-color-violet);
     background-image: url(images/bg-pattern-intro-right-desktop.svg);
@@ -383,6 +384,7 @@ footer .footer-hr {
     background-repeat: no-repeat;
     background-size: 30.5%;
     padding: 0;
+    position: relative;
   }
 
   #intro::before {
@@ -396,17 +398,24 @@ footer .footer-hr {
     height: 100%;
   }
 
+  picture {
+    position: absolute;
+    top: 106px;
+    right: 165px;
+  }
+
   #intro img {
-    width: 92%;
+    width: 100%;
   }
 
   .intro-content {
-    width: 40%;
+    width: 49%;
     text-align: left;
     align-items: flex-start;
     background-image: none;
     background-color: unset;
-    padding: 2.7rem 2rem 0 0;
+    padding: 10.6rem 0 7.5rem 10.3rem;
+    row-gap: 2rem;
   }
 
   .intro-content::before {
@@ -420,8 +429,8 @@ footer .footer-hr {
   }
 
   .intro-content .sect-content {
-    margin-top: 0.7rem;
-    padding-right: 0rem;
+    margin-top: 0;
+    padding: 0;
   }
 
   /* //// Perks ///// */
@@ -430,7 +439,12 @@ footer .footer-hr {
   }
 
   #perks {
-    padding: 5.7rem 10rem 8.8rem;
+    padding: 18.2rem 10.3rem 8.8rem;
+  }
+
+  hr {
+    align-self: flex-start;
+    margin-bottom: 2rem;
   }
 
   #perks .sect-title {
@@ -442,7 +456,6 @@ footer .footer-hr {
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
-    column-gap: 2.3rem;
   }
 
   .perk {

@@ -11,7 +11,6 @@ This is a solution to the [Insure landing page challenge on Frontend Mentor](htt
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
 
@@ -26,12 +25,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](#)
+![Screenshot](desktop-ss.png)
 
 ### Links
 
-- Solution URL: [WIP](https://github.com/SheGeeks/Frontend-Mentor-Projects/tree/Frontend-Mentor-Projects/insure-landing-page)
-- Live Site URL: [Coming soon](#)
+- [Solution](https://github.com/SheGeeks/Frontend-Mentor-Projects/tree/Frontend-Mentor-Projects/insure-landing-page)
+- [Live Site](https://shegeeks.github.io/Frontend-Mentor-Projects/insure-landing-page/)
 
 ## My process
 
@@ -40,10 +39,13 @@ Users should be able to:
 - Mobile-first workflow
 - Semantic HTML5 markup
 - Flexbox
+- JavaScript (mobile navigation only)
 
 ### What I learned
 
-### Continued development
+Another great exercise in using multiple background images. I do wonder if it'll ever get any easier. AFter completing this challenge, I feel a lot more knowledgeable about how they work, especially when it comes to placement on top of another element and in or out of a div container.
+
+I also learned how to work with repsonsive images using the `picture` tag, which was very convenient for this challenge.
 
 ### Useful resources
 
@@ -51,7 +53,7 @@ Users should be able to:
 
 ## Author
 
-- Tech Blog - [SheGeeks.net](https://shegeeks.net)
-- Portfolio - [Corvida's Dev Portfolio](https://corvida.netlify.app/)
-- Twitter - [@Corvida](https://www.twitter.com/corvida)
-- Frontend Mentor - [@SheGeeks](https://www.frontendmentor.io/profile/shegeeks)
+- [Tech Blog](https://shegeeks.net)
+- [Dev Portfolio](https://corvida.netlify.app/)
+- [@Corvida on Twitter](https://www.twitter.com/corvida)
+- [@SheGeeks on Frontend Mentor](https://www.frontendmentor.io/profile/shegeeks)

@@ -43,7 +43,7 @@ Users should be able to:
 
 ### What I learned
 
-Another great exercise in using multiple background images. I do wonder if it'll ever get any easier. AFter completing this challenge, I feel a lot more knowledgeable about how they work, especially when it comes to placement on top of another element and in or out of a div container.
+Another great exercise in using multiple background images. I do wonder if it'll ever get any easier. After completing this challenge, I feel a lot more knowledgeable about how they work, especially when it comes to placement on top of another element and in or out of a div container.
 
 I also learned how to work with repsonsive images using the `picture` tag, which was very convenient for this challenge.
 

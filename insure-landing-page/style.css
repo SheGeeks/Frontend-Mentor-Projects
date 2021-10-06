@@ -84,11 +84,12 @@ h3 {
   top: 100%;
   right: 0;
   width: 100%;
-  height: 600px;
+  height: 550px;
   background-color: var(--secondary-color-dark-violet);
   background-image: url(images/bg-pattern-mobile-nav.svg);
-  background-position: top 97% center;
+  background-position: bottom right;
   background-repeat: no-repeat;
+  background-size: 100%;
   list-style: none;
   gap: 1rem;
   padding: 2rem;
@@ -171,7 +172,7 @@ h3 {
   height: 100%;
   background-image: url(images/bg-pattern-intro-right-mobile.svg);
   background-repeat: no-repeat;
-  background-position: bottom 64px right;
+  background-position: top 587px right;
   position: absolute;
 }
 
@@ -235,7 +236,7 @@ hr {
   align-items: center;
   justify-content: center;
   row-gap: 1.5rem;
-  padding: 4.5rem 0;
+  padding: 4.5rem 2rem;
   margin-top: 4.8rem;
 }
 
@@ -258,6 +259,7 @@ footer {
   align-items: center;
   background-color: var(--secondary-color-light-gray);
   background-image: url(images/bg-pattern-footer-mobile.svg);
+  background-size: 100%;
   background-repeat: no-repeat;
   background-position: top;
   letter-spacing: 0.15ch;
@@ -334,8 +336,230 @@ footer .footer-hr {
   color: hsl(228, 45%, 44%);
 }
 
-/*//////////Desktop Styling///////////////////////*/
-@media only screen and (min-width: 750px) {
+/* /////////////////////////////////////////////// */
+/*////////////////Desktop Styling/////////////////*/
+/* /////////////////////////////////////////////// */
+@media only screen and (min-width: 940px) {
+  #nav-header {
+    padding: 1.1rem 9.9rem;
+    justify-content: space-between;
+    background-color: white;
+  }
+
+  .logo {
+    width: 113px;
+    margin: 0 0.6rem;
+  }
+
+  #mobile-menu-btn {
+    display: none;
+  }
+
+  #nav-header #nav-list {
+    display: flex;
+    align-items: center;
+    /* margin-right: 2rem; */
+  }
+
+  #nav-list li {
+    list-style-type: none;
+    margin-right: 0;
+    margin-left: 1.5rem;
+  }
+
+  li:not(:last-of-type) .nav-link {
+    color: var(--secondary-color-light-gray-violet);
+    font-size: 0.8rem;
+    letter-spacing: 0.2ch;
+  }
+
+  #nav-list li:last-of-type {
+    margin-right: 0.4rem;
+    margin-left: 2.1rem;
+    z-index: 2;
+  }
+
+  li:last-of-type .nav-link {
+    padding: 0.7rem 1.65rem;
+    background: #fff;
+    border: 2px solid var(--secondary-color-dark-violet);
+  }
+
+  #nav-list li:not(:last-of-type) a:hover {
+    color: var(--secondary-color-dark-violet);
+  }
+
+  #nav-list li:last-of-type a:hover {
+    background-color: var(--secondary-color-dark-violet);
+    color: #fff;
+    cursor: pointer;
+  }
+
+  li:last-of-type .nav-link {
+    color: var(--secondary-color-dark-violet);
+    font-size: 0.8rem;
+    letter-spacing: 0.2ch;
+  }
+
+  #intro {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 0 3rem;
+    width: 100%;
+  }
+
+  picture {
+    position: absolute;
+    top: 104px;
+    right: -50px;
+    z-index: 0;
+  }
+
+  #intro img {
+    width: 84%;
+  }
+
+  .intro-content::before {
+    background-image: url(images/bg-pattern-intro-right-desktop.svg),
+      url(images/bg-pattern-intro-left-desktop.svg);
+    /* background-size: 30.5%, 14%; */
+    position: absolute;
+    background-position: top 210px right, top 720px left;
+    padding-bottom: 36rem;
+    background-clip: padding-box, border-box;
+  }
+
+  .intro-content {
+    text-align: left;
+    align-items: flex-start;
+    padding: 10.5rem 5rem 7.9rem 0;
+    row-gap: 1.7rem;
+    background-image: none;
+    width: 100%;
+  }
+
+  .sect-title {
+    font-size: 4.4rem;
+    line-height: 4rem;
+    width: 40%;
+    margin-left: 6.3rem;
+  }
+  a.a-btn {
+    margin-left: 6.3rem;
+    margin-top: 0.3rem;
+  }
+
+  .intro-content .sect-content {
+    margin-left: 6.3rem;
+    padding: 0;
+    width: 40%;
+  }
+
+  /* //// Perks ///// */
+  body:not(h1, h2, h3) {
+    text-align: left;
+  }
+
+  #perks {
+    padding: 15rem 10.3rem 8.8rem;
+  }
+
+  hr {
+    align-self: flex-start;
+    margin-bottom: 2rem;
+  }
+
+  #perks .sect-title {
+    text-align: left;
+    width: 100%;
+    margin: 0;
+  }
+
+  #perks-list {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 3rem 0;
+  }
+
+  .perk {
+    width: 31.5%;
+  }
+
+  /* ////Work ///// */
+  #work {
+    width: 100%;
+    background-image: url(images/bg-pattern-how-we-work-desktop.svg);
+    background-position: top right;
+    background-size: contain;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4.4rem 5rem 4.3rem 5.1rem;
+    margin-top: 4.9rem;
+  }
+
+  #work .sect-title {
+    font-size: 3.4rem;
+    width: 51%;
+    line-height: 3.5rem;
+    padding-bottom: 0;
+  }
+
+  #work a.a-btn {
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  /* ///Footer/// */
+  footer {
+    background-image: url(images/bg-pattern-footer-desktop.svg);
+    background-position: top left;
+    background-size: unset;
+    padding: 0 10rem 3rem;
+    margin-top: 0.5rem;
+  }
+
+  footer .logo {
+    /* margin-top: 4.3rem; */
+    margin: 0.3rem 0 0.6rem;
+    width: unset;
+    height: unset;
+  }
+
+  #footer-nav {
+    flex-direction: row;
+    align-items: flex-start;
+    width: 80%;
+    justify-content: space-between;
+    align-self: flex-start;
+    margin-left: 0.3rem;
+  }
+
+  footer .footer-hr {
+    width: 100%;
+    border-top: 1px solid var(--secondary-color-light-gray-violet);
+    margin: 0.7rem 0 0.5rem;
+  }
+
+  #brand {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 0.3rem;
+    margin-top: 3.9rem;
+  }
+
+  .socials {
+    margin-top: 0;
+  }
+}
+
+/* /////////////////////////////////////////////// */
+/*////////////////Desktop Styling/////////////////*/
+/* /////////////////////////////////////////////// */
+@media only screen and (min-width: 1385px) {
   #nav-header {
     padding: 1.1rem 9.9rem;
     justify-content: space-between;
@@ -450,103 +674,5 @@ footer .footer-hr {
     margin-left: 10.3rem;
     padding: 0;
     width: 40%;
-  }
-
-  /* //// Perks ///// */
-  body:not(h1, h2, h3) {
-    text-align: left;
-  }
-
-  #perks {
-    padding: 15rem 10.3rem 8.8rem;
-  }
-
-  hr {
-    align-self: flex-start;
-    margin-bottom: 2rem;
-  }
-
-  #perks .sect-title {
-    text-align: left;
-    width: 100%;
-    margin: 0;
-  }
-
-  #perks-list {
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
-    padding: 3rem 0;
-  }
-
-  .perk {
-    width: 31.5%;
-  }
-
-  /* ////Work ///// */
-  #work {
-    width: 100%;
-    background-image: url(images/bg-pattern-how-we-work-desktop.svg);
-    background-position: top right;
-    background-size: contain;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 4.4rem 5rem 4.3rem 5.1rem;
-    margin-top: 4.9rem;
-  }
-
-  #work .sect-title {
-    font-size: 3.4rem;
-    width: 51%;
-    line-height: 3.5rem;
-    padding-bottom: 0;
-  }
-
-  #work a.a-btn {
-    margin-left: 0;
-    margin-top: 0;
-  }
-
-  /* ///Footer/// */
-  footer {
-    background-image: url(images/bg-pattern-footer-desktop.svg);
-    background-position: top left;
-    padding: 0 10rem 3rem;
-    margin-top: 0.5rem;
-  }
-
-  footer .logo {
-    /* margin-top: 4.3rem; */
-    margin: 0.3rem 0 0.6rem;
-    width: unset;
-    height: unset;
-  }
-
-  #footer-nav {
-    flex-direction: row;
-    align-items: flex-start;
-    width: 80%;
-    justify-content: space-between;
-    align-self: flex-start;
-    margin-left: 0.3rem;
-  }
-
-  footer .footer-hr {
-    width: 100%;
-    border-top: 1px solid var(--secondary-color-light-gray-violet);
-    margin: 0.7rem 0 0.5rem;
-  }
-
-  #brand {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    padding: 0 0.3rem;
-    margin-top: 3.9rem;
-  }
-
-  .socials {
-    margin-top: 0;
   }
 }

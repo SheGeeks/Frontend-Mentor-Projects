@@ -13,6 +13,13 @@ const err = document.querySelector(".err");
 let selectedTip;
 
 ///// Functions
+
+//Validate Bill Amount
+function validate(value) {
+  var rgx = /^[0-9]*\.?[0-9]*$/;
+  return value.match(rgx);
+}
+
 // Calculate Tip Per Person
 const calcTip = function (percent) {
   tipTotal.textContent = (
@@ -62,7 +69,9 @@ resetBtn.addEventListener("click", (e) => {
 
 ///// Event Listeners
 // Listen for billinPut
-billInput.addEventListener("keyup", (e) => calcTotals());
+billInput.addEventListener("keyup", (e) => {
+  validate(e.key) != [""] ? calcTotals() : NaN;
+});
 
 //Listen for custom tip
 customTipInput.addEventListener("keyup", (e) => {

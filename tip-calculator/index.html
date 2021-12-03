@@ -19,7 +19,7 @@
       <div id="calc-container">
         <div class="bill-input">
           <label for="bill">Bill</label>
-          <input type="number" name="bill" id="bill" placeholder="0" oninput="this.value = Math.abs(this.value)">
+          <input type="number" name="bill" id="bill" placeholder="0" oninput="validate(this.value)">
           <small class="icon"><img src="images/icon-dollar.svg" alt=""></small>
         </div>
         <div class="tip-percent">

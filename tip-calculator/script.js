@@ -99,13 +99,14 @@ container.addEventListener("click", (e) => {
     if (document.querySelector(".percent.selected")) {
       document.querySelector(".percent.selected").classList.remove("selected");
     }
-    e.target !== customTip && e.target !== customTipInput
-      ? e.target.classList.add("selected")
-      : customTip.classList.add("selected");
 
-    e.target !== customTipInput && e.target !== customTip
-      ? (selectedTip = e.target.textContent)
-      : (selectedTip = customTipInput.value);
+    if (e.target !== customTip && e.target !== customTipInput) {
+      e.target.classList.add("selected");
+      selectedTip = e.target.textContent;
+    } else {
+      customTip.classList.add("selected");
+      selectedTip = customTipInput.value;
+    }
   }
   calcTotals();
 });

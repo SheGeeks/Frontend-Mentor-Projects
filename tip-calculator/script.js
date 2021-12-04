@@ -16,7 +16,7 @@ let selectedTip;
 
 //Validate Bill Amount
 function validate(value) {
-  var rgx = /^[0-9]*\.?[0-9]*$/;
+  var rgx = /[0-9]*\.?[0-9]*$/;
   return value.match(rgx);
 }
 
@@ -70,7 +70,9 @@ resetBtn.addEventListener("click", (e) => {
 ///// Event Listeners
 // Listen for billinPut
 billInput.addEventListener("keyup", (e) => {
-  validate(e.key) != [""] ? calcTotals() : NaN;
+  validate(e.key) != "" && billInput.value > 0
+    ? calcTotals()
+    : (billInput.value = "");
 });
 
 //Listen for custom tip

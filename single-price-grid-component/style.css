@@ -57,11 +57,11 @@ section:not(.subscribe) {
 p.highlight {
   font-size: 15px;
   font-weight: 700;
-  margin-top: 1.5rem;
+  margin-top: 2rem;
 }
 
 #intro-content {
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
   line-height: 3ch;
 }
 
@@ -97,7 +97,7 @@ p.highlight {
   border: none;
   border-radius: 5px;
   padding: 0.9rem 0;
-  margin-top: 1.5rem;
+  margin-top: 2rem;
   width: 100%;
   box-shadow: rgba(0, 0, 0, 0.144) 0px 20px 25px -5px,
     rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
@@ -145,7 +145,7 @@ p.highlight {
   }
 
   main {
-    max-width: 640px;
+    max-width: 636px;
     grid-template-columns: repeat(2, 50%);
     grid-template-columns: repeat(2, 50%);
     grid-template-areas:
@@ -162,6 +162,10 @@ p.highlight {
     font-size: 23px;
   }
 
+  section:not(.subscribe) {
+    padding: 2.5rem;
+  }
+
   p.highlight {
     font-size: 18px;
   }
@@ -174,6 +178,7 @@ p.highlight {
   .subscribe {
     grid-area: subscribe;
     border-bottom-left-radius: 10px;
+    padding: 2.3rem 2.5rem 0rem;
   }
 
   .benefits {

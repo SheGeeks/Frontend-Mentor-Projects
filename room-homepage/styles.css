@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-darkgray: hsl(0, 0%, 63%);
+  --second-darkgray: hsl(0, 0%, 27%);
+}
+
+body {
+  font-family: "Spartan", sans-serif;
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: 1.62rem;
+  font-weight: 600;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.31rem;
+}
+
+/*/////////// NAVIGATION */
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  position: absolute;
+  top: 6%;
+  left: 6%;
+  max-width: 100%;
+  z-index: 1;
+}
+
+nav > ul {
+  display: none;
+  flex-direction: row;
+}
+
+li {
+  list-style: none;
+  margin-right: 1rem;
+  visibility: hidden;
+}
+
+#logo {
+  margin-left: 7.2rem;
+}
+
+/*/ ////////// HERO SECTION */
+.hero-img {
+  position: relative;
+}
+
+.hero-img img {
+  width: 100%;
+  display: block;
+}
+
+#hero-nav-icons {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+#hero-nav-icons img {
+  background-color: black;
+  padding: 1rem 1.3rem;
+  height: auto;
+}
+
+#hero-nav-icons img:hover {
+  background-color: var(--second-darkgray);
+}
+
+#featured-content > .content {
+  padding: 4.5rem 2rem 4.3rem 2rem;
+}
+
+.content > p {
+  margin-top: 1rem;
+  letter-spacing: -0.25px;
+  line-height: 1.25rem;
+  font-size: 12px;
+  color: var(--primary-darkgray);
+}
+
+/*/////////// SHOP LINKS */
+.shop-link {
+  margin-top: 3.3rem;
+  padding-bottom: 0.2rem;
+}
+
+.shop-link a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  letter-spacing: 0.63rem;
+  margin-right: 1.8rem;
+}
+
+.shop-link:hover,
+.shop-link a:hover {
+  color: var(--primary-darkgray);
+}
+
+/*/ ////////// ABOUT SECTION */
+#about img {
+  width: 100%;
+  display: block;
+}
+
+#about > .content {
+  padding: 3.7rem 2rem 3.6rem 2rem;
+}
+
+#about > .content > p {
+  color: var(--primary-darkgray);
+  margin-top: 0.85rem;
+}

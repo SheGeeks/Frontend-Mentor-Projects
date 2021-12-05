@@ -2,7 +2,7 @@
 
 This is my solution to the [Intro component with sign up form challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/intro-component-with-signup-form-5cf91bd49edda32581d28fd1). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
---------
+---
 
 ## TABLE OF CONTENTS
 
@@ -28,8 +28,8 @@ Users should be able to:
 - View the optimal layout for the site depending on their device's screen size
 - See hover states for all interactive elements on the page
 - Receive an error message when the `form` is submitted if:
-  - Any `input` field is empty. The message for this error should say *"[Field Name] cannot be empty"*
-  - The email address is not formatted correctly (i.e. a correct email address should have this structure: `name@host.tld`). The message for this error should say *"Looks like this is not an email"*
+  - Any `input` field is empty. The message for this error should say _"[Field Name] cannot be empty"_
+  - The email address is not formatted correctly (i.e. a correct email address should have this structure: `name@host.tld`). The message for this error should say _"Looks like this is not an email"_
 
 ### MY SOLUTION
 
@@ -53,9 +53,9 @@ Started building the mobile design first with Flexbox. Added form using CSS Grid
 
 ### LESSONS LEARNED
 
- - **Update (4/8/21)**: After receiving feedback from <a href="https://github.com/grace-snow">@grace-snow</a> in the Frontend Mentor Slack channel, my solution is now responsive AF and the error indicators properly adjust with the inputs in all orientations. Grace also introduced me to the `:invalid` psuedo class to easily position the error indicator images correctly.
+- **Update (4/8/21)**: After receiving feedback from <a href="https://github.com/grace-snow">@grace-snow</a> in the Frontend Mentor Slack channel, my solution is now responsive AF and the error indicators properly adjust with the inputs in all orientations. Grace also introduced me to the `:invalid` psuedo class to easily position the error indicator images correctly.
 
--  **Update (4/8/21)** I am no longer using CSS Grid on this form. <br>~~I always appreciate playing with both Flexbox and CSS Grid in the same designs. Doing so allows me to get a better understanding of the differences and limitations with using either one.~~
+- **Update (4/8/21)** I am no longer using CSS Grid on this form. <br>~~I always appreciate playing with both Flexbox and CSS Grid in the same designs. Doing so allows me to get a better understanding of the differences and limitations with using either one.~~
 
 - Learned a lot about client-side form validation using JS rather than HTML5 validation features. Felt there was a lot more flexibility with what I could create in this approach, especially with the error messages.
 
@@ -73,9 +73,12 @@ Started building the mobile design first with Flexbox. Added form using CSS Grid
 - [JavaScript Client-side Form Validation (YouTube)](https://www.youtube.com/watch?v=rsd4FNGTRBw)
 
 ## AUTHOR
-- Website: [SheGeeks.net](https://shegeeks.net)
-- Twitter: [@Corvida](https://www.twitter.com/corvida)
-- Frontend Mentor: [@SheGeeks](https://www.frontendmentor.io/profile/shegeeks)
+
+- [Portfolio](https://corvida.netlify.app/)
+- [Tech Blog](https://shegeeks.net)
+- [@Corvida on Twitter](https://www.twitter.com/corvida)
+- [@SheGeeks on Frontend Mentor](https://www.frontendmentor.io/profile/shegeeks)
 
 ---
+
 <b><a id="fn1">1</a></b>: Colors of the button and terms & services statement do not meet WCAG 2 AA contrast ratio thresholds. These colors are designated in the style guide and necessary to accomplish the goal of the challenge. [↩](#a1)

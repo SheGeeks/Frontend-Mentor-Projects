@@ -61,6 +61,7 @@ No additional resources used for this project. _(A first!)_
 
 ## Author
 
-- Website - [SheGeeks.net](https://shegeeks.net)
-- Twitter - [@Corvida](https://www.twitter.com/corvida)
-- Frontend Mentor - [@SheGeeks](https://www.frontendmentor.io/profile/shegeeks)
+- [Portfolio](https://corvida.netlify.app/)
+- [Tech Blog](https://shegeeks.net)
+- [@Corvida on Twitter](https://www.twitter.com/corvida)
+- [@SheGeeks on Frontend Mentor](https://www.frontendmentor.io/profile/shegeeks)

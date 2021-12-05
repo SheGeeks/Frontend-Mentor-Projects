@@ -1,6 +1,6 @@
 # Frontend Mentor - Sunnyside agency landing page solution
 
-This is a solution to the [Sunnyside agency landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/sunnyside-agency-landing-page-7yVs3B6ef). 
+This is a solution to the [Sunnyside agency landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/sunnyside-agency-landing-page-7yVs3B6ef).
 
 ## Table of contents
 
@@ -45,7 +45,7 @@ Users should be able to:
 
 ### What I learned
 
-Another good challenge that `picture` was very useful for since multiple images were given for desktop and mobile. The trickest part of this layout for me was adding the little triangle to the corner of the mobile menu. First time doing something like this. Would love feedback on the approach I took using `position` and `border` to accomplish that portion of the design. 
+Another good challenge that `picture` was very useful for since multiple images were given for desktop and mobile. The trickest part of this layout for me was adding the little triangle to the corner of the mobile menu. First time doing something like this. Would love feedback on the approach I took using `position` and `border` to accomplish that portion of the design.
 
 I used Flexbox for this challenge, but I think grid would've been a great choice to keep all boxes at equal heights. This was difficult to accomplish with flexbox.
 
@@ -61,6 +61,7 @@ I used Flexbox for this challenge, but I think grid would've been a great choice
 
 ## Author
 
-- Tech Blog - [SheGeeks.net](https://shegeeks.net)
-- Twitter - [@Corvida](https://www.twitter.com/corvida)
-- Frontend Mentor - [@SheGeeks](https://www.frontendmentor.io/profile/shegeeks)
+- [Portfolio](https://corvida.netlify.app/)
+- [Tech Blog](https://shegeeks.net)
+- [@Corvida on Twitter](https://www.twitter.com/corvida)
+- [@SheGeeks on Frontend Mentor](https://www.frontendmentor.io/profile/shegeeks)

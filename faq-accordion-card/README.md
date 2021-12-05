@@ -39,7 +39,7 @@ Users should be able to:
 ### Built with
 
 - Semantic HTML5 markup
-- CSS3 
+- CSS3
 - Flexbox
 - Mobile-first workflow
 - A11Y
@@ -49,15 +49,18 @@ Users should be able to:
 This was challenge was great practice with using multiple backgrounds, positioning properties, and creating an accessible accordian. With accessibility top of mind, I leveraged W3's design pattern example for an accessible accordian to create my own, mainly their JavaScript code. While coding the HTML and CSS was a breeze. I had a lot of fun working with mutiple backgrounds in this project. JavaScript was a lot more challenging than I anticipated. W3 really came to the rescue for that part.
 
 ### Continued development
+
 - JavaScript
 - A11Y
 - CSS Position
 
 ### Useful resources
+
 - [W3: Accessible Accordion Example](https://www.w3.org/TR/wai-aria-practices-1.1/examples/accordion/accordion.html)
 
 ## Author
 
-- Website - [SheGeeks.net](https://shegeeks.net)
-- Twitter - [@Corvida](https://www.twitter.com/corvida)
-- Frontend Mentor - [@SheGeeks](https://www.frontendmentor.io/profile/shegeeks)
+- [Portfolio](https://corvida.netlify.app/)
+- [Tech Blog](https://shegeeks.net)
+- [@Corvida on Twitter](https://www.twitter.com/corvida)
+- [@SheGeeks on Frontend Mentor](https://www.frontendmentor.io/profile/shegeeks)

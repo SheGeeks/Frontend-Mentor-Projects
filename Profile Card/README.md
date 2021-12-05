@@ -1,6 +1,6 @@
 # Frontend Mentor - Profile card component solution
 
-This is a solution to the [Profile card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Profile card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -22,9 +22,11 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 - Build out the project to the designs provided
 
 ### Screenshot
+
 ![Profile Card - Desktop](https://user-images.githubusercontent.com/68759267/112256383-15671100-8c3a-11eb-8150-0d9578b58f32.png)
 
 ### Links
+
 - Solution URL: [Code](https://github.com/SheGeeks/Frontend-Mentor-Projects/tree/Frontend-Mentor-Projects/Profile%20Card)
 - Live Site URL: [Live Demo](https://shegeeks.github.io/Frontend-Mentor-Projects/Profile%20Card/) (Resize browser to height of 667px for perfect viewing)
 
@@ -47,12 +49,14 @@ The toughest part of the project was positioning the background elements. Experi
 I plan to spend a little more time digging into background positioning because it was such a challenge with this project, but also very insightful.
 
 ### Useful resources
+
 - Frontend Mentor Slack Channel
 - Google
 - [MDN: background-position](https://developer.mozilla.org/en-US/docs/Web/CSS/background-position)
 
 ## Author
 
-- Website - [Corvida Raven](https://shegeeks.net)
-- Frontend Mentor - [@SheGeeks](https://www.frontendmentor.io/profile/shegeeks)
-- Twitter - [@Corvida](https://www.twitter.com/corvida)
+- [Portfolio](https://corvida.netlify.app/)
+- [Tech Blog](https://shegeeks.net)
+- [@Corvida on Twitter](https://www.twitter.com/corvida)
+- [@SheGeeks on Frontend Mentor](https://www.frontendmentor.io/profile/shegeeks)

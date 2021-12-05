@@ -47,20 +47,22 @@ Users should be able to:
 - Mobile-first workflow
 - A11Y
 
-
 ### What I learned
 
 This challenge was great practice with using multiple images. I really enjoyed planning this layout the most because there's so many ways to tackle split layouts. I choose to use flexbox on most of the layout for responsiveness and speed. I also experimented with using `picture` to switch the header images on desktop and mobile. In order to be able to clip the image when viewing on a desktop, I did not continue using `picture`. Still, I got a greater understanding of how to use it moving forward.
 
 ### Continued development
+
 - JavaScript
 - A11Y
 
 ### Useful resources
+
 - [W3: `Picture`](https://www.w3schools.com/html/html_images_picture.asp)
 
 ## Author
 
-- Tech Blog - [SheGeeks.net](https://shegeeks.net)
-- Twitter - [@Corvida](https://www.twitter.com/corvida)
-- Frontend Mentor - [@SheGeeks](https://www.frontendmentor.io/profile/shegeeks)
+- [Portfolio](https://corvida.netlify.app/)
+- [Tech Blog](https://shegeeks.net)
+- [@Corvida on Twitter](https://www.twitter.com/corvida)
+- [@SheGeeks on Frontend Mentor](https://www.frontendmentor.io/profile/shegeeks)

@@ -339,16 +339,25 @@ footer .footer-hr {
 .attribution {
   font-size: 11px;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+  text-decoration: none;
 }
 
 /* /////////////////////////////////////////////// */
 /*////////////////Desktop Styling/////////////////*/
 /* /////////////////////////////////////////////// */
 @media only screen and (min-width: 940px) {
+  body {
+    max-width: 1450px;
+    background-color: var(--secondary-color-light-gray);
+    margin: auto;
+    border-right: 1px solid #eaeaea;
+    border-left: 1px solid #eaeaea;
+  }
   #nav-header {
     padding: 1.1rem 9.9rem;
     justify-content: space-between;
@@ -408,6 +417,10 @@ footer .footer-hr {
     color: var(--secondary-color-dark-violet);
     font-size: 0.8rem;
     letter-spacing: 0.2ch;
+  }
+
+  main {
+    background-color: #fff;
   }
 
   #intro {

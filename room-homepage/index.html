@@ -31,7 +31,18 @@
 
     <div id="hero">
       <div class="hero-img">
-        <img src="images/mobile-image-hero-1.jpg" alt="" />
+        <picture>
+          <source
+            media="(min-width:650px)"
+            srcset="images/desktop-image-hero-1.jpg"
+          />
+          <source
+            media="(min-width:465px)"
+            srcset="images/mobile-image-hero-1.jpg"
+          />
+          <img src="images/mobile-image-hero-1.jpg" alt="furniture" />
+        </picture>
+        <!-- <img src="images/mobile-image-hero-1.jpg" alt="" /> -->
         <div id="hero-nav-icons">
           <img src="images/icon-angle-left.svg" alt="" />
           <img src="images/icon-angle-right.svg" alt="" />

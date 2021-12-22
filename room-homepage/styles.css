@@ -129,3 +129,28 @@ li {
   color: var(--primary-darkgray);
   margin-top: 0.85rem;
 }
+
+/* //////Desktop Styles//////////// */
+
+@media only screen and (min-width: 803px) {
+  #hero {
+    display: flex;
+  }
+
+  #featured-content {
+    width: 40%;
+  }
+
+  #about {
+    display: flex;
+  }
+
+  #about .content {
+    max-width: 41%;
+    padding: 4.5rem 3rem 3.6rem;
+  }
+
+  #about img {
+    width: initial;
+  }
+}

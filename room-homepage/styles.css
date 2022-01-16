@@ -53,11 +53,21 @@ li {
   visibility: hidden;
 }
 
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+nav a:hover {
+  color: var(--second-darkgray);
+}
+
 #logo {
   margin-left: 7.2rem;
 }
 
 /*/ ////////// HERO SECTION */
+
 .hero-img {
   position: relative;
 }
@@ -65,6 +75,14 @@ li {
 .hero-img img {
   width: 100%;
   display: block;
+}
+
+.hero-src {
+  display: none;
+}
+
+.hero-src.selected {
+  display: inherit;
 }
 
 #hero-nav-icons {
@@ -85,7 +103,15 @@ li {
 }
 
 #featured-content > .content {
+  display: none;
+}
+
+#featured-content > .content {
   padding: 4.5rem 2rem 4.3rem 2rem;
+}
+
+#featured-content > .content.selected {
+  display: inherit;
 }
 
 .content > p {
@@ -132,13 +158,79 @@ li {
 
 /* //////Desktop Styles//////////// */
 
-@media only screen and (min-width: 803px) {
+@media only screen and (min-width: 810px) {
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: hsl(220, 6.7%, 91.2%);
+  }
+
+  h2 {
+    margin-top: 1px;
+    font-size: clamp(0.5rem, 2.689vw, 2.42rem);
+    letter-spacing: -0.9px;
+  }
+
+  main {
+    position: relative;
+    background-color: #fff;
+  }
+
+  nav {
+    flex-direction: row-reverse;
+    left: 0;
+    top: 8%;
+    align-items: flex-start;
+    justify-content: flex-end;
+    width: 58.4%;
+  }
+
+  #logo {
+    margin-left: 4rem;
+    margin-right: 3.5rem;
+  }
+
+  #mobile-menu {
+    display: none;
+  }
+
+  nav > ul {
+    display: flex;
+    color: #fff;
+  }
+
+  li {
+    visibility: visible;
+    margin-right: 1.9rem;
+    text-transform: lowercase;
+    font-size: 0.74rem;
+    font-weight: 500;
+  }
+
   #hero {
     display: flex;
   }
 
+  #hero-nav-icons {
+    transform: translateX(100%);
+  }
+
+  #hero-nav-icons img {
+    padding: 1.5rem;
+  }
+
   #featured-content {
-    width: 40%;
+    width: 50%;
+  }
+
+  #featured-content > .content {
+    padding: 1rem 1rem 0;
+  }
+
+  .shop-link {
+    margin-top: 1rem;
   }
 
   #about {
@@ -147,10 +239,53 @@ li {
 
   #about .content {
     max-width: 41%;
+  }
+
+  #about img {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 1137px) {
+  h2 {
+    line-height: 2.75rem;
+  }
+
+  #featured-content {
+    width: 40%;
+  }
+
+  #featured-content > .content {
+    padding: 5rem 2rem;
+  }
+
+  .content > p {
+    margin-top: 1.6rem;
+  }
+
+  .shop-link {
+    margin-top: 2rem;
+  }
+
+  #about .content {
     padding: 4.5rem 3rem 3.6rem;
   }
 
   #about img {
     width: initial;
+  }
+}
+
+@media only screen and (min-width: 1344px) {
+  main {
+    max-width: 1440px;
+  }
+
+  #hero-nav-icons img {
+    padding: 1.75rem 2.06rem;
+  }
+
+  #featured-content > .content {
+    padding: 7.4rem 4.4rem 4.3rem 6.2rem;
   }
 }

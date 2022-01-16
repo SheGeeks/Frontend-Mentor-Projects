@@ -1,3 +1,8 @@
+const navbar = document.querySelector("nav");
+const navlinks = document.querySelector("ul");
+const mobileMenuOpen = document.querySelector("#mobile-menu");
+const mobileMenuClosed = document.querySelector("#mobile-menu-close");
+
 const navPrev = document.querySelector("#prev");
 const navNext = document.querySelector("#next");
 
@@ -9,6 +14,20 @@ const contentBlocks = document.querySelector("#featured-content").children;
 const totalBlocks = contentBlocks.length;
 
 // Functions
+// Open and close menu
+function mobileMenu(status) {
+  if (status == "close") {
+    navbar.classList.remove("open");
+    navlinks.classList.remove("open");
+    console.log(navbar);
+    console.log(navlinks);
+  } else {
+    navbar.classList.add("open");
+    navlinks.classList.add("open");
+  }
+}
+
+// Switch image in selected direction
 function nextImage(direction) {
   if (direction == "next") {
     index++;
@@ -33,6 +52,16 @@ function nextImage(direction) {
 }
 
 // Event Listeners
+//// Mobile Menu
+mobileMenuOpen.addEventListener("click", () => {
+  mobileMenu("open");
+});
+
+mobileMenuClosed.addEventListener("click", () => {
+  mobileMenu("close");
+});
+
+//// Navigation icons
 navNext.addEventListener("click", () => {
   nextImage("next");
 });

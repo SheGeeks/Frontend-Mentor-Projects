@@ -58,12 +58,69 @@ nav a {
   color: #fff;
 }
 
-nav a:hover {
-  color: var(--second-darkgray);
-}
-
 #logo {
   margin-left: 7.2rem;
+}
+
+/*///////////// Mobile Menu ////////////*/
+
+nav.open {
+  background-color: #fff;
+  height: 110px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0.5rem 0 1.6rem;
+}
+
+nav.open #logo {
+  display: none;
+}
+
+#mobile-menu {
+  cursor: pointer;
+  max-width: 20%;
+}
+
+#mobile-menu-close {
+  display: none;
+}
+
+nav.open > #mobile-menu-close {
+  display: unset;
+  cursor: pointer;
+  max-width: 20%;
+  max-height: 20%;
+}
+
+nav.open > #mobile-menu {
+  display: none;
+}
+
+ul.open {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+ul.open > li {
+  visibility: visible;
+  margin-left: 1rem;
+}
+
+nav.open a {
+  color: #000;
+  text-transform: lowercase;
+  font-weight: 600;
+  font-size: 0.8rem;
+  letter-spacing: -0.05rem;
+}
+
+nav a:hover {
+  color: var(--second-darkgray);
 }
 
 /*/ ////////// HERO SECTION */

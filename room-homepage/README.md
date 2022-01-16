@@ -27,32 +27,46 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Room Challenge by Corvida Raven (Desktop)](desktop-ss.png)
 
 ### Links
 
-- Solution URL: [Coming Soon](#)
-- Live Site URL: [Coming Soon](#)
+- [Live Site](https://shegeeks.github.io/Frontend-Mentor-Projects/room-homepage/)
+- [My Code](https://github.com/SheGeeks/Frontend-Mentor-Projects/tree/Frontend-Mentor-Projects/room-homepage)
 
 ## My process
 
 ### Built with
 
-- Semantic HTML5 markup
+- Mobile-first
 - CSS3
+- CSS Custom Properties
 - Flexbox
 - JavaScript
-- Mobile-first workflow
 
 ### What I learned
 
-Work in progress...
+About halfway through working on this, it dawned on me that I could've used CSS Grid instead of Flexbox to save myself some time.
+
+I also wish I would've planned a little better for applying DRY HTML to the shop now section, but once I style the layout close to perfection I don't like to alter the structure of the HTML. Lesson learned, but I may take some time in a few weeks to correct this.
+
+Was brave enough to use `clamp()` on the heading font, which I really enjoyed the result of and will try to incorporate more in the future.
+
+Also, I always love an opportunity to use `picture` for responsive images and enjoyed the challenge of combining this with a slider.
 
 ### Continued development
 
-Work in progress
+- Applying DRY principles and doing better planning beforehand to save myself a lot of time.
+
+- Accessibility: I'm pretty sure this isn't the most accessible code and I want to improve that.
+
+- Animations: Will add a few animations in the near future.
+
+- `Clamp()`: Researching if this can be used on padding/margins.
 
 ### Useful resources
+
+- [`Clamp()` (MDN)](<https://developer.mozilla.org/en-US/docs/Web/CSS/clamp()>)
 
 ## Author
 

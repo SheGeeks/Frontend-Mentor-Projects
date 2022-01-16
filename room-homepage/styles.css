@@ -221,11 +221,11 @@ nav a:hover {
 
 @media only screen and (min-width: 810px) {
   body {
-    display: flex;
+    /* display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
-    background-color: hsl(220, 6.7%, 91.2%);
+    min-height: 100vh; */
+    background-color: #fafafa;
   }
 
   h2 {

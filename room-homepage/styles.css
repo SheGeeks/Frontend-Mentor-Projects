@@ -154,10 +154,12 @@ nav a:hover {
   background-color: black;
   padding: 1rem 1.3rem;
   height: auto;
+  cursor: pointer;
 }
 
 #hero-nav-icons img:hover {
   background-color: var(--second-darkgray);
+  cursor: pointer;
 }
 
 #featured-content > .content {
@@ -274,7 +276,6 @@ nav a:hover {
 
   #hero-nav-icons {
     transform: translateX(100%);
-    cursor: pointer;
   }
 
   #hero-nav-icons img {

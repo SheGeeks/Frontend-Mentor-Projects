@@ -147,6 +147,7 @@ nav a:hover {
   position: absolute;
   bottom: 0;
   right: 0;
+  cursor: pointer;
 }
 
 #hero-nav-icons img {
@@ -183,6 +184,7 @@ nav a:hover {
 .shop-link {
   margin-top: 3.3rem;
   padding-bottom: 0.2rem;
+  cursor: pointer;
 }
 
 .shop-link a {
@@ -272,6 +274,7 @@ nav a:hover {
 
   #hero-nav-icons {
     transform: translateX(100%);
+    cursor: pointer;
   }
 
   #hero-nav-icons img {

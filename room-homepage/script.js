@@ -1,5 +1,5 @@
-const navbar = document.querySelector("nav");
-const navlinks = document.querySelector("ul");
+const navBar = document.querySelector("nav");
+const navLinks = document.querySelector("ul");
 const mobileMenuOpen = document.querySelector("#mobile-menu");
 const mobileMenuClosed = document.querySelector("#mobile-menu-close");
 
@@ -17,17 +17,15 @@ const totalBlocks = contentBlocks.length;
 // Open and close menu
 function mobileMenu(status) {
   if (status == "close") {
-    navbar.classList.remove("open");
-    navlinks.classList.remove("open");
-    console.log(navbar);
-    console.log(navlinks);
+    navBar.classList.remove("open");
+    navLinks.classList.remove("open");
   } else {
-    navbar.classList.add("open");
-    navlinks.classList.add("open");
+    navBar.classList.add("open");
+    navLinks.classList.add("open");
   }
 }
 
-// Switch image in selected direction
+// Change direction
 function nextImage(direction) {
   if (direction == "next") {
     index++;

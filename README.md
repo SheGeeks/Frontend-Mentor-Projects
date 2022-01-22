@@ -8,6 +8,22 @@ Up above you can review my solutions for each challenge in their respective fold
 
 ## 🐔 Digitally Grown
 
+- [Room Homepage](https://www.frontendmentor.io/challenges/room-homepage-BtdBY_ENq) _1/16/22_
+- [NFT Preview Card](https://shegeeks.github.io/Frontend-Mentor-Projects/nft-preview-card/) _1/14/22_
+
+## 🐣 Hatched
+
+_Recently hatched something. Check back next week to see what hatches from incubation_
+
+## 🥚 Incubating
+
+- [Time Tracking Dashboard](https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw)
+
+---
+
+### 2021 Challenges
+
+- [Insure Landing Page](https://shegeeks.github.io/Frontend-Mentor-Projects/insure-landing-page/) _10/5/21_
 - [Single Price Grid Component](https://shegeeks.github.io/Frontend-Mentor-Projects/single-price-grid-component/) _9/12/21_
 - [Tip Calculator](https://shegeeks.github.io/Frontend-Mentor-Projects/tip-calculator/) _(9/11/21)_
 - [Sunnyside Agency](https://shegeeks.github.io/Frontend-Mentor-Projects/sunnyside-agency/) _(6/20/21)_
@@ -18,11 +34,3 @@ Up above you can review my solutions for each challenge in their respective fold
 - [Project Tracking Landing Page](https://shegeeks.github.io/Frontend-Mentor-Projects/project-tracking-component/) _(4/5/2021)_ _(Updated: 6/29/21)_
 - [Signup Form](https://shegeeks.github.io/Frontend-Mentor-Projects/Signup%20Form/) _(3/30/21)_
 - [Profile Card](https://shegeeks.github.io/Frontend-Mentor-Projects/Profile%20Card/) _(3/23/21)_
-
-## 🐣 Hatched
-
-- [Insure Landing Page](https://github.com/SheGeeks/Frontend-Mentor-Projects/tree/Frontend-Mentor-Projects/insure-landing-page)
-
-## 🥚 Incubating
-
-- [Room Homepage](https://www.frontendmentor.io/challenges/room-homepage-BtdBY_ENq)

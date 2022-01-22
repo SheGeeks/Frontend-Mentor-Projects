@@ -47,6 +47,7 @@ main {
   align-content: center;
   min-height: 100vh;
   padding: 2rem 1rem;
+  row-gap: 1.5rem;
   /* grid-template-rows: 1fr; */
   /* grid-template-columns: 1fr; */
 }
@@ -85,6 +86,61 @@ main {
   font-size: 1.2rem;
 }
 
+.stat-card {
+  /* margin: 1rem 0; */
+  border-radius: 15px;
+  padding: 2.5rem 0 0;
+  background-repeat: no-repeat;
+  background-position: top -10px right 15px;
+  background-size: 20%;
+  position: relative;
+}
+
+#work {
+  background-color: var(--work);
+  background-image: url(images/icon-work.svg);
+}
+
+#play {
+  background-color: var(--play);
+  background-image: url(images/icon-play.svg);
+}
+
+#study {
+  background-color: var(--study);
+  background-image: url(images/icon-study.svg);
+}
+
+#exercise {
+  background-color: var(--exercise);
+  background-image: url(images/icon-exercise.svg);
+}
+
+#social {
+  background-color: var(--social);
+  background-image: url(images/icon-social.svg);
+}
+
+#selfcare {
+  background-color: var(--selfcare);
+  background-image: url(images/icon-self-care.svg);
+}
+
+.card {
+  background-color: var(--stats-bg);
+  border-radius: 15px;
+  padding: 1.5rem 1.3rem;
+  margin-top: -10px;
+  z-index: 5;
+  position: relative;
+}
+
+.card > img {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 2rem 1rem;
+}
 /* Desktop Styles */
 
 /* main {

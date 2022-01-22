@@ -129,18 +129,41 @@ main {
 .card {
   background-color: var(--stats-bg);
   border-radius: 15px;
-  padding: 1.5rem 1.3rem;
+  padding: 1.5rem 1rem;
   margin-top: -10px;
-  z-index: 5;
   position: relative;
 }
 
 .card > img {
   position: absolute;
-  right: 0;
+  right: 1px;
   top: 0;
   padding: 2rem 1rem;
 }
+
+.title {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.time {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.stat-daily,
+.stat-weekly,
+.stat-monthly {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0.5rem;
+}
+
+.hidden {
+  display: none;
+}
+
 /* Desktop Styles */
 
 /* main {

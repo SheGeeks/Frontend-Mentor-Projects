@@ -1,8 +1,8 @@
 # Frontend Mentor Projects
 
-Below are challenges I've completed, am currently working through, and interested in taking on when time permits from FrontendMentor.io.
+These are challenges I've completed, am currently working through, and interested in taking on when time permits from FrontendMentor.io.
 
-Up above you can review my solutions for each challenge in their respective folders. Down below are the links to demo my live solutions. Feedback and collaborations are welcome on all projects!
+Down below are the links to demo my live solutions. Up above you can review my code for each challenge in their respective folders. Feedback and collaborations are welcome!
 
 ---
 
@@ -18,7 +18,11 @@ _The latest hatchling is all grown up. Check back next week to see what hatches 
 
 ## 🥚 Incubating
 
-- [Time Tracking Dashboard](https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw)
+- [E-commerce Product Page](https://www.frontendmentor.io/challenges/ecommerce-product-page-UPsZ9MJp6)
+- [Todo App](https://www.frontendmentor.io/challenges/todo-app-Su1_KokOW)
+- [Launch countdown timer](https://www.frontendmentor.io/challenges/launch-countdown-timer-N0XkGfyz-)
+- [IP Address Tracker](https://www.frontendmentor.io/challenges/ip-address-tracker-I8-0yYAH0)
+- [URL shortening API landing page](https://www.frontendmentor.io/challenges/url-shortening-api-landing-page-2ce3ob-G)
 
 ---
 

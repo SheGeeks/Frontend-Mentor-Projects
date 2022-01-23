@@ -62,7 +62,8 @@ nav ul {
 }
 
 main {
-  background-color: yellowgreen;
+  background-color: #fff;
+  padding-bottom: 1rem;
 }
 
 #lightbox {
@@ -104,6 +105,7 @@ h2 {
   margin-top: 1rem;
   font-size: 0.945rem;
   line-height: 2.9ch;
+  color: var(--gray-blue);
 }
 
 #product-pricing {
@@ -111,7 +113,7 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem 0;
+  padding: 1.6rem 0 1.5rem 0;
   font-weight: 700;
 }
 
@@ -137,7 +139,63 @@ h2 {
 
 #price-org {
   margin-right: 0.2rem;
-  font-size: 1rem;
+  font-size: 1.05rem;
   text-decoration: line-through;
   color: var(--light-gray-blue);
+}
+
+#add-to-cart {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.quantity {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 0.7rem;
+  background-color: var(--light-gray);
+  border-radius: 10px;
+  align-items: baseline;
+}
+
+/* it will support chrome and firefox */
+.quantity input[type="number"]::-webkit-inner-spin-button,
+.quantity input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.quantity input,
+.quantity button {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 900;
+  text-align: center;
+  border: none;
+  background-color: var(--light-gray);
+}
+
+button {
+  background-color: var(--primary-orange);
+  padding: 1rem;
+  border: none;
+  border-radius: 10px;
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #fff;
+}
+
+#cart-button-icon {
+  filter: brightness(500%);
+  width: 7%;
+  margin: 0 0.5rem 0 0;
 }

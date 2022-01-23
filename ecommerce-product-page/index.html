@@ -59,7 +59,11 @@
     </header>
     <main>
       <div id="lightbox">
-        <img src="images/image-product-1.jpg" id="product-image" alt="" />
+        <img
+          src="images/image-product-1.jpg"
+          id="product-image"
+          alt="product image"
+        />
       </div>
       <div id="product-details">
         <p id="product-maker">Sneaker Company</p>
@@ -74,28 +78,39 @@
             <p id="price">$125.00</p>
             <p><span class="discount">50%</span></p>
           </div>
-
           <p id="price-org">$250.00</p>
         </div>
         <div id="add-to-cart">
-          <!-- <label for="quantity">Quantity:</label> -->
-          <input
-            type="number"
-            id="quantity"
-            name="quantity"
-            min="0"
-            max="50"
-            step="1"
-            value="0"
-          />
-          <button type="button" name="addtocart">Add to cart</button>
+          <div class="quantity">
+            <button class="btn minus">
+              <img src="images/icon-minus.svg" alt="subtract" />
+            </button>
+            <input
+              id="quantity"
+              min="0"
+              name="quantity"
+              value="0"
+              type="number"
+            />
+            <button class="btn plus">
+              <img src="images/icon-plus.svg" alt="add" />
+            </button>
+          </div>
+          <button type="button" name="addtocart">
+            <img
+              src="images/icon-cart.svg"
+              alt="add-to-cart icon"
+              id="cart-button-icon"
+            />
+            Add to cart
+          </button>
         </div>
       </div>
     </main>
 
     <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://shegeeks.net">Corvida Raven</a>.
   </div> -->
   </body>
 </html>

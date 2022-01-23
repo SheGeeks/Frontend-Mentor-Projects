@@ -38,6 +38,10 @@ nav {
   background-color: #fff;
 }
 
+nav img {
+  cursor: pointer;
+}
+
 #mobile-menu-icon {
   margin-right: 0.7rem;
 }
@@ -192,6 +196,7 @@ button {
   font-weight: 700;
   font-size: 1rem;
   color: #fff;
+  cursor: pointer;
 }
 
 #cart-button-icon {

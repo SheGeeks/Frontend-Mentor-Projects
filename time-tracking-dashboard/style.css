@@ -87,18 +87,20 @@ main {
   padding: 0rem 1rem;
   text-align: center;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .period:hover {
-  /* background: var(--stats-bg-hover); */
   color: #fff;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .active-btn {
   background: var(--stats-bg-hover);
   color: var(--stats-bg);
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .stat-card {
@@ -240,18 +242,18 @@ main {
     padding: 0.5rem 1rem;
   }
 
+  .active-btn {
+    background: var(--stats-bg-hover);
+    color: var(--stats-bg);
+    border-radius: 5px;
+  }
+
   .stat-card {
     width: 255px;
     padding: 3.5rem 0 0;
     background-repeat: no-repeat;
     position: relative;
     background-size: 30%;
-  }
-
-  .active-btn {
-    background: var(--stats-bg-hover);
-    color: var(--stats-bg);
-    border-radius: 5px;
   }
 
   #social {

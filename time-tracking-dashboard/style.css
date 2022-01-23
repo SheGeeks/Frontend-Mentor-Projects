@@ -95,7 +95,7 @@ main {
   border-radius: 5px;
 }
 
-.active {
+.active-btn {
   background: var(--stats-bg-hover);
   color: var(--stats-bg);
   border-radius: 5px;
@@ -246,6 +246,12 @@ main {
     background-repeat: no-repeat;
     position: relative;
     background-size: 30%;
+  }
+
+  .active-btn {
+    background: var(--stats-bg-hover);
+    color: var(--stats-bg);
+    border-radius: 5px;
   }
 
   #social {

@@ -26,31 +26,29 @@ function show(period) {
 }
 
 function removeActive() {
-  dailyLink.classList.remove("active");
-  weeklyLink.classList.remove("active");
-  monthlyLink.classList.remove("active");
+  dailyLink.classList.remove("active-btn");
+  weeklyLink.classList.remove("active-btn");
+  monthlyLink.classList.remove("active-btn");
 }
 
 ////// Event Listener
 userMenu.addEventListener("click", (e) => {
   if (e.target.classList.contains("period")) {
     hide();
+    removeActive();
 
     if (e.target === dailyLink) {
-      removeActive();
-      dailyLink.classList.add("active");
+      dailyLink.classList.add("active-btn");
       dailyStats.forEach((day) => {
         show(day);
       });
     } else if (e.target === weeklyLink) {
-      removeActive();
-      weeklyLink.classList.add("active");
+      weeklyLink.classList.add("active-btn");
       weeklyStats.forEach((week) => {
         show(week);
       });
     } else if (e.target === monthlyLink) {
-      removeActive();
-      monthlyLink.classList.add("active");
+      monthlyLink.classList.add("active-btn");
       monthlyStats.forEach((month) => {
         show(month);
       });

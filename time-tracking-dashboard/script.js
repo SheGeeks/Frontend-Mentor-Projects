@@ -20,9 +20,15 @@ function hide() {
   });
 }
 
-// Remove "hidden" class
+// Remove "hidden"  and active class
 function show(period) {
   period.classList.remove("hidden");
+}
+
+function removeActive() {
+  dailyLink.classList.remove("active");
+  weeklyLink.classList.remove("active");
+  monthlyLink.classList.remove("active");
 }
 
 ////// Event Listener
@@ -31,14 +37,20 @@ userMenu.addEventListener("click", (e) => {
     hide();
 
     if (e.target === dailyLink) {
+      removeActive();
+      dailyLink.classList.add("active");
       dailyStats.forEach((day) => {
         show(day);
       });
     } else if (e.target === weeklyLink) {
+      removeActive();
+      weeklyLink.classList.add("active");
       weeklyStats.forEach((week) => {
         show(week);
       });
     } else if (e.target === monthlyLink) {
+      removeActive();
+      monthlyLink.classList.add("active");
       monthlyStats.forEach((month) => {
         show(month);
       });

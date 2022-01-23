@@ -25,16 +25,6 @@ h1 {
   font-weight: 300;
 }
 
-a {
-  color: var(--stats-bg-hover);
-  text-decoration: none;
-  transition: color 400ms;
-}
-
-a:hover {
-  color: #fff;
-}
-
 body {
   font-family: "Rubik", sans-serif;
   background-color: var(--primary-bg);
@@ -69,7 +59,7 @@ main {
 #avatar {
   max-width: 75%;
   border: 2px solid #fff;
-  border-radius: 50px;
+  border-radius: 100px;
   margin-top: 6px;
 }
 
@@ -82,8 +72,33 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.5rem 2rem;
+  padding: 1.5rem 1rem;
   font-size: 1.2rem;
+}
+
+.period {
+  background: transparent;
+  border: 0;
+  color: var(--stats-bg-hover);
+  font-family: "Rubik", sans-serif;
+  transition-property: color, background;
+  transition-duration: 400ms;
+  font-size: 1.2rem;
+  padding: 0rem 1rem;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.period:hover {
+  background: var(--stats-bg-hover);
+  color: #fff;
+  border-radius: 5px;
+}
+
+.active {
+  background: var(--stats-bg-hover);
+  color: var(--stats-bg);
+  border-radius: 5px;
 }
 
 .stat-card {
@@ -210,6 +225,19 @@ main {
     flex-direction: column;
     align-items: flex-start;
     height: 30%;
+  }
+
+  .period {
+    padding: 0.1rem 1rem;
+    width: 100%;
+    text-align: left;
+  }
+
+  .period:hover {
+    background: var(--stats-bg-hover);
+    color: #fff;
+    border-radius: 5px;
+    padding: 0.1rem 1rem;
   }
 
   .stat-card {

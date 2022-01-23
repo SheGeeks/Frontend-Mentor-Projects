@@ -8,12 +8,13 @@ Up above you can review my solutions for each challenge in their respective fold
 
 ## 🐔 Digitally Grown
 
+- [Time-tracking Dashboard](https://shegeeks.github.io/Frontend-Mentor-Projects/time-tracking-dashboard/) _1/23/22_
 - [Room Homepage](https://www.frontendmentor.io/challenges/room-homepage-BtdBY_ENq) _1/16/22_
 - [NFT Preview Card](https://shegeeks.github.io/Frontend-Mentor-Projects/nft-preview-card/) _1/14/22_
 
 ## 🐣 Hatched
 
-_Recently hatched something. Check back next week to see what hatches from incubation_
+_The latest hatchling is all grown up. Check back next week to see what hatches from incubation_
 
 ## 🥚 Incubating
 

@@ -12,7 +12,6 @@ This is a solution to the [Time tracking dashboard challenge on Frontend Mentor]
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 
 ## Overview
@@ -27,27 +26,32 @@ Users should be able to:
 
 ### Screenshot
 
-![WIP](./screenshot.jpg)
+![WIP](./desktop-ss.png)
 
 ### Links
 
-- Solution URL: [WIP](#)
-- Live Site URL: [WIP](#)
+- [Live Solution](https://shegeeks.github.io/Frontend-Mentor-Projects/time-tracking-dashboard/)
+- [My Code](https://github.com/SheGeeks/Frontend-Mentor-Projects/tree/Frontend-Mentor-Projects/time-tracking-dashboard)
 
 ## My process
 
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
 - CSS Grid
+- JavaScript
 - Mobile-first workflow
 
 ### What I learned
 
+This was a great challenge to practice using CSS Grid, which is a lot of fun when using template areas. Really enjoyed the challenge of creating the layered card designs and adding the accents. Also, I learned which property to use when needing to change the hover color for SVG that's not inlined (hint: it's `filter`).
+
+At first, I was a little stumped about how to approach switching the stats according to which link was clicked, but I figured it out and created little helper functions to keep my code DRY. Lastly, I think this is the first time I've used `foreach` in JavaScript that didn't involve a tutorial and truly grasped what the hell I was doing. Progress.
+
 ### Continued development
 
-### Useful resources
+- CSS Grid
+- Javascript
 
 ## Author
 

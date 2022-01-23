@@ -14,7 +14,6 @@
   --exercise: hsl(145, 58%, 55%);
   --social: hsl(264, 64%, 52%);
   --selfcare: hsl(43, 84%, 65%);
-
   --profile-bg: hsl(246, 80%, 60%);
   --stats-bg: hsl(235, 46%, 20%);
   --stats-bg-hover: hsl(235, 45%, 61%);
@@ -50,9 +49,6 @@ main {
   min-width: 280px;
   padding: 5rem 1.5rem;
   row-gap: 1.5rem;
-  /* max-width: 420px; */
-  /* grid-template-rows: 1fr; */
-  /* grid-template-columns: 1fr; */
 }
 
 #user-card {
@@ -78,7 +74,6 @@ main {
 }
 
 #username {
-  /* padding-top: 6px; */
   font-size: 15px;
   line-height: 25px;
 }
@@ -92,7 +87,6 @@ main {
 }
 
 .stat-card {
-  /* margin: 1rem 0; */
   border-radius: 15px;
   padding: 3rem 0 0;
   background-repeat: no-repeat;
@@ -150,7 +144,7 @@ main {
   position: absolute;
   right: 9px;
   top: 0;
-  padding: 2.3rem 1rem 0;
+  padding: 2.3rem 1rem 0.5rem;
   cursor: pointer;
 }
 
@@ -182,13 +176,11 @@ main {
   main {
     max-width: 1440px;
     display: grid;
-    /* grid-template-columns: fr 1.5fr 1.5fr 1.5fr; */
     grid-template-areas:
       "user-card work play study"
       "user-card exercise social selfcare";
     justify-content: center;
     justify-items: center;
-    /* align-items: center; */
     column-gap: 1.9rem;
     row-gap: 1.8rem;
   }
@@ -254,6 +246,10 @@ main {
     top: 0;
   }
 
+  .card > img:hover {
+    filter: brightness(500%);
+  }
+
   .stat-daily,
   .stat-weekly,
   .stat-monthly {
@@ -267,12 +263,7 @@ main {
     display: none;
   }
 
-  .title {
-    /* margin-bottom: 2rem; */
-  }
-
   .time {
-    /* margin-top: 2rem; */
     font-size: 3.5rem;
   }
 }

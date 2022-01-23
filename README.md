@@ -14,11 +14,10 @@ Down below are the links to demo my live solutions. Up above you can review my c
 
 ## 🐣 Hatched
 
-_The latest hatchling is all grown up. Check back next week to see what hatches from incubation_
+- [E-commerce Product Page](https://www.frontendmentor.io/challenges/ecommerce-product-page-UPsZ9MJp6): [Code in Progress](https://github.com/SheGeeks/Frontend-Mentor-Projects/tree/Frontend-Mentor-Projects/ecommerce-product-page)
 
 ## 🥚 Incubating
 
-- [E-commerce Product Page](https://www.frontendmentor.io/challenges/ecommerce-product-page-UPsZ9MJp6)
 - [Todo App](https://www.frontendmentor.io/challenges/todo-app-Su1_KokOW)
 - [Launch countdown timer](https://www.frontendmentor.io/challenges/launch-countdown-timer-N0XkGfyz-)
 - [IP Address Tracker](https://www.frontendmentor.io/challenges/ip-address-tracker-I8-0yYAH0)

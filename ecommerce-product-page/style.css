@@ -1,15 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
 
-/* :root {
-    --primary-red: hsl(7, 99%, 70%);
-    --primary-yellow: hsl(51, 100%, 49%);
-    --graphic-design-text: hsl(167, 40%, 24%);
-    --photography-text: hsl(198, 62%, 26%);
-    --footer: hsl(168, 34%, 41%);
-    --secondary-dark-blue: hsl(212, 27%, 19%);
-    --secondary-darkgray-blue: hsl(213, 9%, 39%);
-    --secondary-lightgray-blue: hsl(210, 4%, 67%);
-} */
+:root {
+  --primary-orange: hsl(26, 100%, 55%);
+  --secondary-orange: hsl(25, 100%, 94%);
+
+  --dark-blue: hsl(220, 13%, 13%);
+  --gray-blue: hsl(219, 9%, 45%);
+  --light-gray-blue: hsl(220, 14%, 75%);
+  --light-gray: hsl(223, 64%, 98%);
+  --lightbox-bg: hsl(0, 0%, 0%);
+}
 
 * {
   margin: 0;
@@ -19,7 +19,7 @@
 
 body {
   font-size: 16px;
-  font-family: "Rubik", sans-serif;
+  font-family: "Kumbh Sans", sans-serif;
   text-align: center;
 }
 
@@ -79,4 +79,65 @@ main {
   position: relative;
   bottom: 75px;
   background-color: #fff;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+#product-maker {
+  color: var(--primary-orange);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  letter-spacing: 2.2px;
+  margin-bottom: 0.8rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+  line-height: 1.9ch;
+}
+
+#product-description {
+  margin-top: 1rem;
+  font-size: 0.945rem;
+  line-height: 2.9ch;
+}
+
+#product-pricing {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0;
+  font-weight: 700;
+}
+
+#product-pricing > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#price {
+  font-size: 1.75rem;
+  letter-spacing: 1.5px;
+}
+
+.discount {
+  font-size: 1rem;
+  color: var(--primary-orange);
+  margin-left: 0.9rem;
+  background-color: var(--secondary-orange);
+  border-radius: 5px;
+  padding: 0.2rem 0.5rem;
+}
+
+#price-org {
+  margin-right: 0.2rem;
+  font-size: 1rem;
+  text-decoration: line-through;
+  color: var(--light-gray-blue);
 }

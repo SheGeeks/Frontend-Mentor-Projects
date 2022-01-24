@@ -5,10 +5,10 @@ const addQuantityBtn = document.querySelector("#add-to-cart #qty-add");
 const subQuantityBtn = document.querySelector("#add-to-cart #qty-subtract");
 const qtyInput = document.querySelector("#add-to-cart #qty-total");
 const addToCartBtn = document.querySelector("#addToCart-btn");
+const cartNotification = document.querySelector("#checkout-cart-btn");
+let cartTotal = 0;
 let qtyTotal = 0;
 qtyInput.value = 0;
-
-console.log(qtyInput);
 
 // //////////// Mobile Nav Menu
 mobileMenuBtn.addEventListener("click", (e) => {
@@ -35,5 +35,27 @@ subQuantityBtn.addEventListener("click", (e) => {
   } else {
     qtyTotal--;
     qtyInput.value = qtyTotal;
+  }
+});
+
+// // ////////////// Add to Cart Btn
+
+addToCartBtn.addEventListener("click", (e) => {
+  // grab info for select product
+
+  // check if item is already in cart
+
+  // // +1 if already in cart
+
+  // // else: add info to cart
+
+  // update cart icon total
+  cartTotal += qtyTotal;
+
+  if (cartTotal > 0) {
+    cartNotification.classList.remove("empty");
+    cartNotification.setAttribute("data-count", cartTotal);
+  } else {
+    return;
   }
 });

@@ -14,11 +14,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
 }
 
 body {
   font-size: 16px;
-  font-family: "Kumbh Sans", sans-serif;
   text-align: center;
 }
 
@@ -56,14 +56,34 @@ nav img:not(#logo > img) {
   justify-content: space-evenly;
   align-items: center;
   margin: 0;
+  position: relative;
 }
 
 #logo {
   display: inline-block;
 }
 
-#cart-icon {
-  width: 18%;
+#checkout-cart-btn {
+  background-color: #fff;
+  border: 0;
+  position: relative;
+}
+
+#checkout-cart-btn::after {
+  content: attr(data-count);
+  position: absolute;
+  top: -5px;
+  right: -8px;
+  background: var(--primary-orange);
+  color: white;
+  border-radius: 100px;
+  padding: 0.05rem 0.4rem;
+  font-size: 0.6rem;
+  font-weight: 700;
+}
+
+#checkout-cart-btn.empty::after {
+  display: none;
 }
 
 #profile-pic {
@@ -83,7 +103,7 @@ ul li {
   text-align: left;
 }
 
-nav > div > button {
+nav > div > button:not(#checkout-cart-btn) {
   border: none;
   padding: 1rem 0.5rem;
 }
@@ -161,7 +181,6 @@ main {
 
 button {
   cursor: pointer;
-  font-family: "Kumbh Sans", sans-serif;
 }
 
 .lb-nav-btns {

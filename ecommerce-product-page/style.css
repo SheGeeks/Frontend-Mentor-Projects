@@ -170,7 +170,6 @@ li > a:hover {
 
 main {
   background-color: #fff;
-  padding-bottom: 1rem;
 }
 
 /* ////////// Lightbox */
@@ -219,7 +218,7 @@ button {
   position: relative;
   bottom: 75px;
   background-color: #fff;
-  padding: 1.5rem;
+  padding: 1.5rem 1.5rem 0rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;

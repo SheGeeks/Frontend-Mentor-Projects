@@ -67,6 +67,63 @@ nav img {
 
 nav ul {
   display: none;
+  background-color: #fff;
+  list-style-type: none;
+}
+
+ul li {
+  padding: 0.77rem 0;
+  position: relative;
+  width: 100%;
+  text-align: left;
+}
+
+.mobile-nav.open {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  z-index: 5;
+  width: 67%;
+  min-height: 100vh;
+  left: 0;
+  top: 0rem;
+  padding: 5rem 0;
+}
+
+.open a {
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: #000;
+  font-weight: 700;
+  padding: 0.77rem 1.6rem;
+}
+
+ul li:not(#mobile-menu-close):hover {
+  background-color: var(--primary-orange);
+  color: #fff;
+  transition: background-color 700ms;
+}
+
+li > a:hover {
+  color: #fff;
+  transition: color 400ms;
+}
+
+#mobile-menu-close {
+  position: absolute;
+  top: 11px;
+  left: 25px;
+}
+
+.mobile-menu-close-btn {
+  border: none;
+  background-color: #fff;
+}
+
+.mobile-menu-open-btn {
+  border: none;
+  background-color: #fff;
 }
 
 main {

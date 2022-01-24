@@ -23,11 +23,13 @@
     <header>
       <nav>
         <div>
-          <img
-            src="images/icon-menu.svg"
-            id="mobile-menu-icon"
-            alt="mobile menu icon"
-          />
+          <button class="mobile-menu-open-btn" type="button">
+            <img
+              src="images/icon-menu.svg"
+              id="mobile-menu-icon"
+              alt="mobile menu icon"
+            />
+          </button>
           <h1 id="logo">
             <img src="images/logo.svg" alt="Sneakers company logo" />
           </h1>
@@ -40,7 +42,12 @@
             alt="user profile picture"
           />
         </div>
-        <ul>
+        <ul class="mobile-nav open">
+          <li id="mobile-menu-close">
+            <button class="mobile-menu-close-btn" type="button">
+              <img src="images/icon-close.svg" alt="close mobile menu" />
+            </button>
+          </li>
           <li>
             <a href="#">Collections</a>
           </li>
@@ -129,5 +136,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://shegeeks.net">Corvida Raven</a>.
   </div> -->
+    <script src="script.js"></script>
   </body>
 </html>

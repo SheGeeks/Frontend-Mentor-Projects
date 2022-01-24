@@ -19,7 +19,7 @@
 
 body {
   font-size: 16px;
-  text-align: center;
+  text-align: left;
 }
 
 /* /////////////////// Nav */
@@ -100,7 +100,6 @@ ul li {
   padding: 0.77rem 0;
   position: relative;
   width: 100%;
-  text-align: left;
 }
 
 nav > div > button:not(#checkout-cart-btn) {
@@ -222,7 +221,6 @@ button {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  text-align: left;
 }
 
 #product-maker {

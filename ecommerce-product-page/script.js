@@ -6,6 +6,21 @@ const subQuantityBtn = document.querySelector("#add-to-cart #qty-subtract");
 const qtyInput = document.querySelector("#add-to-cart #qty-total");
 const addToCartBtn = document.querySelector("#addToCart-btn");
 const cartNotification = document.querySelector("#checkout-cart-btn");
+
+const prevImgBtn = document.querySelector("#prev-img-btn");
+const nextImgBtn = document.querySelector("#next-img-btn");
+const productImg = document.querySelector("#product-image");
+
+const imgArray = [
+  "images/image-product-1.jpg",
+  "images/image-product-2.jpg",
+  "images/image-product-3.jpg",
+  "images/image-product-4.jpg",
+];
+
+const totalImgs = imgArray.length;
+let imgIndex = 0;
+
 let cartTotal = 0;
 let qtyTotal = 0;
 qtyInput.value = 0;
@@ -20,6 +35,32 @@ mobileMenuBtn.addEventListener("click", (e) => {
 mobileMenuCloseBtn.addEventListener("click", (e) => {
   mobileNav.classList.remove("open");
   mobileMenuCloseBtn.classList.remove("open");
+});
+
+// ///////////////// Lightbox
+
+function changeImgUrl(number) {
+  productImg.src = imgArray[number];
+}
+
+prevImgBtn.addEventListener("click", (e) => {
+  if (imgIndex !== 0) {
+    imgIndex--;
+    changeImgUrl(imgIndex);
+  } else {
+    imgIndex = 3;
+    changeImgUrl(imgIndex);
+  }
+});
+
+nextImgBtn.addEventListener("click", (e) => {
+  if (imgIndex < 3) {
+    imgIndex++;
+    changeImgUrl(imgIndex);
+  } else {
+    imgIndex = 0;
+    changeImgUrl(imgIndex);
+  }
 });
 
 // ///////////////// Add Quantity

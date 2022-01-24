@@ -23,13 +23,34 @@
     <header>
       <nav>
         <div>
-          <button class="mobile-menu-open-btn" type="button">
-            <img
-              src="images/icon-menu.svg"
-              id="mobile-menu-icon"
-              alt="mobile menu icon"
-            />
-          </button>
+          <button
+            type="button"
+            id="mobile-menu-open-btn"
+            name="mobile-menu"
+          ></button>
+          <button
+            type="button"
+            id="mobile-menu-close-btn"
+            name="close-mobile-menu"
+            class=" "
+          ></button>
+          <ul class="mobile-nav">
+            <li>
+              <a href="#">Collections</a>
+            </li>
+            <li>
+              <a href="#">Men</a>
+            </li>
+            <li>
+              <a href="#">Women</a>
+            </li>
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+          </ul>
           <h1 id="logo">
             <img src="images/logo.svg" alt="Sneakers company logo" />
           </h1>
@@ -42,28 +63,6 @@
             alt="user profile picture"
           />
         </div>
-        <ul class="mobile-nav open">
-          <li id="mobile-menu-close">
-            <button class="mobile-menu-close-btn" type="button">
-              <img src="images/icon-close.svg" alt="close mobile menu" />
-            </button>
-          </li>
-          <li>
-            <a href="#">Collections</a>
-          </li>
-          <li>
-            <a href="#">Men</a>
-          </li>
-          <li>
-            <a href="#">Women</a>
-          </li>
-          <li>
-            <a href="#">About</a>
-          </li>
-          <li>
-            <a href="#">Contact</a>
-          </li>
-        </ul>
       </nav>
     </header>
     <main>
@@ -105,21 +104,52 @@
         </div>
         <div id="add-to-cart">
           <div class="quantity">
-            <button class="btn minus">
-              <img src="images/icon-minus.svg" alt="subtract" />
+            <button id="qty-subtract">
+              <svg
+                width="12"
+                height="4"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <defs>
+                  <path
+                    d="M11.357 3.332A.641.641 0 0 0 12 2.69V.643A.641.641 0 0 0 11.357 0H.643A.641.641 0 0 0 0 .643v2.046c0 .357.287.643.643.643h10.714Z"
+                    id="a"
+                  />
+                </defs>
+                <use fill="currentColor" fill-rule="nonzero" xlink:href="#a" />
+              </svg>
             </button>
             <input
-              id="quantity"
+              id="qty-total"
               min="0"
-              name="quantity"
+              name="qty-total"
               value="0"
               type="number"
             />
-            <button class="btn plus">
-              <img src="images/icon-plus.svg" alt="add" />
+            <button id="qty-add">
+              <svg
+                width="12"
+                height="12"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <defs>
+                  <path
+                    d="M12 7.023V4.977a.641.641 0 0 0-.643-.643h-3.69V.643A.641.641 0 0 0 7.022 0H4.977a.641.641 0 0 0-.643.643v3.69H.643A.641.641 0 0 0 0 4.978v2.046c0 .356.287.643.643.643h3.69v3.691c0 .356.288.643.644.643h2.046a.641.641 0 0 0 .643-.643v-3.69h3.691A.641.641 0 0 0 12 7.022Z"
+                    id="b"
+                  />
+                </defs>
+                <use fill="currentColor" fill-rule="nonzero" xlink:href="#b" />
+              </svg>
             </button>
           </div>
-          <button type="button" name="addtocart" class="add-to-cart-btn">
+          <button
+            type="button"
+            name="addtocart"
+            class="add-to-cart-btn"
+            id="addToCart-btn"
+          >
             <img
               src="images/icon-cart.svg"
               alt="add-to-cart icon"

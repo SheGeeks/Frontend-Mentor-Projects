@@ -72,6 +72,37 @@ main {
 
 #lightbox {
   display: flex;
+  position: relative;
+}
+
+button {
+  cursor: pointer;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.lb-nav-btns {
+  border: 0;
+}
+
+.lb-nav {
+  position: absolute;
+  top: 45%;
+  transform: translate(0, -100%);
+  padding: 0.8rem;
+  width: 40px;
+  height: 40px;
+  z-index: 2;
+  background-color: #fff;
+  border-radius: 100px;
+  border: 0;
+}
+
+.lb-nav.prev {
+  left: 5%;
+}
+
+.lb-nav.next {
+  right: 5%;
 }
 
 #product-image {
@@ -158,13 +189,11 @@ h2 {
 
 .quantity {
   display: flex;
-  align-items: center;
   justify-content: center;
   width: 100%;
   margin-bottom: 0.7rem;
   background-color: var(--light-gray);
   border-radius: 10px;
-  align-items: baseline;
 }
 
 /* it will support chrome and firefox */
@@ -183,16 +212,21 @@ input[type="number"] {
   font-size: 1rem;
   font-weight: 900;
   text-align: center;
-  border: none;
   background-color: var(--light-gray);
+  padding: 1rem;
+  border: none;
+  border-radius: 10px;
 }
 
-button {
+.quantity button {
+  transform: rotate(180deg);
+}
+
+.add-to-cart-btn {
   background-color: var(--primary-orange);
   padding: 1rem;
   border: none;
   border-radius: 10px;
-  font-family: "Kumbh Sans", sans-serif;
   font-weight: 700;
   font-size: 1rem;
   color: #fff;

@@ -59,11 +59,25 @@
     </header>
     <main>
       <div id="lightbox">
+        <button name="lightbox-nav" type="button" class="lb-nav-btns">
+          <img
+            src="images/icon-previous.svg"
+            alt="previous product image"
+            class="lb-nav prev"
+          />
+        </button>
         <img
           src="images/image-product-1.jpg"
           id="product-image"
           alt="product image"
         />
+        <button name="lightbox-nav" type="button" class="lb-nav-btns">
+          <img
+            src="images/icon-next.svg"
+            alt="next product image"
+            class="lb-nav next"
+          />
+        </button>
       </div>
       <div id="product-details">
         <p id="product-maker">Sneaker Company</p>
@@ -96,11 +110,12 @@
               <img src="images/icon-plus.svg" alt="add" />
             </button>
           </div>
-          <button type="button" name="addtocart">
+          <button type="button" name="addtocart" class="add-to-cart-btn">
             <img
               src="images/icon-cart.svg"
               alt="add-to-cart icon"
               id="cart-button-icon"
+              aria-hidden="true"
             />
             Add to cart
           </button>

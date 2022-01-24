@@ -6,6 +6,8 @@ const subQuantityBtn = document.querySelector("#add-to-cart #qty-subtract");
 const qtyInput = document.querySelector("#add-to-cart #qty-total");
 const addToCartBtn = document.querySelector("#addToCart-btn");
 const cartNotification = document.querySelector("#checkout-cart-btn");
+const shoppingCartBtn = document.querySelector("#checkout-cart-btn");
+const shoppingCartCard = document.querySelector("#shopping-cart");
 
 const prevImgBtn = document.querySelector("#prev-img-btn");
 const nextImgBtn = document.querySelector("#next-img-btn");
@@ -25,7 +27,15 @@ let cartTotal = 0;
 let qtyTotal = 0;
 qtyInput.value = 0;
 
-// //////////// Mobile Nav Menu
+// //////////// Functions
+// //// Lightbox
+
+function changeImgUrl(number) {
+  productImg.src = imgArray[number];
+}
+
+// //////////// Event Listeners
+// //// Mobile Nav Menu
 mobileMenuBtn.addEventListener("click", (e) => {
   console.log("clicked");
   mobileNav.classList.add("open");
@@ -37,11 +47,12 @@ mobileMenuCloseBtn.addEventListener("click", (e) => {
   mobileMenuCloseBtn.classList.remove("open");
 });
 
-// ///////////////// Lightbox
+// //// Shopping Cart Toggle
+shoppingCartBtn.addEventListener("click", (e) => {
+  shoppingCartCard.classList.toggle("hide");
+});
 
-function changeImgUrl(number) {
-  productImg.src = imgArray[number];
-}
+// //// Lightbox
 
 prevImgBtn.addEventListener("click", (e) => {
   if (imgIndex !== 0) {
@@ -63,7 +74,7 @@ nextImgBtn.addEventListener("click", (e) => {
   }
 });
 
-// ///////////////// Add Quantity
+// //// Adjust Product Quantity
 
 addQuantityBtn.addEventListener("click", (e) => {
   qtyTotal++;
@@ -79,10 +90,10 @@ subQuantityBtn.addEventListener("click", (e) => {
   }
 });
 
-// // ////////////// Add to Cart Btn
+// ////  Add Product To Cart
 
 addToCartBtn.addEventListener("click", (e) => {
-  // grab info for select product
+  // grab info for selected product
 
   // check if item is already in cart
 
@@ -90,7 +101,7 @@ addToCartBtn.addEventListener("click", (e) => {
 
   // // else: add info to cart
 
-  // update cart icon total
+  // update shopping cart icon total
   cartTotal += qtyTotal;
 
   if (cartTotal > 0) {

@@ -53,6 +53,10 @@ nav img {
   margin: 0;
 }
 
+#logo {
+  display: inline-block;
+}
+
 #cart-icon {
   width: 18%;
 }
@@ -231,6 +235,7 @@ input[type="number"] {
   font-size: 1rem;
   color: #fff;
   cursor: pointer;
+  box-shadow: hsla(26, 100%, 55%, 0.603) 0px 8px 24px;
 }
 
 #cart-button-icon {

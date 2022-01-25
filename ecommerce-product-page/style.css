@@ -35,7 +35,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  padding: 1rem 0 0.75rem 1.5rem;
+  padding: 1rem 1.3rem 0.75rem 1.5rem;
   background-color: #fff;
 }
 
@@ -53,7 +53,7 @@ nav img:not(#logo > img) {
 
 #shop-menu {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-end;
   align-items: center;
   margin: 0;
   position: relative;
@@ -67,6 +67,7 @@ nav img:not(#logo > img) {
   background-color: #fff;
   border: 0;
   position: relative;
+  margin-right: 1.2rem;
 }
 
 #checkout-cart-btn::after {
@@ -91,7 +92,7 @@ nav img:not(#logo > img) {
 }
 
 #profile-pic {
-  width: 22%;
+  width: 20%;
   border: 2px solid white;
 }
 
@@ -205,12 +206,75 @@ li > a:hover {
 }
 
 #basket {
+  padding: 1.35rem 1.5rem 0.6rem;
+}
+
+#basket.empty {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 4.8rem 0 4.1rem;
   font-weight: 700;
   color: var(--gray-blue);
+}
+
+#basket.empty .cart-items,
+#basket.empty #checkout-btn {
+  display: none;
+}
+
+.cart-items {
+  color: var(--gray-blue);
+  display: grid;
+  grid-template-columns: 1fr 3.5fr 0fr;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 1.8rem;
+}
+
+.item-thumbnail {
+  border-radius: 5px;
+  width: 50px;
+}
+
+.item-info {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1.5rem;
+}
+
+#pricing {
+  letter-spacing: 0.5px;
+}
+
+#item-total {
+  font-weight: 700;
+  color: #000;
+}
+
+#delete {
+  color: var(--gray-blue);
+  background: none;
+  border: none;
+  margin-top: 0.5rem;
+  padding: 0.2rem 0;
+}
+
+#delete:hover {
+  color: hsl(0, 70%, 50%);
+}
+
+#checkout-btn {
+  box-shadow: none;
+}
+
+#basket #empty-msg {
+  display: none;
+}
+
+#basket.empty #empty-msg {
+  display: inline-block;
 }
 
 /* /////////////////// Main  */
@@ -389,10 +453,11 @@ input[type="number"] {
   border: none;
   border-radius: 10px;
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: #fff;
   cursor: pointer;
   box-shadow: hsla(26, 100%, 55%, 0.603) 0px 8px 24px;
+  width: 100%;
 }
 
 .add-to-cart-btn:hover {

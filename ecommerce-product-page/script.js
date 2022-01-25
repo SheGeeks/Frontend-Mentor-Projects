@@ -23,6 +23,7 @@ itemPrice.innerHTML = price = productPrice.innerHTML.substring(1);
 const prevImgBtn = document.querySelector("#prev-img-btn");
 const nextImgBtn = document.querySelector("#next-img-btn");
 const productImg = document.querySelector("#product-image");
+const imgThumbs = document.querySelector("#img-thumbs");
 
 const imgArray = [
   "images/image-product-1.jpg",
@@ -83,6 +84,20 @@ nextImgBtn.addEventListener("click", (e) => {
     imgIndex = 0;
     changeImgUrl(imgIndex);
   }
+  setTimeout(toggleFade, 600);
+});
+
+imgThumbs.addEventListener("click", (e) => {
+  productImg.classList.add("fade");
+
+  const thumbnails = [...imgThumbs.children];
+  var thumbIndex = Array.prototype.indexOf.call(imgThumbs.children, e.target);
+
+  thumbnails.forEach((img) => {
+    img.classList.remove("selected");
+    e.target.classList.add("selected");
+    productImg.src = imgArray[thumbIndex];
+  });
   setTimeout(toggleFade, 600);
 });
 

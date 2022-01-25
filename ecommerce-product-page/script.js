@@ -14,9 +14,9 @@ const itemPrice = document.querySelector("#item-price");
 const itemQty = document.querySelector("#item-qty");
 const itemTotal = document.querySelector("#item-total");
 
-let price;
 let cartTotal = 0;
 let qtyTotal = 0;
+let price;
 qtyInput.value = 0;
 itemPrice.innerHTML = price = productPrice.innerHTML.substring(1);
 
@@ -51,7 +51,6 @@ function closeCart() {
 // //////////// Event Listeners
 // //// Mobile Nav Menu
 mobileMenuBtn.addEventListener("click", (e) => {
-  console.log("clicked");
   mobileNav.classList.add("open");
   mobileMenuCloseBtn.classList.add("open");
 });
@@ -106,23 +105,27 @@ subQuantityBtn.addEventListener("click", (e) => {
 // ////  Add item To Cart
 
 addToCartBtn.addEventListener("click", (e) => {
-  //  Toggle empty basket class
-  cartBasket.classList.remove("empty");
-
-  // // Update totals
-  // update checkout cart badge total
-  cartTotal += qtyTotal;
-
-  if (cartTotal > 0) {
-    shoppingCartBtn.classList.remove("empty");
-    shoppingCartBtn.setAttribute("data-count", cartTotal);
-  } else {
+  if (qtyInput.value == 0) {
     return;
-  }
+  } else {
+    //  Toggle empty basket class
+    cartBasket.classList.remove("empty");
 
-  // Update checkout cart item total and quantity
-  itemTotal.innerHTML = "$" + price * cartTotal + ".00";
-  itemQty.innerHTML = cartTotal;
+    // // Update totals
+    // update checkout cart badge total
+    cartTotal += qtyTotal;
+
+    if (cartTotal > 0) {
+      shoppingCartBtn.classList.remove("empty");
+      shoppingCartBtn.setAttribute("data-count", cartTotal);
+    } else {
+      return;
+    }
+
+    // Update checkout cart item total and quantity
+    itemTotal.innerHTML = "$" + price * cartTotal + ".00";
+    itemQty.innerHTML = cartTotal;
+  }
 });
 
 // //// Shopping Cart Toggle

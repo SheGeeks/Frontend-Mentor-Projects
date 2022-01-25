@@ -68,6 +68,7 @@ nav img:not(#logo > img) {
   border: 0;
   position: relative;
   margin-right: 1.2rem;
+  color: var(--gray-blue);
 }
 
 #checkout-cart-btn::after {
@@ -88,7 +89,7 @@ nav img:not(#logo > img) {
 }
 
 #cart-icon:hover {
-  color: var(--primary-orange);
+  color: hsl(0, 0%, 0%);
 }
 
 #profile-pic {
@@ -316,6 +317,32 @@ button {
 
 .lb-nav.next {
   right: 4%;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 0.7s;
+  animation-name: fade;
+  animation-duration: 0.7s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* ///////////// Product Details */

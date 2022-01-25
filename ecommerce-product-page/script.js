@@ -15,15 +15,15 @@ const itemPrice = document.querySelector("#item-price");
 const itemQty = document.querySelector("#item-qty");
 const itemTotal = document.querySelector("#item-total");
 
+let price;
+let cartTotal = 0;
+let qtyTotal = 0;
+qtyInput.value = 0;
+itemPrice.innerHTML = price = productPrice.innerHTML.substring(1);
+
 const prevImgBtn = document.querySelector("#prev-img-btn");
 const nextImgBtn = document.querySelector("#next-img-btn");
 const productImg = document.querySelector("#product-image");
-
-let cartTotal = 0;
-let qtyTotal = 0;
-let price = productPrice.innerHTML.substring(1);
-qtyInput.value = 0;
-
 const imgArray = [
   "images/image-product-1.jpg",
   "images/image-product-2.jpg",
@@ -81,6 +81,7 @@ nextImgBtn.addEventListener("click", (e) => {
 });
 
 // //// Adjust Product Quantity
+
 addQuantityBtn.addEventListener("click", (e) => {
   qtyTotal++;
   qtyInput.value = qtyTotal;
@@ -102,8 +103,12 @@ addToCartBtn.addEventListener("click", (e) => {
   cartBasket.classList.remove("empty");
 
   // // Update totals
-  // update shopping cart icon total
+  // update checkout cart badge total
   cartTotal += qtyTotal;
+
+  // Update checkout cart item total and quantity
+  itemTotal.innerHTML = "$" + price * cartTotal + ".00";
+  itemQty.innerHTML = cartTotal;
 
   if (cartTotal > 0) {
     cartNotification.classList.remove("empty");
@@ -111,10 +116,6 @@ addToCartBtn.addEventListener("click", (e) => {
   } else {
     return;
   }
-
-  // Update cart totals and quantity
-  itemTotal.innerHTML = "$" + price * cartTotal + ".00";
-  itemQty.innerHTML = cartTotal;
 });
 
 // Delete item from cart

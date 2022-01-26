@@ -492,6 +492,7 @@ input[type="number"] {
 
 .quantity button:hover > svg {
   color: hsl(27, 100%, 71%);
+  transition: all 300ms;
 }
 
 .add-to-cart-btn {
@@ -690,6 +691,17 @@ input[type="number"] {
   #product-description {
     margin-top: 2.2rem;
     font-size: 1rem;
+  }
+
+  #product-image {
+    cursor: pointer;
+    transform: scale(1, 1);
+    transition: all 300ms;
+  }
+
+  #product-image:hover {
+    transform: scale(1.1, 1.1);
+    transition: all 300ms;
   }
 
   #product-pricing {

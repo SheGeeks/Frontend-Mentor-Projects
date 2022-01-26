@@ -58,7 +58,7 @@
         <div id="shop-menu">
           <button
             type="button"
-            name="checkout-cart"
+            aria-label="Checkout cart button"
             data-count="1"
             id="checkout-cart-btn"
             class="empty"
@@ -162,6 +162,7 @@
           <img
             src="images/image-product-1-thumbnail.jpg"
             alt="product thumbnail"
+            class="selected"
           />
           <img
             src="images/image-product-2-thumbnail.jpg"
@@ -269,7 +270,7 @@
         </div>
         <div id="add-to-cart">
           <div class="quantity">
-            <button id="qty-subtract">
+            <button id="qty-subtract" aria-label="subtract quantity">
               <svg
                 width="12"
                 height="4"
@@ -279,7 +280,6 @@
                 <defs>
                   <path
                     d="M11.357 3.332A.641.641 0 0 0 12 2.69V.643A.641.641 0 0 0 11.357 0H.643A.641.641 0 0 0 0 .643v2.046c0 .357.287.643.643.643h10.714Z"
-                    id="a"
                   />
                 </defs>
                 <use fill="currentColor" fill-rule="nonzero" xlink:href="#a" />
@@ -291,8 +291,9 @@
               name="qty-total"
               value="0"
               type="number"
+              aria-label="Product quantity"
             />
-            <button id="qty-add">
+            <button id="qty-add" aria-label="add quantity">
               <svg
                 width="12"
                 height="12"

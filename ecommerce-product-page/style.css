@@ -490,7 +490,7 @@ input[type="number"] {
   color: var(--primary-orange);
 }
 
-.quantity button:hover > svg {
+#add-to-cart svg:hover {
   color: hsl(27, 100%, 71%);
   transition: all 300ms;
 }
@@ -654,12 +654,13 @@ input[type="number"] {
     border-radius: 10px;
     max-width: 90px;
     cursor: pointer;
+    border: solid 2px transparent;
   }
 
   #img-thumbs img:hover,
   #img-thumbs img.selected {
+    opacity: 0.5;
     border: 2px solid var(--primary-orange);
-    opacity: 0.8;
   }
 
   #product-details {

@@ -50,7 +50,13 @@ function closeCart() {
 }
 
 function openLightbox() {
-  document.getElementById("lightbox-modal").style.display = "block";
+  if (window.innerWidth < 1024) {
+    document.location = document.location.toString().split("#")[0] + "#map";
+    return false;
+  } else {
+    document.getElementById("lightbox-modal").style.display = "block";
+    toSlide(imgIndex);
+  }
 }
 
 function closeLightbox() {

@@ -49,6 +49,22 @@ function closeCart() {
   shoppingCartCard.classList.add("hide");
 }
 
+function openLightbox() {
+  document.getElementById("lightbox-modal").style.display = "block";
+}
+
+function closeLightbox() {
+  document.getElementById("lightbox-modal").style.display = "none";
+}
+
+function changeSlide(n) {
+  showSlide((slideIndex += n));
+}
+
+function toSlide(n) {
+  showSlide((slideIndex = n));
+}
+
 // //////////// Event Listeners
 // //// Mobile Nav Menu
 mobileMenuBtn.addEventListener("click", (e) => {
@@ -61,7 +77,36 @@ mobileMenuCloseBtn.addEventListener("click", (e) => {
   mobileMenuCloseBtn.classList.remove("open");
 });
 
-// //// Lightbox
+// //// Lightbox Modal
+
+var slideIndex = 1;
+showSlide(slideIndex);
+
+function showSlide(n) {
+  const slides = document.getElementsByClassName("slide");
+  let modalPreviews = document.getElementsByClassName("modal-preview");
+
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (let i = 0; i < modalPreviews.length; i++) {
+    modalPreviews[i].className = modalPreviews[i].className.replace(
+      " active",
+      ""
+    );
+  }
+
+  slides[slideIndex - 1].style.display = "block";
+  modalPreviews[slideIndex - 1].className += " active";
+}
 
 prevImgBtn.addEventListener("click", (e) => {
   productImg.classList.add("fade");
@@ -100,6 +145,8 @@ imgThumbs.addEventListener("click", (e) => {
   });
   setTimeout(toggleFade, 600);
 });
+
+productImg.addEventListener("click", (e) => {});
 
 // //// Adjust Product Quantity
 

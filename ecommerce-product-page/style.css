@@ -302,7 +302,7 @@ main {
   position: relative;
 }
 
-#lightbox-modal {
+.modal {
   display: none;
 }
 
@@ -732,11 +732,9 @@ input[type="number"] {
 
   .light-thumb {
     float: left;
-    /* width: 25%; */
   }
 
   .modal {
-    display: none;
     position: fixed;
     z-index: 2;
     padding: 10px 62px 0px 62px;

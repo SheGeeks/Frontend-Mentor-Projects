@@ -148,11 +148,15 @@ imgThumbs.addEventListener("click", (e) => {
     img.classList.remove("selected");
     e.target.classList.add("selected");
     productImg.src = imgArray[thumbIndex];
+
+    if (thumbIndex == 0) {
+      imgIndex = 1;
+    } else {
+      imgIndex = thumbIndex + 1;
+    }
   });
   setTimeout(toggleFade, 600);
 });
-
-productImg.addEventListener("click", (e) => {});
 
 // //// Adjust Product Quantity
 

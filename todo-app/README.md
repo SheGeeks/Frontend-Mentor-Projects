@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Screenshot
 
-![WIP]()
+<!-- ![WIP]() -->
 
 ### Links
 
@@ -47,7 +47,6 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
 
 ### What I learned

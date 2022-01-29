@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
+
+:root {
+  --primary-bright-blue: hsl(220, 98%, 61%);
+  --gradient: linear-gradient(130deg, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+
+  /* Light Theme */
+  --todoitembg: hsl(0, 0%, 98%);
+  --mainbg: hsl(236, 33%, 92%);
+  --LightGrayishBlue: hsl(233, 11%, 84%);
+  --DarkGrayishBlue: hsl(236, 9%, 61%);
+  --tasktext: hsl(235, 19%, 35%);
+
+  /* Dark Theme */
+  --VeryDarkBlue: hsl(235, 21%, 11%);
+  --VeryDarkDesaturatedBlue: hsl(235, 24%, 19%);
+  --LightGrayishBlue1: hsl(234, 39%, 85%);
+  --LightGrayishBlue2: hsl(236, 33%, 92%);
+  --DarkGrayishBlue2: hsl(234, 11%, 52%);
+  --VeryDarkGrayishBlue1: hsl(233, 14%, 35%);
+  --VeryDarkGrayishBlue2: hsl(237, 14%, 26%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+body {
+  background-color: var(--mainbg);
+  color: var(--idklightgray);
+}
+
+h1 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  letter-spacing: 0.5rem;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  font-size: 0.65rem;
+  color: var(--DarkGrayishBlue);
+  cursor: pointer;
+}
+
+button:hover {
+  color: var(--tasktext);
+}
+
+button.selected {
+  color: var(--primary-bright-blue);
+}
+
+main {
+  background: var(--mainbg) url(images/bg-mobile-light.jpg) no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2.8rem 1.5rem;
+}
+
+#heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+#todo-container {
+  width: 100%;
+  position: relative;
+}
+
+#todo-item_new {
+  margin-top: 2rem;
+  border-radius: 5px;
+  border: 1px solid #fff;
+}
+
+input[type="text"] {
+  margin-left: 2rem;
+  width: 100%;
+  border: none;
+  background-color: var(--todoitembg);
+  font-size: 0.75rem;
+}
+
+#todo-list {
+  margin-top: 1rem;
+  background-color: var(--todoitembg);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border: 1px solid #fff;
+}
+
+.todo-item {
+  border-bottom: 1px solid var(--LightGrayishBlue);
+  cursor: pointer;
+}
+
+.todo-item,
+#todo-list_footer {
+  background-color: var(--todoitembg);
+  justify-content: space-between;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.todo-contents {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  font-size: 0.75rem;
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: var(--todoitembg);
+  border: 1px solid var(--LightGrayishBlue);
+  border-radius: 25px;
+}
+
+/* On mouse-over, add a grey background color */
+.todo-contents:hover input ~ .checkmark {
+  border: 2px solid blue;
+  border-radius: 25px;
+}
+
+/* When the checkbox is checked, add a background */
+input:checked ~ .checkmark {
+  background: var(--gradient);
+  border: 2px solid var(--todoitembg);
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+  border: 1px solid #fff;
+}
+
+/* Show the checkmark when checked */
+input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.checkmark:after {
+  left: 3px;
+  top: 4px;
+  width: 9.5px;
+  height: 8px;
+  background: url(images/icon-check.svg) no-repeat;
+  border: none;
+}
+
+#todo-task {
+  font-size: 0.75rem;
+  color: var(--tasktext);
+  text-align: left;
+  margin-left: 2rem;
+  font-weight: 400;
+}
+
+.todo-item.strike #todo-task {
+  color: var(--LightGrayishBlue);
+  text-decoration: line-through;
+}
+
+#todo-list_footer {
+  color: var(--DarkGrayishBlue);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+#todo-count,
+#clear {
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+
+#todo-sort {
+  position: absolute;
+  bottom: -85px;
+  left: 0;
+  background-color: var(--todoitembg);
+  width: 100%;
+  padding: 0 1rem;
+  border-radius: 5px;
+  text-align: center;
+}
+
+#todo-sort button {
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding: 1rem 0.5rem;
+}
+
+/* #todo-sort button:hover {
+  color: var(--primary-bright-blue);
+} */
+
+#drag-note {
+  margin-top: 5rem;
+  color: var(--DarkGrayishBlue);
+  font-size: 0.85rem;
+  text-align: center;
+}

@@ -8,13 +8,14 @@ Down below are the links to demo my live solutions. Up above you can review my c
 
 ## 🐔 Digitally Grown
 
+- [Ecommerce Product Page](https://shegeeks.github.io/Frontend-Mentor-Projects/time-tracking-dashboard/) _1/26/22_
 - [Time-tracking Dashboard](https://shegeeks.github.io/Frontend-Mentor-Projects/time-tracking-dashboard/) _1/23/22_
 - [Room Homepage](https://www.frontendmentor.io/challenges/room-homepage-BtdBY_ENq) _1/16/22_
 - [NFT Preview Card](https://shegeeks.github.io/Frontend-Mentor-Projects/nft-preview-card/) _1/14/22_
 
 ## 🐣 Hatched
 
-- [E-commerce Product Page](https://www.frontendmentor.io/challenges/ecommerce-product-page-UPsZ9MJp6): [Code in Progress](https://github.com/SheGeeks/Frontend-Mentor-Projects/tree/Frontend-Mentor-Projects/ecommerce-product-page)
+_Just hatched a project. Check back in two weeks_
 
 ## 🥚 Incubating
 
@@ -25,7 +26,7 @@ Down below are the links to demo my live solutions. Up above you can review my c
 
 ---
 
-### 2021 Challenges
+### 2021 Challenges Completed
 
 - [Insure Landing Page](https://shegeeks.github.io/Frontend-Mentor-Projects/insure-landing-page/) _10/5/21_
 - [Single Price Grid Component](https://shegeeks.github.io/Frontend-Mentor-Projects/single-price-grid-component/) _9/12/21_

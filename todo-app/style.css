@@ -86,6 +86,7 @@ input[type="text"] {
   border: none;
   background-color: var(--todoitembg);
   font-size: 0.75rem;
+  outline: none;
 }
 
 #todo-list {
@@ -117,6 +118,7 @@ input[type="text"] {
   position: relative;
   font-size: 0.75rem;
   cursor: pointer;
+  width: 100%;
 }
 
 input[type="checkbox"] {

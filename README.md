@@ -15,11 +15,10 @@ Down below are the links to demo my live solutions. Up above you can review my c
 
 ## 🐣 Hatched
 
-_Just hatched a project. Check back in two weeks_
+- [Todo App](https://www.frontendmentor.io/challenges/todo-app-Su1_KokOW) | [Code in Progress...](https://github.com/SheGeeks/Frontend-Mentor-Projects/tree/Frontend-Mentor-Projects/todo-app) _1/28/22_
 
 ## 🥚 Incubating
 
-- [Todo App](https://www.frontendmentor.io/challenges/todo-app-Su1_KokOW)
 - [Launch countdown timer](https://www.frontendmentor.io/challenges/launch-countdown-timer-N0XkGfyz-)
 - [IP Address Tracker](https://www.frontendmentor.io/challenges/ip-address-tracker-I8-0yYAH0)
 - [URL shortening API landing page](https://www.frontendmentor.io/challenges/url-shortening-api-landing-page-2ce3ob-G)

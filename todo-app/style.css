@@ -59,6 +59,7 @@ button.selected {
 main {
   background: var(--mainbg) url(images/bg-mobile-light.jpg) no-repeat;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 2.8rem 1.5rem;
@@ -227,7 +228,7 @@ input:checked ~ .checkmark:after {
 
 #todo-sort {
   position: absolute;
-  bottom: -85px;
+  bottom: -60px;
   left: 0;
   background-color: var(--todoitembg);
   width: 100%;
@@ -243,8 +244,8 @@ input:checked ~ .checkmark:after {
 }
 
 #drag-note {
-  margin-top: 5rem;
-  color: var(--DarkGrayishBlue);
+  margin-top: 6rem;
+  color: hsl(240, 4.2%, 41.8%);
   font-size: 0.85rem;
   text-align: center;
 }

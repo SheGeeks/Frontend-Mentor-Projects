@@ -29,41 +29,77 @@
           <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26"><path fill="#FFF" fill-rule="evenodd" d="M13 0c.81 0 1.603.074 2.373.216C10.593 1.199 7 5.43 7 10.5 7 16.299 11.701 21 17.5 21c2.996 0 5.7-1.255 7.613-3.268C23.22 22.572 18.51 26 13 26 5.82 26 0 20.18 0 13S5.82 0 13 0z"/></svg>
         </div>
         <div class="todo-item" id="todo-item_new">
-          <label class="todo-contents">
-            <input type="checkbox" name="" id="">
+          <label class="todo-contents" aria-label="new todo item">
+            <input type="checkbox" name="new todo checkbox" aria-label="new todo item checkbox">
             <span class="checkmark"></span>
-            <input type="text" name="" id="new_task" placeholder="Create a new todo..." name="new">
+            <input type="text" id="new_task" placeholder="Create a new todo..." name="new todo" aria-label="Create a new todo item">
           </label>
         </div>
         <div id="todo-list">
           <div class="todo-item strike">
-            <label class="todo-contents"> <p id="todo-task">Complete online JavaScript course</p>
-                <input type="checkbox" name="" id="" checked aria-checked="true"">
+            <label class="todo-contents" aria-label="todo item"> <p id="todo-task">Complete online JavaScript course</p>
+                <input type="checkbox"  aria-label="todo item checkbox" checked aria-checked="true">
                 <span class="checkmark"></span>
               </label>
-              <button class="delete" >
+              <button class="delete" type="button" aria-label="delete" >
                 <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 18 18"><path fill="currentColor" fill-rule="evenodd" d="M16.97 0l.708.707L9.546 8.84l8.132 8.132-.707.707-8.132-8.132-8.132 8.132L0 16.97l8.132-8.132L0 .707.707 0 8.84 8.132 16.971 0z"/></svg>
               </button>
             </div>
           <div class="todo-item">
-            <label class="todo-contents"> <p id="todo-task">Jog around the park 3x</p>
-                <input type="checkbox" name="" id="">
+            <label class="todo-contents" aria-label="todo item"> <p id="todo-task">Jog around the park 3x</p>
+                <input type="checkbox" aria-label="todo item checkbox">
                 <span class="checkmark"></span>
               </label>
-              <button class="delete" >
+              <button class="delete" type="button" aria-label="delete">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 18 18"><path fill="currentColor" fill-rule="evenodd" d="M16.97 0l.708.707L9.546 8.84l8.132 8.132-.707.707-8.132-8.132-8.132 8.132L0 16.97l8.132-8.132L0 .707.707 0 8.84 8.132 16.971 0z"/></svg>
+              </button>
+            </div>
+          <div class="todo-item">
+            <label class="todo-contents" aria-label="todo item"> <p id="todo-task">10 minutes meditation</p>
+                <input type="checkbox" aria-label="todo item checkbox">
+                <span class="checkmark"></span>
+              </label>
+              <button class="delete" type="button" aria-label="delete">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 18 18"><path fill="currentColor" fill-rule="evenodd" d="M16.97 0l.708.707L9.546 8.84l8.132 8.132-.707.707-8.132-8.132-8.132 8.132L0 16.97l8.132-8.132L0 .707.707 0 8.84 8.132 16.971 0z"/></svg>
+              </button>
+            </div>
+          <div class="todo-item">
+            <label class="todo-contents" aria-label="todo item"> <p id="todo-task">Read for 1 hour</p>
+                <input type="checkbox" aria-label="todo item checkbox">
+                <span class="checkmark"></span>
+              </label>
+              <button class="delete" type="button" aria-label="delete">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 18 18"><path fill="currentColor" fill-rule="evenodd" d="M16.97 0l.708.707L9.546 8.84l8.132 8.132-.707.707-8.132-8.132-8.132 8.132L0 16.97l8.132-8.132L0 .707.707 0 8.84 8.132 16.971 0z"/></svg>
+              </button>
+            </div>
+          <div class="todo-item">
+            <label class="todo-contents" aria-label="todo item"> <p id="todo-task">Pick up groceries</p>
+                <input type="checkbox" aria-label="todo item checkbox">
+                <span class="checkmark"></span>
+              </label>
+              <button class="delete" type="button" aria-label="delete">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 18 18"><path fill="currentColor" fill-rule="evenodd" d="M16.97 0l.708.707L9.546 8.84l8.132 8.132-.707.707-8.132-8.132-8.132 8.132L0 16.97l8.132-8.132L0 .707.707 0 8.84 8.132 16.971 0z"/></svg>
+              </button>
+            </div>
+          <div class="todo-item">
+            <label class="todo-contents" aria-label="todo item"> <p id="todo-task">Complete Todo App on Frontend Mentor</p>
+                <input type="checkbox" aria-label="todo item checkbox">
+                <span class="checkmark"></span>
+              </label>
+              <button class="delete" type="button" aria-label="delete">
                 <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 18 18"><path fill="currentColor" fill-rule="evenodd" d="M16.97 0l.708.707L9.546 8.84l8.132 8.132-.707.707-8.132-8.132-8.132 8.132L0 16.97l8.132-8.132L0 .707.707 0 8.84 8.132 16.971 0z"/></svg>
               </button>
             </div>
           </div>
           <div id="todo-list_footer">
-            <p id="todo-count"> 1 item left</p> <div id="todo-sort"><button class="sort-btn selected">All</button> <button class="sort-btn">Active</button> <button class="sort-btn">Completed</button></div> <button id="clear">Clear Completed</button>
+            <p id="todo-count"> 1 item left</p> <div id="todo-sort"><button type="button" class="sort-btn selected">All</button> <button type="button" class="sort-btn">Active</button> <button type="button" class="sort-btn">Completed</button></div> <button type="button" id="clear">Clear Completed</button>
           </div>
         </div>
         
         
       </div>
+      <p id="drag-note">Drag and drop to reorder list</p>
     </main>
-    <p id="drag-note">Drag and drop to reorder list</p>
 
     <!-- <div class="attribution">
       Challenge by

@@ -10,15 +10,6 @@
   --LightGrayishBlue: hsl(233, 11%, 84%);
   --DarkGrayishBlue: hsl(236, 9%, 61%);
   --tasktext: hsl(235, 19%, 35%);
-
-  /* Dark Theme */
-  /* --VeryDarkBlue: hsl(235, 21%, 11%); */
-  /* --LightGrayishBlue1: hsl(234, 39%, 85%); */
-  --LightGrayishBlue2: hsl(236, 33%, 92%);
-  /* --DarkGrayishBlue2: hsl(234, 11%, 52%); */
-  --DarkGrayishBlue3: hsl(237, 14%, 26%);
-  --VeryDarkGrayishBlue1: hsl(233, 14%, 35%);
-  --whatisthis----------: hsl(236, 13%, 40%);
 }
 
 * {

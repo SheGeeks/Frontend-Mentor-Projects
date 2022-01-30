@@ -8,6 +8,7 @@ const todoText = document.querySelector("#todo-task");
 const deleteTask = document.querySelector(".delete");
 const clearTasks = document.querySelector("#clear");
 const todoCounter = document.querySelector("#todo-count");
+const sortOptions = document.querySelector("#todo-sort");
 let counterIndex;
 
 function updateCounter() {
@@ -23,6 +24,28 @@ function updateCounter() {
   counterIndex > 1 || counterIndex === 0
     ? (todoCounter.textContent = `${counterIndex} items left`)
     : (todoCounter.textContent = `${counterIndex} item left`);
+}
+
+function switchSortOptions(e) {
+  let options = [...document.querySelectorAll(".sort-btn")];
+  options.forEach((option) => {
+    option.classList.remove("selected");
+    e.target.classList.add("selected");
+  });
+
+  console.log(options);
+}
+
+function switchSortView(style, style2) {
+  let allTasks = [...todoListContainer.querySelectorAll(".todo-item")];
+
+  allTasks.forEach((task) => {
+    if (task.classList.contains("strike")) {
+      task.style.display = style;
+    } else {
+      task.style.display = style2;
+    }
+  });
 }
 
 updateCounter();
@@ -50,17 +73,27 @@ newTaskInput.addEventListener("keydown", (e) => {
   }
 });
 
+// Strike Tasks When Checked
 todoListContainer.addEventListener("click", (e) => {
   //   e.stopPropagation();
-  console.log(e.target);
+  let sortBtns = document.querySelector(".sort-btn.selected").innerHTML;
 
-  // Strike Tasks When Checked
   if (e.target.matches("input[type=checkbox]")) {
     let todoItem = e.target.closest(".todo-item");
     if (todoItem.classList.contains("strike")) {
       todoItem.classList.remove("strike");
+
+      // //Hide or Show based on sort view
+      if (sortBtns === "Completed") {
+        todoItem.style.display = "none";
+      }
     } else {
       todoItem.classList.add("strike");
+
+      // //Hide or Show based on sort view
+      if (sortBtns === "Active") {
+        todoItem.style.display = "none";
+      }
     }
   }
 
@@ -84,4 +117,25 @@ clearTasks.addEventListener("click", (e) => {
   tasksComplete.forEach((task) => {
     task.closest(".todo-item").remove();
   });
+});
+
+// Sort List View
+sortOptions.addEventListener("click", (e) => {
+  switch (e.target.innerHTML) {
+    case "All":
+      console.log("All");
+      switchSortOptions(e);
+      switchSortView("flex", "flex");
+      break;
+    case "Active":
+      console.log("Active");
+      switchSortOptions(e);
+      switchSortView("none", "flex");
+      break;
+    case "Completed":
+      console.log("Completed");
+      switchSortOptions(e);
+      switchSortView("flex", "none");
+      break;
+  }
 });

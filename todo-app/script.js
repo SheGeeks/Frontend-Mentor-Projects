@@ -4,7 +4,6 @@ const todoTemplate = document.querySelector(
   "#todo-list .todo-item:not(.strike)"
 );
 const checkmark = document.querySelectorAll("input[type=checkbox]");
-const todoText = document.querySelector("#todo-task");
 const deleteTask = document.querySelector(".delete");
 const clearTasks = document.querySelector("#clear");
 const todoCounter = document.querySelector("#todo-count");
@@ -59,7 +58,8 @@ newTaskInput.addEventListener("keydown", (e) => {
 
     // Change task text to user input
     const newToDo = document.getElementById("todo-list").lastChild;
-    newToDo.childNodes[1].childNodes[1].textContent = newTaskInput.value;
+    console.log(newToDo.childNodes[1].childNodes[0]);
+    newToDo.childNodes[1].childNodes[0].textContent = newTaskInput.value;
     newTaskInput.value = "";
 
     // Remove check and strike from cloned task template

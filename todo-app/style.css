@@ -12,13 +12,13 @@
   --tasktext: hsl(235, 19%, 35%);
 
   /* Dark Theme */
-  --VeryDarkBlue: hsl(235, 21%, 11%);
-  --VeryDarkDesaturatedBlue: hsl(235, 24%, 19%);
-  --LightGrayishBlue1: hsl(234, 39%, 85%);
+  /* --VeryDarkBlue: hsl(235, 21%, 11%); */
+  /* --LightGrayishBlue1: hsl(234, 39%, 85%); */
   --LightGrayishBlue2: hsl(236, 33%, 92%);
-  --DarkGrayishBlue2: hsl(234, 11%, 52%);
+  /* --DarkGrayishBlue2: hsl(234, 11%, 52%); */
+  --DarkGrayishBlue3: hsl(237, 14%, 26%);
   --VeryDarkGrayishBlue1: hsl(233, 14%, 35%);
-  --VeryDarkGrayishBlue2: hsl(237, 14%, 26%);
+  --whatisthis----------: hsl(236, 13%, 40%);
 }
 
 * {
@@ -37,6 +37,10 @@ h1 {
   text-transform: uppercase;
   font-size: 1.8rem;
   letter-spacing: 0.5rem;
+}
+
+#scheme-day {
+  display: none;
 }
 
 button {
@@ -170,6 +174,7 @@ input[type="checkbox"] {
   height: 18px;
   content: "";
   background-color: var(--todoitembg);
+  background: var(--todoitembg);
   border-radius: 50%;
   overflow: hidden;
 }
@@ -217,6 +222,10 @@ label {
   text-decoration: line-through;
 }
 
+.delete:hover {
+  color: red;
+}
+
 #todo-list_footer {
   color: var(--DarkGrayishBlue);
   border-bottom-left-radius: 5px;
@@ -252,4 +261,47 @@ label {
   color: hsl(240, 4.2%, 41.8%);
   font-size: 0.85rem;
   text-align: center;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --mainbg: hsl(235, 21%, 11%);
+    --todoitembg: hsl(235, 24%, 19%);
+    --DarkGrayishBlue: hsl(234, 11%, 52%);
+    --tasktext: hsl(234, 39%, 85%);
+    --LightGrayishBlue: hsl(233, 14%, 35%);
+  }
+
+  main {
+    background: var(--mainbg) url(images/bg-mobile-dark.jpg) no-repeat;
+  }
+
+  #scheme-day {
+    display: block;
+  }
+
+  #scheme-night {
+    display: none;
+  }
+
+  #todo-item_new {
+    border: 1px solid var(--todoitembg);
+  }
+
+  #new_task {
+    color: var(--tasktext);
+  }
+
+  #todo-list {
+    border: 1px solid var(--todoitembg);
+  }
+
+  .todo-item {
+    border-bottom: 0.5px solid hsl(237, 14%, 26%);
+    font-weight: 400;
+  }
+
+  .todo-item.strike label {
+    color: hsl(233, 14%, 35%);
+  }
 }

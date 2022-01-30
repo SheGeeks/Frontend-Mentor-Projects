@@ -141,15 +141,50 @@ input[type="checkbox"] {
 }
 
 /* On mouse-over, add a grey background color */
-.todo-contents:hover input ~ .checkmark {
-  border: 2px solid blue;
-  border-radius: 25px;
+.todo-contents:hover input:not(:checked) ~ .checkmark {
+  /* border: 2px solid blue; */
+  background: var(--gradient);
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50%;
+  border: none;
+}
+
+.todo-contents:hover input:checked ~ .checkmark {
+  /* border: 2px solid blue; */
+  background: linear-gradient(270deg, hsl(0, 0%, 37%), rgb(175, 175, 175));
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50%;
+  border: none;
+}
+
+.todo-contents:hover input:checked ~ .checkmark::after {
+  background: url(images/icon-cross.svg) no-repeat;
+  left: 7px;
+  top: 7px;
+  width: 8px;
+}
+
+.todo-contents:hover input:not(:checked) ~ .checkmark::after {
+  position: absolute;
+  display: block;
+  top: 1px;
+  left: 1px;
+  width: 18px;
+  height: 18px;
+  content: "";
+  background-color: var(--todoitembg);
+  border-radius: 50%;
+  overflow: hidden;
 }
 
 /* When the checkbox is checked, add a background */
 input:checked ~ .checkmark {
   background: var(--gradient);
-  border: 2px solid var(--todoitembg);
+  border: none;
+  width: 20px;
+  height: 20px;
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
@@ -157,7 +192,7 @@ input:checked ~ .checkmark {
   content: "";
   position: absolute;
   display: none;
-  border: 1px solid #fff;
+  background: var(--gradient);
 }
 
 /* Show the checkmark when checked */
@@ -166,10 +201,10 @@ input:checked ~ .checkmark:after {
 }
 
 .checkmark:after {
-  left: 3px;
-  top: 4px;
-  width: 9.5px;
-  height: 8px;
+  left: 5px;
+  top: 6px;
+  width: 10px;
+  height: 10px;
   background: url(images/icon-check.svg) no-repeat;
   border: none;
 }

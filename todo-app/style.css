@@ -30,7 +30,6 @@
 
 body {
   background-color: var(--mainbg);
-  color: var(--idklightgray);
 }
 
 h1 {
@@ -43,7 +42,6 @@ h1 {
 button {
   background-color: transparent;
   border: none;
-  font-size: 0.65rem;
   color: var(--DarkGrayishBlue);
   cursor: pointer;
 }
@@ -80,6 +78,7 @@ main {
   border-radius: 5px;
   border: 1px solid #fff;
   padding: 1rem 3.1rem;
+  cursor: pointer;
 }
 
 input[type="text"] {
@@ -103,10 +102,10 @@ input[type="text"] {
   border: 1px solid #fff;
 }
 
-.todo-item {
+.todo-item:not(#todo-item_new) {
   border-bottom: 1px solid var(--LightGrayishBlue);
   cursor: pointer;
-  padding: 1.121rem 1.1rem;
+  padding: 1.07rem 1.1rem;
 }
 
 .todo-item,
@@ -122,7 +121,6 @@ input[type="text"] {
   justify-content: space-between;
   align-items: center;
   position: relative;
-  font-size: 0.73rem;
   cursor: pointer;
   width: 100%;
 }
@@ -156,7 +154,7 @@ input[type="checkbox"] {
 }
 
 .todo-contents:hover input:checked ~ .checkmark {
-  background: linear-gradient(270deg, hsl(0, 0%, 37%), rgb(175, 175, 175));
+  background: var(--tasktext);
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
   border-radius: 50%;
@@ -207,7 +205,7 @@ input:checked ~ .checkmark:after {
 }
 
 label {
-  font-size: 0.75rem;
+  font-size: 0.73rem;
   color: var(--tasktext);
   text-align: left;
   margin-left: 2rem;

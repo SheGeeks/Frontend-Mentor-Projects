@@ -140,9 +140,8 @@ input[type="checkbox"] {
   border-radius: 25px;
 }
 
-/* On mouse-over, add a grey background color */
+/* On mouse-over, add a gradient border color */
 .todo-contents:hover input:not(:checked) ~ .checkmark {
-  /* border: 2px solid blue; */
   background: var(--gradient);
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
@@ -151,19 +150,11 @@ input[type="checkbox"] {
 }
 
 .todo-contents:hover input:checked ~ .checkmark {
-  /* border: 2px solid blue; */
   background: linear-gradient(270deg, hsl(0, 0%, 37%), rgb(175, 175, 175));
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
   border-radius: 50%;
   border: none;
-}
-
-.todo-contents:hover input:checked ~ .checkmark::after {
-  background: url(images/icon-cross.svg) no-repeat;
-  left: 7px;
-  top: 7px;
-  width: 8px;
 }
 
 .todo-contents:hover input:not(:checked) ~ .checkmark::after {
@@ -250,10 +241,6 @@ input:checked ~ .checkmark:after {
   font-weight: 700;
   padding: 1rem 0.5rem;
 }
-
-/* #todo-sort button:hover {
-  color: var(--primary-bright-blue);
-} */
 
 #drag-note {
   margin-top: 5rem;

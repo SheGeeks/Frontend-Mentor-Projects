@@ -53,6 +53,10 @@ updateCounter();
 // Create new todo
 newTaskInput.addEventListener("keydown", (e) => {
   if (e.keyCode == 13) {
+    if (!newTaskInput.value || newTaskInput.value[0] == " ") {
+      return;
+    }
+
     // Create new task and add to end of list
     const clonedToDo = todoTemplate.cloneNode(true);
     todoListContainer.appendChild(clonedToDo);

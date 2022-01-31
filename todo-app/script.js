@@ -68,7 +68,17 @@ newTaskInput.addEventListener("keydown", (e) => {
 
     // Remove check and strike from cloned task template
     newToDo.childNodes[1].classList.remove("strike");
+    console.log(newToDo);
     newToDo.querySelector("input[type=checkbox]").checked = false;
+
+    if (
+      document.querySelector(".sort-btn.selected").innerHTML === "All" ||
+      document.querySelector(".sort-btn.selected").innerHTML === "Active"
+    ) {
+      newToDo.style.display = "flex";
+    } else {
+      newToDo.style.display = "none";
+    }
 
     // Update todo counter
     updateCounter();
@@ -78,7 +88,9 @@ newTaskInput.addEventListener("keydown", (e) => {
 // Strike Tasks When Checked
 todoListContainer.addEventListener("click", (e) => {
   //   e.stopPropagation();
-  let sortBtns = document.querySelector(".sort-btn.selected").innerHTML;
+
+  let sortBtns = document.querySelector(".sort-btn.selected");
+  let todoItem = e.target.closest(".todo-item");
 
   if (e.target.matches("input[type=checkbox]")) {
     let todoContents = e.target.closest(".todo-contents");
@@ -86,19 +98,22 @@ todoListContainer.addEventListener("click", (e) => {
       todoContents.classList.remove("strike");
 
       // //Hide or Show based on sort view
-      let todoItem = e.target.closest(".todo-item");
       if (sortBtns === "Completed") {
-        todoItem.style.display = "none";
+        switchSortView("flex", "none");
       }
     } else {
       todoContents.classList.add("strike");
 
       // //Hide or Show based on sort view
       if (sortBtns === "Active") {
+        console.log(todoItem);
         todoItem.style.display = "none";
       }
     }
   }
+
+  // Update todo counter
+  updateCounter();
 
   // Delete Tasks
   if (
@@ -107,11 +122,12 @@ todoListContainer.addEventListener("click", (e) => {
     e.target.matches("path")
   ) {
     // e.currentTarget.childNodes
-    e.target.closest(".todo-item").remove();
+    e.target.closest(".todo-item").classList.add("picked");
+    setTimeout(function () {
+      e.target.closest(".todo-item").remove();
+      updateCounter();
+    }, 550);
   }
-
-  // Update todo counter
-  updateCounter();
 });
 
 // Clear completed tasks

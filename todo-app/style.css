@@ -175,43 +175,6 @@ input[type="checkbox"] {
   border-radius: 25px;
 }
 
-/* On mouse-over, add a gradient border color */
-.todo-contents:not(#todo-item_new .todo-contents):hover
-  input:not(:checked)
-  ~ .checkmark {
-  background: var(--gradient);
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  border-radius: 50%;
-  border: none;
-}
-
-.todo-contents:not(#todo-item_new .todo-contents):hover
-  input:checked
-  ~ .checkmark {
-  background: var(--tasktext);
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  border-radius: 50%;
-  border: none;
-}
-
-.todo-contents:not(#todo-item_new .todo-contents):hover
-  input:not(:checked)
-  ~ .checkmark::after {
-  position: absolute;
-  display: block;
-  top: 1px;
-  left: 1px;
-  width: 18px;
-  height: 18px;
-  content: "";
-  background-color: var(--todoitembg);
-  background: var(--todoitembg);
-  border-radius: 50%;
-  overflow: hidden;
-}
-
 /* When the checkbox is checked, add a background */
 input:checked ~ .checkmark {
   background: var(--gradient);
@@ -275,10 +238,6 @@ label {
   animation-timing-function: linear;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-}
-
-.delete:hover {
-  color: red;
 }
 
 #todo-list_footer {
@@ -401,6 +360,47 @@ label {
   .checkmark::after {
     left: 7px;
     top: 8px;
+  }
+
+  /* On mouse-over, add a gradient border color */
+  .todo-contents:not(#todo-item_new .todo-contents):hover
+    input:not(:checked)
+    ~ .checkmark {
+    background: var(--gradient);
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50%;
+    border: none;
+  }
+
+  .todo-contents:not(#todo-item_new .todo-contents):hover
+    input:checked
+    ~ .checkmark {
+    background: var(--tasktext);
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50%;
+    border: none;
+  }
+
+  .todo-contents:not(#todo-item_new .todo-contents):hover
+    input:not(:checked)
+    ~ .checkmark::after {
+    position: absolute;
+    display: block;
+    top: 1px;
+    left: 1px;
+    width: 18px;
+    height: 18px;
+    content: "";
+    background-color: var(--todoitembg);
+    background: var(--todoitembg);
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  .delete:hover {
+    color: red;
   }
 
   .todo-contents:not(#todo-item_new .todo-contents):hover

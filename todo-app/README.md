@@ -33,27 +33,55 @@ Users should be able to:
 
 ### Screenshot
 
-<!-- ![WIP]() -->
+![Desktop View](desktop-ss.png)
 
 ### Links
 
-- Solution: [WIP](#)
-- Live Site: [WIP](#)
+- [Solution](https://github.com/SheGeeks/Frontend-Mentor-Projects/tree/Frontend-Mentor-Projects/todo-app)
+- [Live Site](https://shegeeks.github.io/Frontend-Mentor-Projects/todo-app/)
 
 ## My process
 
 ### Built with
 
+- Mobile-first workflow
 - Semantic HTML5 markup
 - CSS custom properties
+- Fluid Typography
 - Flexbox
-- Mobile-first workflow
+- JavaScript
+- [Sortable](https://github.com/SortableJS/Sortable) (for drag and drop)
 
 ### What I learned
 
+There was a lot of learning with this project. While the HTML was simple, the CSS and JS were a challenge. In fact, I did a lot of things for the first time with this project:
+
+- Creating a custom checkbox with gradients
+- Using [Sortable](https://github.com/SortableJS/Sortable) to implement drag and drop
+- Creating a dark mode theme
+- Using color scheme data with JS
+- Changing caret color
+
+I also got to explore the viewBox property more with the SVGs, which was fun. I took time to dig into accessibility around the inputs. Using `clamp()` was helpful to avoid adding styles to change font sizes at scale. I also added a few animations for completing tasks and deleting them, which was new for me. However, I very much want to continue digging into using CSS animations.
+
+Overall, this was a great CSS and JavaScript challenge, exactly what I was looking for to continue building my skills in both.
+
 ### Continued development
 
+- Improving attribute selection and structure in HTML and CSS
+- CSS Animations
+
 ### Useful resources
+
+- [Create Gradient Border Circle (StackOverFlow)](https://stackoverflow.com/questions/31388861/is-it-possible-to-create-a-gradient-border-on-a-circle-with-css3)
+- [SVG viewBox (MDN)](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/viewBox)
+- [Caret Color (MDN)](https://developer.mozilla.org/en-US/docs/Web/CSS/caret-color)
+- [Labeling Controls (W3)](https://www.w3.org/WAI/tutorials/forms/labels/)
+- [Design An Inclusive Todo List](https://inclusive-components.design/a-todo-list/)
+- [Creating A Fluid Type Scale with CSS Clamp](https://www.aleksandrhovhannisyan.com/blog/fluid-type-scale-with-css-clamp/)
+- [Fluid Typography Calculator](https://royalfig.github.io/fluid-typography-calculator/)
+- [Create A User Controlled Dark or Light Mode](https://piccalil.li/tutorial/create-a-user-controlled-dark-or-light-mode/)
+- [Dark Modes With CSS](https://css-tricks.com/dark-modes-with-css/)
 
 ## Author
 

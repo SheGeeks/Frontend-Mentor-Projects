@@ -50,7 +50,7 @@ updateCounter();
 
 // Create new todo
 newTaskInput.addEventListener("keydown", (e) => {
-  if (e.key == 13 || e.key == "Enter") {
+  if (e.which == 13 || e.key == "Enter") {
     if (!newTaskInput.value || newTaskInput.value[0] == " ") {
       return;
     }
@@ -72,6 +72,8 @@ newTaskInput.addEventListener("keydown", (e) => {
       document.querySelector(".sort-btn.selected").innerHTML === "Completed"
     ) {
       newToDo.style.display = "none";
+    } else {
+      newToDo.style.display = "flex";
     }
 
     // Update todo counter
@@ -210,4 +212,6 @@ applySetting();
 // Sorting script by Sortable
 new Sortable(todoListContainer, {
   animation: 300,
+  delay: 400,
+  delayOnTouchOnly: true,
 });

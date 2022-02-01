@@ -74,7 +74,7 @@ main {
 #todo-container {
   width: 100%;
   position: relative;
-  max-width: 600px;
+  max-width: 540px;
 }
 
 #todo-item_new {
@@ -328,7 +328,7 @@ label {
   }
 
   #todo-item_new {
-    padding: 1.25rem 3.1rem;
+    padding: 1.31rem 3.1rem;
     margin-top: 2.2rem;
   }
 

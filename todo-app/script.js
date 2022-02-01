@@ -50,7 +50,7 @@ updateCounter();
 
 // Create new todo
 newTaskInput.addEventListener("keydown", (e) => {
-  if (e.keyCode == 13) {
+  if (e.key == 13 || e.key == "Enter") {
     if (!newTaskInput.value || newTaskInput.value[0] == " ") {
       return;
     }

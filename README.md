@@ -8,6 +8,7 @@ Down below are the links to demo my live solutions. Up above you can review my c
 
 ## 🐔 Digitally Grown
 
+- [Todo App](https://shegeeks.github.io/Frontend-Mentor-Projects/todo-app/) _1/31/22_
 - [Ecommerce Product Page](https://shegeeks.github.io/Frontend-Mentor-Projects/time-tracking-dashboard/) _1/26/22_
 - [Time-tracking Dashboard](https://shegeeks.github.io/Frontend-Mentor-Projects/time-tracking-dashboard/) _1/23/22_
 - [Room Homepage](https://www.frontendmentor.io/challenges/room-homepage-BtdBY_ENq) _1/16/22_
@@ -15,13 +16,15 @@ Down below are the links to demo my live solutions. Up above you can review my c
 
 ## 🐣 Hatched
 
-- [Todo App](https://www.frontendmentor.io/challenges/todo-app-Su1_KokOW) | [Code in Progress...](https://github.com/SheGeeks/Frontend-Mentor-Projects/tree/Frontend-Mentor-Projects/todo-app) _1/28/22_
+_What was hatched is now all grown up. Check back next week to see what hatches from incubation_
 
 ## 🥚 Incubating
 
 - [Launch countdown timer](https://www.frontendmentor.io/challenges/launch-countdown-timer-N0XkGfyz-)
 - [IP Address Tracker](https://www.frontendmentor.io/challenges/ip-address-tracker-I8-0yYAH0)
 - [URL shortening API landing page](https://www.frontendmentor.io/challenges/url-shortening-api-landing-page-2ce3ob-G)
+
+---
 
 ---
 

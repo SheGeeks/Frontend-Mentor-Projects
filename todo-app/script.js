@@ -32,8 +32,6 @@ function switchSortOptions(e) {
     option.classList.remove("selected");
     e.target.classList.add("selected");
   });
-
-  console.log(options);
 }
 
 function switchSortView(style, style2) {
@@ -68,15 +66,11 @@ newTaskInput.addEventListener("keydown", (e) => {
 
     // Remove check and strike from cloned task template
     newToDo.childNodes[1].classList.remove("strike");
-    console.log(newToDo);
     newToDo.querySelector("input[type=checkbox]").checked = false;
 
     if (
-      document.querySelector(".sort-btn.selected").innerHTML === "All" ||
-      document.querySelector(".sort-btn.selected").innerHTML === "Active"
+      document.querySelector(".sort-btn.selected").innerHTML === "Completed"
     ) {
-      newToDo.style.display = "flex";
-    } else {
       newToDo.style.display = "none";
     }
 
@@ -106,7 +100,6 @@ todoListContainer.addEventListener("click", (e) => {
 
       // //Hide or Show based on sort view
       if (sortBtns === "Active") {
-        console.log(todoItem);
         todoItem.style.display = "none";
       }
     }
@@ -213,3 +206,8 @@ schemeToggle.addEventListener("click", (e) => {
 });
 
 applySetting();
+
+// Sorting script by Sortable
+new Sortable(todoListContainer, {
+  animation: 300,
+});

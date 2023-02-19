@@ -141,6 +141,10 @@ hr {
     border-radius: 10px;
   }
 
+  .overlay:hover {
+    cursor: pointer;
+  }
+
   .preview:hover .overlay {
     opacity: 1;
   }

@@ -1,22 +1,16 @@
 # Frontend Mentor Projects
 
-These are challenges I've completed, am currently working through, and interested in taking on when time permits from FrontendMentor.io.
-
-Down below are the links to demo my live solutions. Up above you can review my code for each challenge in their respective folders. Feedback and collaborations are welcome!
+These are challenges I've completed, am currently working through, and interested in taking on when time permits from [FrontendMentor.io](https://www.frontendmentor.io/profile/SheGeeks). Down below are the links to demo my solutions. Up above you can review my code for each challenge in their respective folders.
 
 ---
 
 ## 🐔 Digitally Grown
 
-- [Todo App](https://shegeeks.github.io/Frontend-Mentor-Projects/todo-app/) _1/31/22_
-- [Ecommerce Product Page](https://shegeeks.github.io/Frontend-Mentor-Projects/time-tracking-dashboard/) _1/26/22_
-- [Time-tracking Dashboard](https://shegeeks.github.io/Frontend-Mentor-Projects/time-tracking-dashboard/) _1/23/22_
-- [Room Homepage](https://www.frontendmentor.io/challenges/room-homepage-BtdBY_ENq) _1/16/22_
-- [NFT Preview Card](https://shegeeks.github.io/Frontend-Mentor-Projects/nft-preview-card/) _1/14/22_
+- [Product Preview Card Component](https://shegeeks.github.io/Frontend-Mentor-Projects/product-preview-card/) _3/19/23_
 
 ## 🐣 Hatched
 
-_What was hatched is now all grown up. Check back next week to see what hatches from incubation_
+_What was hatched is now all grown up. Check back next week to see what hatches from incubation!_
 
 ## 🥚 Incubating
 
@@ -27,6 +21,14 @@ _What was hatched is now all grown up. Check back next week to see what hatches 
 ---
 
 ---
+
+### 2022 Challenges Completed
+
+- [Todo App](https://shegeeks.github.io/Frontend-Mentor-Projects/todo-app/) _1/31/22_
+- [Ecommerce Product Page](https://shegeeks.github.io/Frontend-Mentor-Projects/ecommerce-product-page/) _1/26/22_
+- [Time-tracking Dashboard](https://shegeeks.github.io/Frontend-Mentor-Projects/time-tracking-dashboard/) _1/23/22_
+- [Room Homepage](https://shegeeks.github.io/Frontend-Mentor-Projects/room-homepage/) _1/16/22_
+- [NFT Preview Card](https://shegeeks.github.io/Frontend-Mentor-Projects/nft-preview-card/) _1/14/22_
 
 ### 2021 Challenges Completed
 

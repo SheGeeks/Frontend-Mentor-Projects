@@ -257,8 +257,8 @@ nav ul {
 }
 
 .attribution a {
-  text-decoration: none;
-  color: hsl(228, 56.4%, 26.1%);
+  /* text-decoration: none; */
+  color: hsl(228, 91%, 63%);
 }
 
 /* ............ */

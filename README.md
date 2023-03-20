@@ -6,7 +6,7 @@ These are challenges I've completed, am currently working through, and intereste
 
 ## 🐔 Digitally Grown
 
-- [News Homepage](https://shegeeks.github.io/Frontend-Mentor-Projects/product-preview-card/) _3/19/23_
+- [News Homepage](https://shegeeks.github.io/Frontend-Mentor-Projects/news-homepage/) _3/19/23_
 - [Product Preview Card Component](https://shegeeks.github.io/Frontend-Mentor-Projects/product-preview-card/) _3/19/23_
 
 ## 🐣 Hatched

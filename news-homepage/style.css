@@ -1,0 +1,398 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;700;800&display=swap");
+
+:root {
+  --soft-orange: hsl(35, 77%, 62%);
+  --soft-red: hsl(5, 85%, 63%);
+  --off-white: hsl(36, 100%, 99%);
+  --Gray-blue: hsl(233, 8%, 79%);
+  --Dark-gray-blue: hsl(236, 13%, 42%);
+  --Dark-blue: hsl(240, 100%, 5%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  padding: 1rem;
+}
+
+body p {
+  font-size: 15px;
+  line-height: 2.5ch;
+}
+
+section {
+  margin: 2rem 0;
+}
+
+article {
+  margin: 1rem 0;
+}
+
+article img {
+  width: 100%;
+  height: auto;
+}
+
+h2 {
+  font-weight: 800;
+  font-size: 2.5rem;
+  color: var(--Dark-blue);
+}
+
+h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+/* //////////////// */
+
+/* Navigation */
+nav {
+  padding: 1rem 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+}
+
+.opened ul {
+  position: fixed;
+  height: 100%;
+  width: 68%;
+  z-index: 3;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  transition: 0.5s;
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  padding: 10rem 1.5rem;
+  gap: 1.75rem;
+  transition: 0.5s;
+}
+
+.opened ul:before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: #0000008d;
+  z-index: -2;
+}
+
+.opened ul:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: #fff;
+}
+
+.closed ul {
+  display: none;
+}
+
+#menuButton {
+  background-color: transparent;
+  border: none;
+  z-index: 4;
+  cursor: pointer;
+}
+
+.navTopLevel.opened a {
+  display: block;
+  text-align: left;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--Dark-gray-blue);
+}
+
+.nav-links a:hover {
+  color: var(--soft-red);
+}
+
+.logo {
+  width: 50px;
+  height: auto;
+}
+/* ............ */
+
+/* Featured Article */
+#featured p,
+#popular p {
+  color: var(--Dark-gray-blue);
+}
+
+#read-more {
+  padding: 1rem 2rem;
+  background-color: var(--soft-red);
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.5ch;
+}
+
+#read-more:hover {
+  background-color: var(--Dark-blue);
+  transition: all 0.45s;
+}
+
+#featured p {
+  margin-bottom: 2rem;
+}
+/* ............ */
+
+/* New Articles */
+#new {
+  background-color: var(--Dark-blue);
+  color: var(--off-white);
+  margin: 5rem 0;
+  padding: 1.5rem 1.25rem;
+}
+
+#new article:hover {
+  cursor: pointer;
+}
+
+#new article:hover h3 {
+  color: var(--soft-orange);
+}
+
+.bottom-border {
+  border-bottom: 1px solid var(--Dark-gray-blue);
+}
+
+#new h2 {
+  color: var(--soft-orange);
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+#new h3 {
+  font-size: 1.25rem;
+}
+
+#new p {
+  color: var(--Gray-blue);
+  font-size: 0.98rem;
+}
+/* ............ */
+
+/* Popular Articles */
+#popular {
+  counter-reset: section;
+}
+
+#popular article {
+  display: flex;
+  gap: 2rem;
+}
+
+#popular article h3 {
+  color: var(--Dark-blue);
+  font-weight: 800;
+}
+
+#popular article:hover h3 {
+  color: var(--soft-red);
+  font-weight: 800;
+}
+
+#popular article h3::before {
+  counter-increment: section;
+  content: "0" counter(section) "";
+  display: block;
+  color: var(--Gray-blue);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+#popular article img {
+  width: 110px;
+  height: 130px;
+}
+
+/* ............ */
+
+/* Credit */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: hsl(228, 45%, 44%);
+}
+
+/* ............ */
+
+/* Desktop Styles */
+
+@media screen and (min-width: 750px) {
+  nav {
+    padding-bottom: 3rem;
+  }
+
+  #menuButton {
+    display: none;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.75rem;
+  }
+
+  .closed ul {
+    display: flex;
+  }
+  main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 0.5fr;
+    grid-column-gap: 16px;
+    grid-row-gap: 17px;
+  }
+
+  #featured {
+    grid-area: 1 / 1 / 2 / 3;
+    margin: 0;
+  }
+
+  #new {
+    grid-area: 1 / 3 / 2 / 4;
+    margin: 0;
+  }
+
+  #popular {
+    grid-area: 2 / 1 / 3 / 4;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 16px;
+  }
+}
+
+@media screen and (min-width: 1078px) {
+  body {
+    padding: 3rem 10.5rem;
+  }
+
+  nav .logo {
+    width: 60px;
+  }
+
+  main {
+    grid-column-gap: 25px;
+  }
+
+  #featured h2 {
+    font-size: 3.5rem;
+    line-height: 1.42ch;
+  }
+
+  #featured .flex {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 3rem;
+    margin-top: 1.95rem;
+  }
+
+  #featured .flex h2 {
+    width: 40%;
+  }
+
+  #featured .flex .article-content {
+    width: 48%;
+  }
+
+  #featured p {
+    margin-bottom: 3rem;
+  }
+
+  #read-more {
+    padding: 1rem 2rem;
+    font-size: 0.85rem;
+  }
+
+  #new {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    padding: 1.5rem 1.5rem 2.5rem;
+  }
+
+  #new h2 {
+    font-size: 2.5rem;
+  }
+
+  #new article {
+    cursor: pointer;
+    margin: 0;
+  }
+
+  #new h3 {
+    font-size: 1.25rem;
+  }
+
+  #new article p {
+    font-size: 0.95rem;
+  }
+
+  #new article:not(:last-of-type) p {
+    margin-bottom: 2.25rem;
+  }
+
+  #popular {
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    margin-top: 2.35rem;
+  }
+
+  #popular article {
+    gap: 1.3rem;
+    cursor: pointer;
+  }
+
+  #popular article img {
+    width: 95px;
+    height: 127px;
+  }
+
+  #popular article h3::before {
+    font-size: 2rem;
+    margin-bottom: 0.45rem;
+  }
+
+  #popular article h3 {
+    font-size: 1.15rem;
+    margin-bottom: 0.7rem;
+  }
+
+  #popular article p {
+    font-size: 14px;
+    line-height: 2.8ch;
+  }
+}

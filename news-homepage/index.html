@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+  <title>Frontend Mentor | News homepage</title>
+</head>
+
+<body>
+  <nav class='navTopLevel closed' id='mainNav' aria-label="Main">
+    <img class="logo" src="assets/images/logo.svg" alt="" />
+    <button id="menuButton" class="icon" aria-expanded="false" aria-controls="menuItems"><img
+        src="assets/images/icon-menu.svg" alt="Menu"></button>
+    <ul id="menuItems">
+      <li class="nav-links"><a href="#">Home</a></li>
+      <li class="nav-links"><a href="#">New</a></li>
+      <li class="nav-links"><a href="#">Popular</a></li>
+      <li class="nav-links"><a href="#">Trending</a></li>
+      <li class="nav-links"><a href="#">Categories</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <article id="featured">
+      <picture>
+        <source media="(max-width: 699px)" srcset="assets/images/image-web-3-mobile.jpg" />
+        <source media="(min-width: 700px)" srcset="assets/images/image-web-3-desktop.jpg" />
+        <img src="assets/images/image-web-3-mobile.jpg" alt="abstract shapes" />
+        <!-- <img src="assets/images/image-web-3-mobile.jpg" alt="" /> -->
+      </picture>
+      <div class="flex">
+        <h2>The Bright Future of Web 3.0?</h2>
+        <div class="article-content">
+          <p>
+            We dive into the next evolution of the web that claims to put the
+            power of the platforms back into the hands of the people. But is
+            it really fulfilling its promise?
+          </p>
+          <a href="#" id="read-more">Read more</a>
+        </div>
+      </div>
+    </article>
+
+    <section id="new">
+      <h2>New</h2>
+      <article class="bottom-border">
+        <h3>Hydrogen VS Electric Cars</h3>
+        <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+      </article>
+      <article class="bottom-border">
+        <h3>The Downsides of AI Artistry</h3>
+        <p>
+          What are the possible adverse effects of on-demand AI image
+          generation?
+        </p>
+      </article>
+      <article>
+        <h3>Is VC Funding Drying Up?</h3>
+        <p>
+          Private funding by VC firms is down 50% YOY. We take a look at what
+          that means.
+        </p>
+      </article>
+    </section>
+
+    <section id="popular">
+      <article>
+        <img src="assets/images/image-retro-pcs.jpg" alt="" />
+        <div>
+          <h3>Reviving Retro PCs</h3>
+          <p>What happens when old PCs are given modern upgrades?</p>
+        </div>
+      </article>
+      <article>
+        <img src="assets/images/image-top-laptops.jpg" alt="" />
+        <div>
+          <h3>Top 10 Laptops of 2022</h3>
+          <p>Our best picks for various needs and budgets.</p>
+        </div>
+      </article>
+      <article>
+        <img src="assets/images/image-gaming-growth.jpg" alt="" />
+        <div>
+          <h3>The Growth of Gaming</h3>
+          <p>How the pandemic has sparked fresh opportunities.</p>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <div class="attribution">
+    Challenge by
+    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a
+      href="#">Corvida</a>.
+  </div>
+</body>
+<script>
+  function toggleMenu(event) {
+    var navBar = document.getElementById("mainNav");
+    var expanded = event.currentTarget.getAttribute("aria-expanded");
+    if (expanded === "true") {
+      navBar.classList.add("closed");
+      navBar.classList.remove("opened");
+      event.currentTarget.setAttribute('aria-expanded', 'false');
+      event.currentTarget.firstChild.setAttribute('src', 'assets/images/icon-menu.svg');
+    } else {
+      navBar.classList.add("opened");
+      navBar.classList.remove("closed");
+      event.currentTarget.setAttribute('aria-expanded', 'true');
+      event.currentTarget.firstChild.setAttribute('src', 'assets/images/icon-menu-close.svg');
+    }
+
+  }
+
+  document.getElementById('menuButton').addEventListener('click', toggleMenu, false);
+</script>
+
+</html>

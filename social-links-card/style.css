@@ -22,6 +22,19 @@ body {
     min-height: 100vh;
 }
 
+a:focus-visible,
+button:focus-visible {
+    outline: 2px solid #c5f82a;
+}
+
+#folio_link:focus-visible,
+button:focus-visible,
+small a:focus-visible {
+    outline: 2px solid #c5f82a;
+    border-radius: 75px;
+    padding: 0 .5rem;
+}
+
 .container {
     display: flex;
     justify-content: center;
@@ -204,6 +217,18 @@ small a {
     color: var(--off-black);
     background: url('assets/NeonBG_light.jpg') no-repeat;
     background-size: cover;
+}
+
+.light-mode a:focus-visible {
+    outline: 2px solid hsl(191.4, 75.5%, 38.4%)
+}
+
+.light-mode #folio_link:focus-visible,
+.light-mode button:focus-visible,
+.light-mode small a:focus-visible {
+    outline: 2px solid hsl(191.4, 75.5%, 38.4%);
+    border-radius: 75px;
+    padding: 0 .5rem;
 }
 
 .light-mode main {

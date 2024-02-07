@@ -49,8 +49,8 @@ main {
 /* User Styles */
 
 .user_img {
-    width: 100px;
-    height: 100px;
+    width: 75px;
+    height: 75px;
     border-radius: 100%;
     object-fit: cover;
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
@@ -66,13 +66,14 @@ main {
 }
 
 .user_info {
-    margin: 2rem 0;
+    margin: 1rem 0;
 }
 
 .name {
     color: #fff;
     font-weight: 600;
     margin: 0 0 .25rem;
+    font-size: 1.5rem;
 }
 
 .loc {
@@ -100,7 +101,7 @@ main {
     color: #fff;
     text-decoration: none;
     background-color: hsla(75, 12.7%, 31%, 0.56);
-    padding: 1rem;
+    padding: .75rem 1rem;
     border-radius: 5px;
     position: relative;
     border: 1px solid #aeaeae25;

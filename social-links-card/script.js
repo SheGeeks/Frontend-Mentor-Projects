@@ -1,4 +1,4 @@
-const button = document.querySelector(".btn");
+const button = document.querySelector("#toggle");
 const useLight = window.matchMedia("(prefers-color-scheme: light)");
 
 function toggleLightMode(state) {

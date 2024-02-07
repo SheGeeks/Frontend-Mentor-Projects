@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Protest+Strike&display=swap');
+
+:root {
+    --primary: hsl(75, 94%, 57%);
+    --gray: hsl(0, 0%, 20%);
+    --dark-gray: hsl(0, 0%, 12%);
+    --off-black: hsl(0, 0%, 8%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: var(--off-black);
+    color: #fff;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    background-color: var(--gray);
+    padding: 1rem;
+    border-radius: 5px;
+    font-weight: 700;
+    transition: all ease .3s;
+    position: relative;
+}
+
+a:hover {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    transition: all ease .3s;
+}
+
+
+
+.quote span {
+    font-family: "Protest Strike", sans-serif;
+    font-weight: 300;
+    font-size: 1.25rem;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+main {
+    min-width: 375px;
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    align-items: center;
+    text-align: center;
+    background-color: var(--dark-gray);
+}
+
+.user_img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    border: 1px solid var(--off-black);
+    object-fit: cover;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    transition: all ease .3s;
+}
+
+.user_img:hover {
+    cursor: pointer;
+    border: 1px solid var(--primary);
+    transform: scale(1.2);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    transition: all ease .3s;
+}
+
+.user_info {
+    margin: 2rem 0;
+}
+
+.name {
+    color: #fff;
+    font-weight: 500;
+    margin: 0 0 .25rem;
+}
+
+.loc {
+    color: var(--primary);
+    font-weight: 500;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    margin: 1rem;
+    width: 100%;
+}
+
+a:first-child:hover {
+    background: #000 url('assets/github-mark-white.png') no-repeat;
+    background-size: 25%;
+    background-position: center left;
+    color: #fff;
+}
+
+a:nth-child(2) {
+    position: relative;
+}
+
+a:nth-child(2):after {
+    content: "";
+    background-image: url(assets/squiggle.svg);
+    background-repeat: repeat-x;
+    position: absolute;
+    right: 1rem;
+    bottom: 0;
+    height: 16px;
+    background-position: center;
+    transition: all 0.3s;
+}
+
+a:nth-child(2):hover:after {
+    width: 70%;
+    transition: all 0.3s;
+}
+
+a:nth-child(2):hover {
+    background: #fff url('assets/fem_logo.png') no-repeat;
+    background-size: 28%;
+    background-position: center left;
+    color: #3f54a3;
+}
+
+a:nth-last-child(3):hover {
+    background: #007fbc url(assets/LinkedIn_icon.svg) no-repeat;
+    background-position: center left;
+    color: #fff;
+}
+
+a:nth-last-child(2):hover {
+    background: #000 url(assets/logo-white.png) no-repeat;
+    background-size: 25%;
+    background-position: center left;
+    color: #fff;
+}
+
+a:last-child:hover {
+    background-color: #fff;
+    background: url(assets/Instagram_Glyph_White.svg) no-repeat, linear-gradient(90deg, #ffd600, #ffaf00, #ff822e, #ff4855, #ff007e, #ff00ab, #d800d6, #7638fa);
+    background-repeat: no-repeat;
+    background-size: 25% auto;
+    background-position: left center;
+    color: #fff;
+}

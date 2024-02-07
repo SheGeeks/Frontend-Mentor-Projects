@@ -15,39 +15,17 @@
 
 body {
     font-family: "Inter", sans-serif;
-    background-color: var(--off-black);
+    background-color: #ededed;
     color: #fff;
-}
-
-a {
-    color: #fff;
-    text-decoration: none;
-    background-color: var(--gray);
-    padding: 1rem;
-    border-radius: 5px;
-    font-weight: 700;
-    transition: all ease .3s;
-    position: relative;
-}
-
-a:hover {
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-    transition: all ease .3s;
-}
-
-
-
-.quote span {
-    font-family: "Protest Strike", sans-serif;
-    font-weight: 300;
-    font-size: 1.25rem;
 }
 
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90vh;
+    height: 100vh;
+    background: url('assets/NeonBG.png') no-repeat;
+    background-size: cover;
 }
 
 main {
@@ -58,14 +36,16 @@ main {
     border-radius: 10px;
     align-items: center;
     text-align: center;
-    background-color: var(--dark-gray);
+    border: 1px solid hsla(75, 12.7%, 31%, 0.56);
+    background-color: hsla(0, 0%, 12%, 0.284);
+    backdrop-filter: blur(50px);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 .user_img {
     width: 100px;
     height: 100px;
     border-radius: 100%;
-    border: 1px solid var(--off-black);
     object-fit: cover;
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
     transition: all ease .3s;
@@ -85,13 +65,20 @@ main {
 
 .name {
     color: #fff;
-    font-weight: 500;
+    font-weight: 600;
     margin: 0 0 .25rem;
 }
 
 .loc {
     color: var(--primary);
     font-weight: 500;
+}
+
+.quote span {
+    font-family: "Protest Strike", sans-serif;
+    font-weight: 300;
+    font-size: 1.25rem;
+
 }
 
 .links {
@@ -102,8 +89,26 @@ main {
     width: 100%;
 }
 
+a {
+    color: #fff;
+    text-decoration: none;
+    background-color: hsla(75, 12.7%, 31%, 0.56);
+    padding: 1rem;
+    border-radius: 5px;
+
+    transition: all ease .3s;
+    position: relative;
+    border: 1px solid transparent;
+}
+
+a:hover {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    transition: all ease .3s;
+}
+
 a:first-child:hover {
-    background: #000 url('assets/github-mark-white.png') no-repeat;
+    border: 1px solid var(--primary);
+    background: url('assets/github-mark-white.png') no-repeat;
     background-size: 25%;
     background-position: center left;
     color: #fff;
@@ -131,6 +136,7 @@ a:nth-child(2):hover:after {
 }
 
 a:nth-child(2):hover {
+    border: 1px solid var(--primary);
     background: #fff url('assets/fem_logo.png') no-repeat;
     background-size: 28%;
     background-position: center left;
@@ -138,23 +144,131 @@ a:nth-child(2):hover {
 }
 
 a:nth-last-child(3):hover {
+    border: 1px solid var(--primary);
     background: #007fbc url(assets/LinkedIn_icon.svg) no-repeat;
     background-position: center left;
     color: #fff;
 }
 
 a:nth-last-child(2):hover {
-    background: #000 url(assets/logo-white.png) no-repeat;
+    border: 1px solid var(--primary);
+    background: url(assets/x-logo-white.png) no-repeat;
     background-size: 25%;
     background-position: center left;
     color: #fff;
 }
 
 a:last-child:hover {
-    background-color: #fff;
-    background: url(assets/Instagram_Glyph_White.svg) no-repeat, linear-gradient(90deg, #ffd600, #ffaf00, #ff822e, #ff4855, #ff007e, #ff00ab, #d800d6, #7638fa);
+    border: 1px solid var(--primary);
+    background: url(assets/Instagram_Glyph_White.svg), linear-gradient(90deg, #ffd600, #ffaf00, #ff822e, #ff4855, #ff007e, #ff00ab, #d800d6, #7638fa);
     background-repeat: no-repeat;
-    background-size: 25% auto;
+    background-size: 25%;
     background-position: left center;
     color: #fff;
+}
+
+
+@media (prefers-color-scheme: light) {
+
+
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Protest+Strike&display=swap');
+
+    :root {
+        --primary: hsl(75, 12.7%, 31%);
+        --gray: #cccccc;
+        --dark-gray: #e0e0e0;
+        --off-white: #ebebeb;
+        --off-black: hsl(0, 0%, 8%);
+    }
+
+    body {
+        font-family: "Inter", sans-serif;
+        background-color: #ededed;
+        color: var(--off-black);
+    }
+
+    .container {
+        background: url('assets/NeonBG_light.jpg') no-repeat;
+        background-size: cover;
+    }
+
+    main {
+        background-color: rgba(255, 255, 255, 0.346);
+        backdrop-filter: blur(10px);
+    }
+
+    .name {
+        color: var(--off-black);
+        font-weight: 600;
+        margin: 0 0 .25rem;
+    }
+
+    a {
+        font-weight: 700;
+        color: var(--off-black);
+        background-color: #ffffff43;
+        box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+        transition: all ease .3s;
+    }
+
+    a:first-child:hover {
+        border-color: transparent;
+        background: #fff url('assets/github-mark.png') no-repeat;
+        background-size: 25%;
+        background-position: center left;
+        color: var(--off-black);
+    }
+
+    a:nth-child(2) {
+        position: relative;
+    }
+
+    a:nth-child(2):after {
+        content: "";
+        background-image: url(assets/squiggle.svg);
+        background-repeat: repeat-x;
+        position: absolute;
+        right: 1rem;
+        bottom: 0;
+        height: 16px;
+        background-position: center;
+        transition: all 0.3s;
+    }
+
+    a:nth-child(2):hover:after {
+        width: 70%;
+        transition: all 0.3s;
+    }
+
+    a:nth-child(2):hover {
+        border-color: transparent;
+        background: #fff url('assets/fem_logo.png') no-repeat;
+        background-size: 28%;
+        background-position: center left;
+        color: #3f54a3;
+    }
+
+    a:nth-last-child(3):hover {
+        border-color: transparent;
+        background: #007fbc url(assets/LinkedIn_icon.svg) no-repeat;
+        background-position: center left;
+        color: #fff;
+    }
+
+    a:nth-last-child(2):hover {
+        border-color: transparent;
+        background: url(assets/x-logo-black.png) no-repeat;
+        background-size: 25%;
+        background-position: center left;
+        color: var(--off-black);
+    }
+
+    a:last-child:hover {
+        border-color: #e0e0e0;
+        background: url(assets/Instagram_Glyph_White.svg) no-repeat, linear-gradient(90deg, #ffd600, #ffaf00, #ff822e, #ff4855, #ff007e, #ff00ab, #d800d6, #7638fa);
+        background-size: 25% cover;
+        background-position: left center;
+        color: #fff;
+    }
+
 }

@@ -15,21 +15,21 @@
 
 body {
     font-family: "Inter", sans-serif;
-    background-color: #ededed;
     color: #fff;
+    background: url('assets/NeonBG.png') no-repeat;
+    background-size: cover;
+    min-height: 100vh;
 }
 
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background: url('assets/NeonBG.png') no-repeat;
-    background-size: cover;
-    /* padding: 1rem 2rem; */
+    min-height: 100vh;
 }
 
 main {
+    margin: 1rem;
     min-width: 370px;
     padding: 2rem 1.5rem;
     display: flex;
@@ -186,12 +186,7 @@ small a {
     }
 
     body {
-        font-family: "Inter", sans-serif;
-        background-color: #ededed;
         color: var(--off-black);
-    }
-
-    .container {
         background: url('assets/NeonBG_light.jpg') no-repeat;
         background-size: cover;
     }
@@ -272,5 +267,4 @@ small a {
         background-position: left center;
         color: #fff;
     }
-
 }

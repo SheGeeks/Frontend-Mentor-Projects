@@ -1,29 +1,29 @@
 # Frontend Mentor Projects
 
-These are challenges I've completed, am currently working through, and interested in taking on when time permits from [FrontendMentor.io](https://www.frontendmentor.io/profile/SheGeeks). Down below are the links to demo my solutions. Up above you can review my code for each challenge in their respective folders.
+These are challenges I've completed, am currently working through, and interested in taking on when time permits from [Frontend Mentor](https://www.frontendmentor.io/profile/SheGeeks). Below are the links to demos. Above, you can dig into my code for each challenge.
 
 ---
 
+## 🥚 Incubating
+
+_Check back in a few weeks to see what's cooking!_
+
+## 🐣 Hatched
+
+_What was hatched is now all grown up._
+
 ## 🐔 Digitally Grown
+
+### 2024
+
+- [Social Links Card](https://shegeeks.github.io/Frontend-Mentor-Projects/social-links-card/) _2/7/24_
+
+### 2023
 
 - [News Homepage](https://shegeeks.github.io/Frontend-Mentor-Projects/news-homepage/) _3/19/23_
 - [Product Preview Card Component](https://shegeeks.github.io/Frontend-Mentor-Projects/product-preview-card/) _3/19/23_
 
-## 🐣 Hatched
-
-_What was hatched is now all grown up. Check back next week to see what hatches from incubation!_
-
-## 🥚 Incubating
-
-- [Launch countdown timer](https://www.frontendmentor.io/challenges/launch-countdown-timer-N0XkGfyz-)
-- [IP Address Tracker](https://www.frontendmentor.io/challenges/ip-address-tracker-I8-0yYAH0)
-- [URL shortening API landing page](https://www.frontendmentor.io/challenges/url-shortening-api-landing-page-2ce3ob-G)
-
----
-
----
-
-### 2022 Challenges Completed
+### 2022
 
 - [Todo App](https://shegeeks.github.io/Frontend-Mentor-Projects/todo-app/) _1/31/22_
 - [Ecommerce Product Page](https://shegeeks.github.io/Frontend-Mentor-Projects/ecommerce-product-page/) _1/26/22_
@@ -31,7 +31,7 @@ _What was hatched is now all grown up. Check back next week to see what hatches 
 - [Room Homepage](https://shegeeks.github.io/Frontend-Mentor-Projects/room-homepage/) _1/16/22_
 - [NFT Preview Card](https://shegeeks.github.io/Frontend-Mentor-Projects/nft-preview-card/) _1/14/22_
 
-### 2021 Challenges Completed
+### 2021
 
 - [Insure Landing Page](https://shegeeks.github.io/Frontend-Mentor-Projects/insure-landing-page/) _10/5/21_
 - [Single Price Grid Component](https://shegeeks.github.io/Frontend-Mentor-Projects/single-price-grid-component/) _9/12/21_

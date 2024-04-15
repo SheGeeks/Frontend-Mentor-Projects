@@ -1,0 +1,3 @@
+.github {
+  @apply hover:shadow-[0_2px_4px_rgba(0,0,0,0.4),0_7px_13px_-3px_rgba(0,0,0,0.3),inset_0_-3px_0_rgba(0,0,0,0.2)] first:hover:bg-[url('../assets/github-mark-white.png')] first:hover:bg-[length:25%] first:hover:bg-no-repeat first:hover:bg-left border border-[#aeaeae25] hover:border-[#c5f82a];
+}

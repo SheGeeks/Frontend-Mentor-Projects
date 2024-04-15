@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.link {
+  @apply relative bg-[#5459458f] border border-[#aeaeae25] py-3 px-4 rounded hover:shadow-[0_2px_4px_rgba(0,0,0,0.4),0_7px_13px_-3px_rgba(0,0,0,0.3),inset_0_-3px_0_rgba(0,0,0,0.2)] hover:bg-no-repeat hover:bg-left hover:bg-transparent hover:border-[#c5f82a] hover:transition-all;
+}
+
+.link:first-child {
+  @apply hover:bg-[url('/images/github-mark-white.png')] hover:bg-[length:25%];
+}
+
+.link:nth-child(2) {
+  @apply hover:bg-white hover:bg-[url('/images/fem_logo.png')] hover:bg-[length:28%] hover:text-[#3f54a3] after:bg-[url('/images/squiggle.svg')] after:absolute after:bg-center after:bg-repeat-x after:right-4 after:bottom-0 after:h-4 after:text-transparent;
+}
+
+.link:nth-child(2)::after {
+  clip: rect(0, 0, 0, 0);
+}
+
+.link:nth-child(2):hover::after {
+  @apply w-[70%] overflow-hidden transition-all;
+  clip: unset;
+}
+
+.link:nth-child(3) {
+  @apply hover:bg-[#007fbc] hover:bg-[url('/images/LinkedIn_icon.svg')] hover:bg-[length:25%];
+}
+.link:nth-child(4) {
+  @apply hover:bg-[url('/images/x-logo-white.png')] hover:bg-[length:25%];
+}
+.link:last-child {
+  @apply hover:bg-[url('/images/Instagram_Glyph_White.svg'),linear-gradient(to_right,#ffd600,#ffaf00,#ff822e,#ff4855,#ff007e,#ff00ab,#d800d6,#7638fa)] hover:bg-[length:25%];
+}
+
+#toggle {
+  @apply absolute top-0 right-0 m-[-85px] w-[150px] h-[150px] rotate-45 bg-[length:20%] bg-[bottom_10px_left_50%] shadow-[0_0_0_1px_#607326] border-none bg-[#1e2018cc] bg-[url('/images/moon-to-sun-loop.svg')] bg-no-repeat cursor-pointer hover:bg-[#5459458f] transition-all;
+}

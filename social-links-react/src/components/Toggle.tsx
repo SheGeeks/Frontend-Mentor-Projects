@@ -1,6 +1,32 @@
+"use client";
+import React, { CSSProperties } from "react";
+import { useState } from "react";
+
+let count = 0;
+
 export default function Toggle() {
+  const imgLight = "/images/sun-to-moon-loop.svg?" + count;
+  const imgDark = "/images/moon-to-sun-loop.svg?" + count;
+  const [dark, setDark] = useState(false);
+
+  const toggleTheme = () => {
+    setDark(!dark);
+    document.documentElement.classList.toggle("dark");
+    count++;
+  };
+
+  const style = {
+    backgroundImage: dark ? `url(${imgDark})` : `url(${imgLight}) `,
+  };
+
   return (
-    <button aria-labelledby="toggle-label" id="toggle">
+    <button
+      aria-labelledby="toggle-label"
+      id="toggle"
+      style={style}
+      className="absolute top-0 right-0 m-[-85px] w-[150px] h-[150px] rotate-45 bg-[length:20%] bg-[bottom_10px_left_50%] shadow-[0_0_0_1px_#607326] border-none bg-[#224759] dark:bg-[#1e2018cc] bg-no-repeat cursor-pointer hover:bg-[#152151] dark:hover:bg-[#5459458f] transition-all"
+      onClick={toggleTheme}
+    >
       <span id="toggle-label" hidden>
         Toggle color mode
       </span>

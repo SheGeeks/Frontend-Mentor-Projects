@@ -16,12 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={inter.className}>
-      <body
-        style={{ backgroundImage: `url("../images/NeonBG.png")` }}
-        className="min-h-screen bg-cover"
-      >
-        {children}
-      </body>
+      <body className="bg-neonL dark:bg-neonD">{children}</body>
     </html>
   );
 }

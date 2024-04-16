@@ -22,7 +22,9 @@ export default function UserInfo() {
       </a>
       <div className="user_info font-semibold my-4">
         <h1 className="name text-2xl">Corvida Raven</h1>
-        <p className="loc text-[#c5f82a]">Atlanta, Georgia, USA</p>
+        <p className="loc text-[#545945] dark:text-[#c5f82a]">
+          Atlanta, Georgia, USA
+        </p>
       </div>
       <div className="bio">
         <p>

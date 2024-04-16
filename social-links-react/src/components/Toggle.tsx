@@ -1,5 +1,4 @@
 "use client";
-import React, { CSSProperties } from "react";
 import { useState } from "react";
 
 let count = 0;

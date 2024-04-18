@@ -25,7 +25,15 @@
 
 @layer components {
   .link {
-    @apply relative py-3 px-4 rounded shadow-[0_1px_1px_rgba(9,30,66,0.25),0_0_1px_1px_rgba(9,30,66,0.13)] hover:shadow-none dark:shadow-none dark:hover:shadow-[0_2px_4px_rgba(0,0,0,0.4),0_7px_13px_-3px_rgba(0,0,0,0.3),inset_0_-3px_0_rgba(0,0,0,0.2)] font-bold dark:font-normal bg-white/40 dark:bg-lprimary/60 dark:hover:bg-transparent border border-transparent dark:border-accent/25 hover:bg-white hover:bg-no-repeat hover:bg-left hover:border-gray-300 dark:hover:border-accent hover:transition-all duration-300 hover:duration-300;
+    @apply relative py-3 px-4 rounded shadow-[0_1px_1px_rgba(9,30,66,0.25),0_0_1px_1px_rgba(9,30,66,0.13)] hover:shadow-none dark:hover:shadow-none  font-bold dark:font-normal bg-white/40 dark:bg-lprimary/60 dark:hover:bg-black/60 border border-transparent dark:border-accent/25 hover:bg-white hover:bg-no-repeat hover:bg-left hover:border-gray-300 dark:hover:border-accent hover:transition-all duration-300 hover:duration-300;
+  }
+
+  .link.blog {
+    @apply hover:bg-[url('/images/sg_logo.png')]  hover:bg-[length:25%];
+  }
+
+  .link.folio {
+    @apply hover:bg-[url('/images/dev.svg')] dark:hover:bg-[url('/images/dev-white.svg')]  hover:bg-[length:25%];
   }
 
   .link.git {

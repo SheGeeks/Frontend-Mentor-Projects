@@ -1,5 +1,15 @@
 export const socialLinks = [
   {
+    url: "https://shegeeks.net",
+    name: "Blog",
+    class: "blog",
+  },
+  {
+    url: "https://dev.shegeeks.net",
+    name: "Portfolio",
+    class: "folio",
+  },
+  {
     url: "https://github.com/shegeeks",
     name: "Github",
     class: "git",

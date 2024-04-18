@@ -9,6 +9,10 @@ const config: Config = {
   darkMode: "class",
   theme: {
     extend: {
+      colors: {
+        accent: "#c5f82a",
+        lprimary: "#545945",
+      },
       backgroundImage: {
         neonL: "url('/images/NeonBG_light.jpg')",
         neonD: "url('/images/NeonBG.png')",

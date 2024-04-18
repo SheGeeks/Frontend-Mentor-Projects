@@ -17,12 +17,12 @@ export default function UserInfo() {
           alt="Frontend Developer, Corvida"
           width="75"
           height="75"
-          className="user_img rounded-full shadow-md transition-all ease-in m-auto duration-300 hover:ease-in"
+          className="user_img rounded-full shadow-md m-auto"
         />
       </a>
       <div className="user_info font-semibold my-4">
         <h1 className="name text-2xl">Corvida Raven</h1>
-        <p className="loc text-[#545945] dark:text-[#c5f82a]">
+        <p className="loc text-lprimary dark:text-accent">
           Atlanta, Georgia, USA
         </p>
       </div>

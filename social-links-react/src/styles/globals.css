@@ -19,23 +19,21 @@
 @layer base {
   body {
     color: rgb(var(--foreground-rgb));
-    @apply min-h-screen bg-cover text-[#141414];
-  }
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+    @apply min-h-screen bg-cover text-neutral-800;
   }
 }
 
 @layer components {
+  .link {
+    @apply relative py-3 px-4 rounded shadow-[0_1px_1px_rgba(9,30,66,0.25),0_0_1px_1px_rgba(9,30,66,0.13)] hover:shadow-none dark:shadow-none dark:hover:shadow-[0_2px_4px_rgba(0,0,0,0.4),0_7px_13px_-3px_rgba(0,0,0,0.3),inset_0_-3px_0_rgba(0,0,0,0.2)] font-bold dark:font-normal bg-white/40 dark:bg-lprimary/60 dark:hover:bg-transparent border border-transparent dark:border-accent/25 hover:bg-white hover:bg-no-repeat hover:bg-left hover:border-gray-300 dark:hover:border-accent hover:transition-all duration-300 hover:duration-300;
+  }
+
   .link.git {
-    @apply hover:bg-white hover:bg-[url('/images/github-mark.png')] dark:hover:bg-transparent dark:hover:bg-[url('/images/github-mark-white.png')] hover:bg-[length:25%];
+    @apply hover:bg-[url('/images/github-mark.png')] dark:hover:bg-[url('/images/github-mark-white.png')] hover:bg-[length:25%];
   }
 
   .link.fem {
-    @apply hover:bg-white hover:bg-[url('/images/fem_logo.png')] hover:bg-[length:28%] hover:text-[#3f54a3] after:bg-[url('/images/squiggle.svg')] after:absolute after:bg-center after:bg-repeat-x after:right-4 after:bottom-0 after:h-4 after:text-transparent;
+    @apply hover:bg-[url('/images/fem_logo.svg')] hover:bg-[length:28%]  after:bg-[url('/images/squiggle.svg')] after:absolute after:bg-center after:bg-repeat-x after:right-4 after:bottom-0 after:h-4 after:text-transparent;
   }
 
   .link.fem::after {
@@ -48,14 +46,24 @@
   }
 
   .link.lin {
-    @apply hover:bg-white hover:bg-[url('/images/LinkedIn-blue.svg')] hover:text-[#007fbc] dark:hover:bg-transparent hover:bg-[length:25%] dark:hover:text-[white];
+    @apply hover:bg-[url('/images/LinkedIn-blue.svg')] hover:bg-[length:25%];
   }
 
   .link.twit {
-    @apply hover:bg-white hover:bg-[url('/images/x-logo-black.png')]  dark:hover:bg-transparent dark:hover:bg-[url('/images/x-logo-white.png')] hover:bg-[length:25%];
+    @apply hover:bg-[url('/images/x-logo-black.png')] dark:hover:bg-[url('/images/x-logo-white.png')] hover:bg-[length:25%];
   }
 
   .link.ig {
-    @apply hover:bg-white dark:hover:bg-transparent hover:bg-[url('/images/Instagram_Glyph_White.svg'),linear-gradient(to_right,#ffd600,#ffaf00,#ff822e,#ff4855,#ff007e,#ff00ab,#d800d6,#7638fa)] hover:bg-[length:25%];
+    @apply hover:bg-[url('/images/Instagram_Glyph_White.svg'),linear-gradient(to_right,#ffd600,#ffaf00,#ff822e,#ff4855,#ff007e,#ff00ab,#d800d6,#7638fa)] hover:bg-[length:25%];
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .transition {
+    @apply transition-all duration-300 hover:duration-300;
   }
 }

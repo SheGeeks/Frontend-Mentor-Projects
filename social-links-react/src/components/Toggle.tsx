@@ -23,7 +23,7 @@ export default function Toggle() {
       aria-labelledby="toggle-label"
       id="toggle"
       style={style}
-      className="absolute top-0 right-0 m-[-85px] w-[150px] h-[150px] rotate-45 bg-[length:20%] bg-[bottom_10px_left_50%] shadow-[0_0_0_1px_#607326] border-none bg-[#224759] dark:bg-[#1e2018cc] bg-no-repeat cursor-pointer hover:bg-[#152151] dark:hover:bg-[#5459458f] transition-all"
+      className="absolute top-0 right-0 m-[-85px] w-[150px] h-[150px] rotate-45 bg-[length:20%] bg-[bottom_10px_left_50%] shadow-[0_0_0_1px_#607326] border-none bg-cyan-900 dark:hover:bg-black/30 bg-no-repeat cursor-pointer hover:bg-black/90 dark:bg-black/70 transition"
       onClick={toggleTheme}
     >
       <span id="toggle-label" hidden>

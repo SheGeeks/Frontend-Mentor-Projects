@@ -16,7 +16,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={inter.className}>
-      <body className="bg-neonL dark:bg-neonD transition">{children}</body>
+      <body className="bg-primary dark:bg-secondary transition">
+        {children}
+      </body>
     </html>
   );
 }

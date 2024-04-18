@@ -14,8 +14,8 @@ const config: Config = {
         lprimary: "#545945",
       },
       backgroundImage: {
-        neonL: "url('/images/NeonBG_light.jpg')",
-        neonD: "url('/images/NeonBG.png')",
+        primary: "url('/images/NeonBG_light.jpg')",
+        secondary: "url('/images/NeonBG.png')",
       },
     },
   },

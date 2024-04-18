@@ -2,7 +2,6 @@ import Links from "@/components/Links";
 import UserInfo from "@/components/UserInfo";
 import Footer from "@/components/Footer";
 import Toggle from "@/components/Toggle";
-// import "../styles/globals.css";
 
 // "use client";
 let avatar = require("../../public/images/av.jpg");

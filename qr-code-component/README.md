@@ -20,6 +20,7 @@ A simple QR code component | [DEMO](https://shegeeks.github.io/Frontend-Mentor-P
 
 - Semantic HTML5
 - CSS Grid
+- CSS Flexbox
 - Viewport Units
 - WCAG 2.1 Accessible Colors
 - Under 100 lines of CSS
